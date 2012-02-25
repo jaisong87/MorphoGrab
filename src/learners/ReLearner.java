@@ -29,13 +29,14 @@ public class ReLearner {
 	
 	String charStateDelimiter;
 	
-	public ReLearner(Vector<String> dataRows){
+	public ReLearner(Vector<String> dr){
 		/* Constructor - should take in a large chunk of Text */
 		learningOver = false;
 		characterExpr = "";
 		stateExpr = "";
 		enableDebugging = true;
 		charStateDelimiter = new String();
+		dataRows = new Vector<String>(dr);
 	}
 	
 	public void resetStates(){
@@ -78,8 +79,16 @@ public class ReLearner {
 
 	public void showCharacterAndStates()
 	{
-		
-		
+		for(int i=0;i<dataRows.size();i++)
+		{
+			String[] tokens = dataRows.elementAt(i).split(charStateDelimiter);
+			String curCharacter = "";
+			String curState = "";
+			for(int j=0;j<tokens.length-1;j++)
+					curCharacter += tokens[j];
+			curState = tokens[tokens.length-1];
+			System.out.println(curCharacter+ " => { "+curState + " }");
+		}
 	}
 	
 	/*
@@ -140,8 +149,11 @@ public class ReLearner {
 		startPos.add(129); endPos.add(157);
 		
 		myLearner.addExample(line1, 0, 101, startPos, endPos);
-	
+		
 		myLearner.learnExpressions();
+		
+		myLearner.showCharacterAndStates();
+		
 		return;
 	}
 }
