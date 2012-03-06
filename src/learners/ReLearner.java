@@ -2,15 +2,20 @@
  * 
  */
 package learners;
+import java.util.Collections;
 import java.util.Vector;
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.io.FileInputStream;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import learners.regexTemplate;
 
+enum AlgoType{ DELIMITER_SEPARATOR, REGEX_TEMPLATE, KNN_LEARNER };
 
 /**
  * @author jaison
@@ -23,27 +28,44 @@ import java.io.InputStreamReader;
  */
 public class ReLearner {
 	boolean learningOver; /* Is learning Over - state variable */
-	String characterExpr, stateExpr; /* Expression for character and states */
+	String stateExpr; /* Used by REGEX_TEMPLATE : Expression for character and states */
+
 	Vector<String> dataRows; /* These are rows in the input document. We operate on this for information-extraction */
-	boolean enableDebugging;
+	boolean enableDebugging; /* For more debug prints*/
 	
-	String charStateDelimiter;
-	
-	public ReLearner(Vector<String> dr){
-		/* Constructor - should take in a large chunk of Text */
+	String charStateDelimiter; /* To split between character and all of the remaining states*/
+    Vector<String> stateDelimiters; /* Used by DELIMITER_SEPERATOR - Set of possible delimiters */
+    
+    AlgoType learningAlgorithm; /* Specify the type of learning algorithm */
+   
+    Vector<regexTemplate> stateTemplates; /* All the regexTemplates for states are in this container */
+    
+	/* Constructor - should take in a large chunk of Text 
+	 * All the datarows are taken in the constructor 
+	 * AlgoType is also specified in the constructor
+	 */
+    public ReLearner(Vector<String> dr, AlgoType alg){
+		learningAlgorithm = alg;
 		learningOver = false;
-		characterExpr = "";
-		stateExpr = "";
-		enableDebugging = true;
-		charStateDelimiter = new String();
-		dataRows = new Vector<String>(dr);
-	}
+		enableDebugging = true;                   /* Enable debugging by default */
+		charStateDelimiter = new String();        /* Char-State delimiter */ 
+		dataRows = new Vector<String>(dr);		  /* Initialise the data-rows. More could be added later */
+		stateDelimiters = new Vector<String>();   /* Used in DELIMITER_SEPARATOR */
+		stateTemplates = new Vector<regexTemplate>(); /* Used in REGEX_TEMPLATE*/ 
+    }
 	
+    /* Reset the states and start all over again
+     * All the learning would be cleared. Except for the data-rows, the regexLearner
+     * won't know of anything else.
+     */
 	public void resetStates(){
 		learningOver = false;
 		return;
 	}
 	
+	/*
+	 * Add an example. As a consequence some learning should happen.
+	 */
 	public boolean addExample(String dataRow, int startCharPos, int endCharPos, Vector<Integer> startStatePos, Vector<Integer> endStatePos) /* Add an example for Character*/
 	{
 		System.out.println("ReLearner::addExample() Called");
@@ -55,18 +77,61 @@ public class ReLearner {
 			
 		charStateDelimiter = dataRow.substring( endCharPos, startStatePos.elementAt(0) );
 
-		System.out.println("Char/State - Delimiter : "+charStateDelimiter);
+		System.out.println("Char/State - Delimiter is \""+charStateDelimiter+"\"");
 		
-		System.out.println("States : "+dataRow.substring(startStatePos.elementAt(0), endStatePos.elementAt(0) ) );
+	if(AlgoType.DELIMITER_SEPARATOR == learningAlgorithm )
+	{
+		System.out.print("States : "+dataRow.substring(startStatePos.elementAt(0), endStatePos.elementAt(0) ) );
 		for(int i=1;i<startStatePos.size();i++)
 		{
-			System.out.println(" , "+dataRow.substring(startStatePos.elementAt(i), endStatePos.elementAt(i) )  );			
+			stateDelimiters.addElement(dataRow.substring(endStatePos.elementAt(i-1), startStatePos.elementAt(i)));
+			System.out.print(" , "+dataRow.substring(startStatePos.elementAt(i), endStatePos.elementAt(i) )  );			
 		}
+		
+	}
+	else if (AlgoType.REGEX_TEMPLATE == learningAlgorithm)
+	{
+		for(int i=0;i<startStatePos.size();i++)
+		{
+		regexTemplate rtemplate = new regexTemplate(dataRow.substring(startStatePos.elementAt(0), endStatePos.elementAt(0)));
+		stateTemplates.addElement(rtemplate);
+		System.out.println("Latest learned expression is "+rtemplate.getRegex());
+		}
+		
+	}
+		for(int i=1;i<startStatePos.size();i++)
+		{
+			//stateDelimiters.addElement(dataRow.substring(endStatePos.elementAt(i-1), startStatePos.elementAt(i)));
+			System.out.println(" DLT :  "+dataRow.substring(endStatePos.elementAt(i-1), startStatePos.elementAt(i))  );			
+		}
+		
 	}
 	
 	return false; /* Not Implemented*/	
 	}
-		
+
+	public void printSummary()
+	{
+		System.out.println("================== SUMMARY ========================");
+	if(AlgoType.DELIMITER_SEPARATOR == learningAlgorithm)
+	{
+		System.out.println("Learning Algorithm : DELIMITER_SEPERATORS Heuristic");
+	}
+	else if(AlgoType.REGEX_TEMPLATE == learningAlgorithm)
+	{
+		System.out.println("Learning Algorithm : REGEX_TEMPLATE");
+		for(int i=0;i<stateTemplates.size();i++)
+		{
+		regexTemplate stateTemplate = stateTemplates.elementAt(0);
+		System.out.println("Template#"+i+" : "+stateTemplate.getRegex());
+		}
+	}
+	else {
+		System.out.println("Learning Algorithm Specified is unknown");
+	}
+		System.out.println("===================================================");
+	}
+	
 	public boolean learnExpressions()
 	{
 		
@@ -79,16 +144,102 @@ public class ReLearner {
 
 	public void showCharacterAndStates()
 	{
+		if(AlgoType.DELIMITER_SEPARATOR == learningAlgorithm)
+				showCharacterAndStatesUsingDelimiters();
+		else if(AlgoType.REGEX_TEMPLATE == learningAlgorithm){
+				showCharacterAndStatesUsingRegexTemplates();
+		}
+	}
+	
+	private void showCharacterAndStatesUsingRegexTemplates()
+	{
+		regexTemplate stateTemplate = stateTemplates.elementAt(0);
+	    Pattern pattern = Pattern.compile(stateTemplate.getRegex());
+
+		
 		for(int i=0;i<dataRows.size();i++)
 		{
+			System.out.println("-----------------------------------------------------------------");
+			System.out.println("Row is : "+dataRows.elementAt(i));
+			String[] tokens = dataRows.elementAt(i).split(charStateDelimiter);
+			String curCharacter = "";
+			String combinedStates = "";
+			for(int j=0;j<tokens.length-1;j++)
+			{
+				if(j>0) curCharacter+= ":";
+				curCharacter += tokens[j];
+			}
+			combinedStates = tokens[tokens.length-1];
+			System.out.print(curCharacter+ " => ");
+									
+			Vector<String> curStates = new Vector<String>();
+			
+		    Matcher matcher = pattern.matcher(combinedStates);
+
+		    while (matcher.find()) {
+//		                System.out.println("I found the text - " + matcher.group() + " starting at " +"index " + matcher.start() +" and ending at index " + matcher.end());
+		    	curStates.addElement(matcher.group());
+		    }
+
+			
+			for(int j=0;j<curStates.size();j++)
+			{
+				System.out.print(" { "+curStates.elementAt(j) + " } ");
+			}
+			System.out.println("");
+		}
+	}
+	
+	
+	/* Show characters and states using delimters */
+	private void showCharacterAndStatesUsingDelimiters()
+	{
+		
+			for(int i=0;i<dataRows.size();i++)
+		{
+			System.out.println("-----------------------------------------------------------------");
+			System.out.println("Row is : "+dataRows.elementAt(i));
 			String[] tokens = dataRows.elementAt(i).split(charStateDelimiter);
 			String curCharacter = "";
 			String curState = "";
 			for(int j=0;j<tokens.length-1;j++)
 					curCharacter += tokens[j];
 			curState = tokens[tokens.length-1];
-			System.out.println(curCharacter+ " => { "+curState + " }");
+			System.out.print(curCharacter+ " => ");
+			
+	//		System.out.println("DEBUG : "+curState);
+			
+			Vector<String> curStates = new Vector<String>();
+			Vector<String> prevStates= new Vector<String>();
+			curStates.addElement(curState);
+			prevStates.addElement(curState);
+			
+			for(int j=0;j<stateDelimiters.size();j++)
+			{
+	//			prevStates = curStates;
+				curStates.clear();
+	//			System.out.println("Using delimiter "+stateDelimiters.elementAt(j)+" on prevStates of "+prevStates.size()+" elements..curStates have "+curStates.size()+" elements");
+				for(int k=0;k<prevStates.size();k++)
+				{
+					String[] tmpTokens = prevStates.elementAt(k).split(stateDelimiters.elementAt(j));
+					//System.out.println("Got "+tmpTokens.length+" pieces from "+prevStates.elementAt(k));
+					for(int l = 0;l<tmpTokens.length;l++)
+							curStates.addElement(tmpTokens[l]);
+				}
+				prevStates = curStates;
+			}
+			
+			for(int j=0;j<curStates.size();j++)
+			{
+				System.out.print(" { "+curStates.elementAt(j) + " } ");
+			}
+			System.out.println("");
 		}
+			for(int j=0;j<stateDelimiters.size();j++)
+			{
+			System.out.println(stateDelimiters.elementAt(j));
+			}
+
 	}
 	
 	/*
@@ -124,28 +275,18 @@ public class ReLearner {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+		Collections.reverse(dataRows);
+	
 		String line1 = "1. Pigmentation: †Carapace, tergites, pedipalps and metasoma (e.g., pedipalpal and metasomal carinae): pigmented/infuscated (0); not pigmented/infuscated (1).";	
-		String line2 = "2. Chelicerae: Fixed finger, median and basal teeth: fused into a bicusp (conjoined on a ‘trunk’) (0); separate, not fused into a bicusp (not conjoined on a ‘trunk’) (1). [S&S01/9; S&F03.5/44]";
-		String line3 = "3. Chelicerae: Fixed finger, number of teeth: four (subdistal present) (0); three (subdistal absent) (1).";
-		String line4 = "4. Chelicerae: Movable finger, distal tooth alignment (internal distal and external distal teeth): opposable, internal distal tooth completely overlaps external distal tooth in dorsal view, U-shape in anterior aspect (0); not opposable, internal distal tooth does not overlap or at most partially overlaps external distal tooth in dorsal view, V-shape in anterior aspect (1). [L80/21; P00/11; S&S01/1, 6; S&F03.5/39]";
-		String line5 = "5. Chelicerae: Movable finger, dorsal edge, number of subdistal teeth: two (0); one (1); none (2). [L80/10; S89/31, 32; P00/10; S&S01/3; S&F03.5/41]";
-
-		dataRows.add(line1);
-		dataRows.add(line2);
-		dataRows.add(line3);
-		dataRows.add(line4);
-		dataRows.add(line5);
 		
-		
-		ReLearner myLearner = new ReLearner(dataRows);
+		//ReLearner myLearner = new ReLearner(dataRows,AlgoType.DELIMITER_SEPARATOR);
+		ReLearner myLearner = new ReLearner(dataRows,AlgoType.REGEX_TEMPLATE);
 		//106, 130
 		//132, 159
 		Vector<Integer> startPos = new Vector<Integer>();
 		Vector<Integer>   endPos = new Vector<Integer>();
 		
-		startPos.add(103); endPos.add(128);
+		startPos.add(103); endPos.add(127);
 		startPos.add(129); endPos.add(157);
 		
 		myLearner.addExample(line1, 0, 101, startPos, endPos);
@@ -154,10 +295,8 @@ public class ReLearner {
 		
 		myLearner.showCharacterAndStates();
 		
+		myLearner.printSummary();
+		
 		return;
 	}
 }
-
-
-
-

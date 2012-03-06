@@ -7,8 +7,9 @@ public class BoolKNN {
 	int N; /* Dimensioanlity */
 	Vector<ArrayList<Boolean>> learnedInputs;
 	Vector<Boolean> learnedAnswers;
-    int K;	
-	
+	int K;	
+    
+    
 	public BoolKNN(int dim /*, int k*/) {
 		// TODO Auto-generated constructor stub
 			N = dim;
