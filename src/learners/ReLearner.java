@@ -4,6 +4,7 @@
 package learners;
 import java.util.Collections;
 import java.util.Vector;
+import java.util.Map;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -151,20 +152,28 @@ public class ReLearner {
 		return true;
 	}
 
-	public void showCharacterAndStates()
+	/*
+	 * This part is cool , Just extract Information
+	 */
+	public HashMap<String, Vector<String> > extractCharacterAndStates()
 	{
+		HashMap<String, Vector<String>> characterAndStates = new HashMap<String, Vector<String>>();
+
 		if(AlgoType.DELIMITER_SEPARATOR == learningAlgorithm)
-				showCharacterAndStatesUsingDelimiters();
-		else if(AlgoType.REGEX_TEMPLATE == learningAlgorithm){
-				showCharacterAndStatesUsingRegexTemplates();
-		}
+			characterAndStates = getCharacterAndStatesUsingDelimiters();
+	else if(AlgoType.REGEX_TEMPLATE == learningAlgorithm){
+		characterAndStates = getCharacterAndStatesUsingRegexTemplates();
+			}
+		
+		return characterAndStates;
 	}
-	
-	private void showCharacterAndStatesUsingRegexTemplates()
+		
+	private HashMap<String, Vector<String>> getCharacterAndStatesUsingRegexTemplates()
 	{
 		regexTemplate stateTemplate = stateTemplates.elementAt(0);
 	    Pattern pattern = Pattern.compile(stateTemplate.getRegex());
 
+		HashMap<String, Vector<String>> characterAndStates = new HashMap<String, Vector<String>>(); /* Hashmap containing character->set(states) */
 		
 		for(int i=0;i<dataRows.size();i++)
 		{
@@ -179,7 +188,11 @@ public class ReLearner {
 				curCharacter += tokens[j];
 			}
 			combinedStates = tokens[tokens.length-1];
-			System.out.print(curCharacter+ " => ");
+			
+			if(true == enableDebugging)
+				{
+				System.out.print(curCharacter+ " => ");
+				}
 									
 			Vector<String> curStates = new Vector<String>();
 			
@@ -193,16 +206,22 @@ public class ReLearner {
 			
 			for(int j=0;j<curStates.size();j++)
 			{
-				System.out.print(" { "+curStates.elementAt(j) + " } ");
+				if(true == enableDebugging)
+					{
+					System.out.print(" { "+curStates.elementAt(j) + " } ");
+					}
 			}
+			
 			System.out.println("");
+			characterAndStates.put(curCharacter, curStates);
 		}
+	return characterAndStates;
 	}
 	
-	
 	/* Show characters and states using delimters */
-	private void showCharacterAndStatesUsingDelimiters()
+	private HashMap<String, Vector<String>> getCharacterAndStatesUsingDelimiters()
 	{
+		HashMap<String, Vector<String>> characterAndStates = new HashMap<String, Vector<String>>(); /* Hashmap containing character->set(states) */
 		
 			for(int i=0;i<dataRows.size();i++)
 		{
@@ -214,7 +233,10 @@ public class ReLearner {
 			for(int j=0;j<tokens.length-1;j++)
 					curCharacter += tokens[j];
 			curState = tokens[tokens.length-1];
-			System.out.print(curCharacter+ " => ");
+			if(true == enableDebugging)
+				{
+				System.out.print(curCharacter+ " => ");
+				}
 			
 	//		System.out.println("DEBUG : "+curState);
 			
@@ -240,27 +262,28 @@ public class ReLearner {
 			
 			for(int j=0;j<curStates.size();j++)
 			{
+				if(true == enableDebugging)
+				{
 				System.out.print(" { "+curStates.elementAt(j) + " } ");
+				}
 			}
-			System.out.println("");
+			if(true == enableDebugging)
+			{	
+				System.out.println("");
+			}
+			characterAndStates.put(curCharacter, curStates);
 		}
 			for(int j=0;j<stateDelimiters.size();j++)
 			{
+				if(true == enableDebugging)
+				{
 			System.out.println(stateDelimiters.elementAt(j));
-			}
-
-	}
-	
-	/*
-	 * This part is cool , Just extract Information
-	 */
-	public HashMap<String, Vector<String> > extractCharacterAndStates()
-	{
-		HashMap<String, Vector<String>> characterAndStates = new HashMap<String, Vector<String>>();
-		
+				}
+		}
 		return characterAndStates;
 	}
-
+	
+	
         /*
 	public static void main(String args[])
 	{

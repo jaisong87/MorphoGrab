@@ -323,7 +323,7 @@ public class SampleJForm extends javax.swing.JFrame {
                 
 		myLearner.learnExpressions();
 		
-		myLearner.showCharacterAndStates();
+		HashMap<String, Vector<String>> chAndStates = myLearner.extractCharacterAndStates();
 		
 		myLearner.printSummary();
 		
