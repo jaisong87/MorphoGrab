@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import learners.regexTemplate;
 
-enum AlgoType{ DELIMITER_SEPARATOR, REGEX_TEMPLATE, KNN_LEARNER };
+
 
 /**
  * @author jaison
@@ -27,6 +27,9 @@ enum AlgoType{ DELIMITER_SEPARATOR, REGEX_TEMPLATE, KNN_LEARNER };
  * States should be maintained and regex's should be saved in the class
  */
 public class ReLearner {
+    
+        public static enum AlgoType{ DELIMITER_SEPARATOR, REGEX_TEMPLATE, KNN_LEARNER };
+    
 	boolean learningOver; /* Is learning Over - state variable */
 	String stateExpr; /* Used by REGEX_TEMPLATE : Expression for character and states */
 
@@ -66,6 +69,12 @@ public class ReLearner {
 	/*
 	 * Add an example. As a consequence some learning should happen.
 	 */
+        public boolean Train(String Character , String States , String line)
+        {
+            return true;
+        
+        }
+        
 	public boolean addExample(String dataRow, int startCharPos, int endCharPos, Vector<Integer> startStatePos, Vector<Integer> endStatePos) /* Add an example for Character*/
 	{
 		System.out.println("ReLearner::addExample() Called");
@@ -252,6 +261,7 @@ public class ReLearner {
 		return characterAndStates;
 	}
 
+        /*
 	public static void main(String args[])
 	{
 		System.out.println("Hello World!!!");
@@ -299,4 +309,6 @@ public class ReLearner {
 		
 		return;
 	}
+        * 
+        */
 }
