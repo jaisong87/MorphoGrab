@@ -1,18 +1,21 @@
 
+import java.awt.Color;
 import java.awt.FileDialog;
 import java.io.*;
 import java.nio.charset.Charset;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Stack;
-import java.util.Vector;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.BadLocationException;
+import javax.swing.text.DefaultHighlighter;
+import javax.swing.text.Highlighter;
+import javax.swing.text.JTextComponent;
 import learners.ReLearner;
 import learners.regexTemplate;
-
+import learners.Pairs;
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -49,6 +52,8 @@ public class SampleJForm extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jButton2 = new javax.swing.JButton();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("MorphoBank");
@@ -93,6 +98,10 @@ public class SampleJForm extends javax.swing.JFrame {
             }
         });
 
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jScrollPane4.setViewportView(jTextArea3);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -115,7 +124,9 @@ public class SampleJForm extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 412, Short.MAX_VALUE)
+                    .addComponent(jScrollPane4)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,7 +143,10 @@ public class SampleJForm extends javax.swing.JFrame {
                 .addComponent(jButton2)
                 .addContainerGap(110, Short.MAX_VALUE))
             .addComponent(jScrollPane2)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane4))
         );
 
         pack();
@@ -142,7 +156,7 @@ public class SampleJForm extends javax.swing.JFrame {
     
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        FileDialog fileDlg = new FileDialog(this,"Select the file");
+        FileDialog fileDlg = new FileDialog(this,"Select the File");
         fileDlg.show();
         String fileName = fileDlg.getDirectory() + "//" + fileDlg.getFile();
         
@@ -177,6 +191,7 @@ public class SampleJForm extends javax.swing.JFrame {
         int endpos;
     }
     
+     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        try {
            int lineNumber = jTextArea1.getLineOfOffset(jTextArea1.getSelectionStart());
@@ -271,7 +286,7 @@ public class SampleJForm extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         
-                Vector<String> dataRows = new Vector<String>();
+              Vector<String> dataRows = new Vector<String>();
 		
 		FileInputStream fin;
 		try {
@@ -292,7 +307,7 @@ public class SampleJForm extends javax.swing.JFrame {
 			e.printStackTrace();
 		}
 	
-                Collections.reverse(dataRows);
+                //Collections.reverse(dataRows);
                 ReLearner myLearner = new ReLearner(dataRows, ReLearner.AlgoType.REGEX_TEMPLATE);
 		
                 Vector<Integer> startPos = new Vector<Integer>();
@@ -314,19 +329,109 @@ public class SampleJForm extends javax.swing.JFrame {
                      }
                      
                      myLearner.addExample(line, c_char.startpos, c_char.endpos, startPos, endPos);
-                             
+                     startPos.clear();
+                     endPos.clear();
                  }
                 
+                 jTextArea3.setText("");
 		//myLearner.addExample(line1, 0, 101, startPos, endPos);
 		
                // myLearner.toString( "Character","list<states>","line1")
                 
 		myLearner.learnExpressions();
 		
-		HashMap<String, Vector<String>> chAndStates = myLearner.extractCharacterAndStates();
-		
-		myLearner.printSummary();
-		
+                //Pattern regex = myLearner.getRegex();
+                     
+                int startline;
+                int endline ;
+                   
+                
+                
+		HashMap<String, Vector<String> > h1 =  myLearner.extractCharacterAndStates();                
+		Vector<Pairs> chAndStates = new Vector<Pairs>(); //myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
+
+                for(int  i = 0 ; i <chAndStates.size() ;i++)
+                {
+                    Pairs p = chAndStates.get(i);
+                    String key= p.getChar();
+                    jTextArea3.setText(jTextArea3.getText()+ key +"\n");
+            
+                    // getValue is used to get value of key in Map
+                    Vector<String> value=(Vector<String>)p.getStates();
+
+                    for(int j = 0 ; j< value.size();j++)
+                    {
+                        jTextArea3.setText( jTextArea3.getText()+ value.get(j) + "\n");
+                    }
+
+                    jTextArea3.setText(jTextArea3.getText()+ "\n");
+              }
+                
+                /*
+                Set s=chAndStates.entrySet();
+
+        //Move next key and value of Map by iterator
+        Iterator it=s.iterator();
+
+        while(it.hasNext())
+        {
+            // key=value separator this by Map.Entry to get key and value
+            Map.Entry m =(Map.Entry)it.next();
+
+            // getKey is used to get key of Map
+            String key=(String)m.getKey();
+            jTextArea3.setText(jTextArea3.getText()+ key +"\n");
+            
+            // getValue is used to get value of key in Map
+            Vector<String> value=(Vector<String>)m.getValue();
+
+            for(int j = 0 ; j< value.size();j++)
+            {
+                  jTextArea3.setText( jTextArea3.getText()+ value.get(j) + "\n");
+            }
+             
+            jTextArea3.setText(jTextArea3.getText()+ "\n");
+        }
+		*/
+            
+        
+        
+                /*
+                try
+                {
+                int lineNumber = 0;
+                while(true)
+                {
+                    try
+                    {
+                        startline = jTextArea1.getLineStartOffset(lineNumber);
+                        endline = jTextArea1.getLineEndOffset(lineNumber);
+                    }
+                    catch ( BadLocationException ex)
+                    {
+                        break;
+                    }
+                    String text= jTextArea1.getText(startline, endline - startline +1);
+                    Matcher matcher = regex.matcher(text);
+                    
+                    if(matcher.find())
+                    {
+                        Highlighter hilite = jTextArea1.getHighlighter();
+                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.red);
+                        hilite.addHighlight(startline, endline, p);
+                        
+                   }
+                    lineNumber++;
+                }
+                }
+                catch ( Exception e)
+                {
+                    ;
+                }
+                
+        
+        */
+        
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -404,7 +509,9 @@ public class SampleJForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTable jTable2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea3;
     // End of variables declaration//GEN-END:variables
 }
