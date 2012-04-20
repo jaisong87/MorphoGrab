@@ -217,9 +217,10 @@ public class ReLearner {
 	/*
 	 * This part is cool , Just extract Information
 	 */
-	public HashMap<String, Vector<String> > extractCharacterAndStates()
+	public  Vector<Pairs>/*HashMap<String, Vector<String> >*/ extractCharacterAndStates()
 	{
-		HashMap<String, Vector<String>> characterAndStates = new HashMap<String, Vector<String>>();
+		//HashMap<String, Vector<String>> characterAndStates = new HashMap<String, Vector<String>>();
+		Vector<Pairs> characterAndStates = new Vector<Pairs>();
 
 		if(AlgoType.DELIMITER_SEPARATOR == learningAlgorithm)
 			characterAndStates = getCharacterAndStatesUsingDelimiters();
@@ -349,22 +350,27 @@ public class ReLearner {
                 return pp;
 	}
         
-        private HashMap<String, Vector<String>> getCharacterAndStatesUsingRegexTemplates()
+        private /*HashMap<String, Vector<String>>*/ Vector<Pairs>  getCharacterAndStatesUsingRegexTemplates()
 	{
         	System.out.println("*********** ExtractCharacterAndStates() using RegexTemplates @jaison");
                	Vector<Pairs> pp = new  Stack<Pairs>();
 	        String finalString ="";
                 regexTemplate stateTemplate = stateTemplates.elementAt(0);
                 finalString+= stateTemplate.getRegex();
-                
+               
+               for(int i=1;i<stateTemplates.size();i++) 
+            	   finalString+="|"+stateTemplates.elementAt(i).getRegex();
+               
                 Pattern pattern = Pattern.compile(finalString);
                
-		HashMap<String, Vector<String>> characterAndStates = new HashMap<String, Vector<String>>(); /* Hashmap containing character->set(states) */
-		
 		for(int i=0;i<dataRows.size();i++)
 		{
 			System.out.println("-----------------------------------------------------------------");
 			System.out.println("Row is : "+dataRows.elementAt(i));
+
+			String curLine = dataRows.elementAt(i);
+		if(curLine.contains(charStateDelimiter))
+		{
 			String[] tokens = dataRows.elementAt(i).split(charStateDelimiter);
 			String curCharacter = "";
 			String combinedStates = "";
@@ -404,10 +410,11 @@ public class ReLearner {
 			}
 			
 			System.out.println("");
-                        if(curStates.size() == statestokens.length)
+                        if(curStates.size() == statestokens.length) /* Line is not very clear */
                         {
-                            characterAndStates.put(curCharacter, curStates);
-                            Pairs p = new Pairs();
+                     //       characterAndStates.put(curCharacter, curStates);
+                        
+			Pairs p = new Pairs();
                         p.character = curCharacter;
                         p.states = curStates;
                         
@@ -415,8 +422,10 @@ public class ReLearner {
                             pp.add(p);
         
                         }
+			}
 		}
-	return characterAndStates;
+	printSummary();
+	return pp;//characterAndStates;
 	}
 	
         
@@ -424,9 +433,11 @@ public class ReLearner {
         
         
 	/* Show characters and states using delimters */
-	private HashMap<String, Vector<String>> getCharacterAndStatesUsingDelimiters()
+	private  Vector<Pairs>/*HashMap<String, Vector<String>>*/ getCharacterAndStatesUsingDelimiters()
 	{
-                HashMap<String, Vector<String>> characterAndStates = new HashMap<String, Vector<String>>(); /* Hashmap containing character->set(states) */
+                //HashMap<String, Vector<String>> characterAndStates = new HashMap<String, Vector<String>>(); /* Hashmap containing character->set(states) */
+		 Vector<Pairs> characterAndStates = new Vector<Pairs>();
+
 			for(int i=0;i<dataRows.size();i++)
 		{
 			System.out.println("-----------------------------------------------------------------");
@@ -475,7 +486,10 @@ public class ReLearner {
 			{	
 				System.out.println("");
 			}
-			characterAndStates.put(curCharacter, curStates);
+			   Pairs p = new Pairs();
+                        p.character = curCharacter;
+                        p.states = curStates;
+			characterAndStates.add(p);
                         
 		}
 			for(int j=0;j<stateDelimiters.size();j++)
@@ -492,6 +506,19 @@ public class ReLearner {
         /*
 	public static void main(String args[])
 	{
+		String data = "hello world";
+		String[] tokens = data.split(":");
+		System.out.println("tokens are "+tokens.length+" in number");
+		
+		for(int i=0;i<tokens.length;i++)
+				System.out.println("Tokens is "+tokens[i]);
+		
+		if(data.matches(":"))	
+				System.out.println("String contains delimter ");
+		else 
+			System.out.println("String does not contain delimter ");
+	}
+		
 		System.out.println("Hello World!!!");
 		Vector<String> dataRows = new Vector<String>();
 		

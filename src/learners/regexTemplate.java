@@ -109,7 +109,9 @@ public class regexTemplate {
 			else if(ctype == specialCharCount )
 			{
 				pattern+="[\\d]";
-				if(repeatAllowed.elementAt(i)==true) pattern+="+";
+				if(repeatAllowed.elementAt(i)==true)  {
+												pattern+="+";
+														}
 			}
 			else if(ctype== specialCharCount+1)
 			{
