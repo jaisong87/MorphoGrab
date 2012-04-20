@@ -1,0 +1,97 @@
+﻿Appendix 2. 
+Characters and character states employed in the cladistic analysis of Bothriuridae. Character states were scored 0 to 4, ? (unknown) or ֠(inapplicable). Multistate characters were treated non-additively, except where indicated otherwise. Character numbers corresponding to the previous analysis of scorpionoid relationships (Prendini, 2000c: Appendix 3) are denoted by LP numbers. Twenty-one characters, pertinent to scorpionoid relationships, but uninformative in the present analysis (and hence excluded) are indicated with an asterisk. 
+1. Carapace: Lateral ocelli, number of pairs: (0) more than 3; (1) 3; (2) 2. [LP 1] 
+2. Carapace: Median ocular tubercle: (0) raised; (1) shallow. [LP 2] 
+3. Carapace: Median notch: (0) absent; (1) shallow; (2) strongly excavated. [LP 3] 
+4. Carapace: Median longitudinal furrow: (0) broad, shallow, without suture; (1) narrow, suturiform. [LP 4] 
+5. Carapace: Median longitudinal furrow: (0) well developed; (1) obsolete. [LP 5] 
+6. Carapace: Posterior sutures: (0) absent; (1) present. [LP 7] 
+7. Carapace: Non-granular surfaces of prosoma, mesosoma, metasoma and legs: (0) smooth; (1) distinctly punctate. [LP 8] 
+8. Sternum: Sternum shape: (0) subtriangular; (1) subpentagonal; (2) transverse. [LP 9] 
+9. Chelicerae: Cheliceral movable finger, number of subdistal teeth: (0) 1; (1) 2. [LP 10]
+10. Chelicerae: Cheliceral movable finger, distal external and distal internal teeth: (0) subequal, with distal external tooth only slightly smaller than distal internal tooth, and opposable, i.e. forming a bicusp; (1) unequal, with distal external tooth considerably smaller than distal internal tooth, aligned longitudinally and usually not opposable or, at most, moderately opposable. [LP 11]
+11. Pedipalp ornamentation: Patella, dorsal surface: (0) flat, dorsomedian and dorsoexternal carinae in same axis; (1) convex, dorsomedian carina raised above horizontal axis of dorsoexternal carina. [LP 15] 
+12. Pedipalp ornamentation: Patella, dorsoexternal carina: (0) distinct; (1) obsolete. [LP 16]
+13. Pedipalp ornamentation: Patella, externomedian carina: (0) continous from proximal to distal edges; (1) discontinuous, interrupted two-thirds along. [LP 17]
+14. Pedipalp ornamentation: Patella, anterior process: (0) absent; (1) present. [LP 18]
+15. Pedipalp ornamentation: Chela, number of carinae: (0) 8; (1) 10. [LP 19]
+16. Pedipalp ornamentation: Chela (?), dorsal secondary carina: (0) distinct; (1) obsolete; (?) unknown. [LP 20]
+17. Pedipalp ornamentation: Chela (?), dorsal secondary carina: (0) distinct; (1) obsolete. [LP 21]
+18. Pedipalp ornamentation: Chela, dorsal secondary carina: (0) extending full way across dorsal surface, subdigital carina vestigial; (1) dorsal secondary carina extending part way across dorsal surface, subdigital carina extending part way across in opposite direction. [LP 22] *
+19. Pedipalp ornamentation: Chela, digital carina: (0) distinct; (1) obsolete. [LP 23]
+20. Pedipalp ornamentation: Chela, ventroexternal carina: (0) distinct; (1) obsolete. [LP 26]
+21. Pedipalp ornamentation: Chela, ventroexternal carina: (0) parallel to longitudinal axis of chela, distal edge connected to external movable finger condyle; (1) parallel to longitudinal axis of chela, distal edge disconnected from external movable finger condyle and directed toward a point between external and internal movable finger condyles, but closer to external condyle; (2) oblique to longitudinal axis of chela, distal edge disconnected from external movable finger condyle and directed toward (almost connecting) internal movable finger condyle. Additive [LP 27]
+22. Pedipalp ornamentation: Chela, ventromedian carina: (0) vestigial or obsolete; (1) distinct; (֩ inapplicable. [LP 28] *
+23. Pedipalp ornamentation: Chela, ventrointernal carina: (0) more strongly developed than internomedian carina, which may be obsolete; (1) equally or less strongly developed than internomedian carina; (֩ inapplicable. [LP 29]
+24. Pedipalp ornamentation: Chela, ventrointernal carina: (0) equally or more strongly developed then internomedian carina, which may be obsolete; (1) less strongly developed than internomedian carina, often obsolete; (֩ inapplicable. [LP 30] *
+25. Pedipalp ornamentation: Chela (?), secondary sexual structure: (0) absent; (1) hook like apophysis; (2) semicircular, rimmed depression; (?) unknown. Additive [LP 31]
+26. Pedipalp ornamentation: Chela (?), hook like secondary sexual structure with granular ridge at base of fixed finger: (0) present; (1) absent; (?) unknown;(֩ inapplicable. [LP 32]
+27. Pedipalp ornamentation: Chela fingers, number of rows of primary denticles: (0) single; (1) double, often fused at the base; (2) multiple. [LP 33]
+28. Pedipalp ornamentation: Chela fingers, dentate margin: (0) entire; (1) markedly scalloped. [LP 34]
+29. Pedipalp ornamentation: Chela (?), lobe of movable finger: (0) absent or at most weakly developed, close to base movable finger and lacking an obvious notch in fixed finger; (1) well developed, almost midway along movable finger (if dentate margin markedly scalloped, first lobe disproportionately developed), with a distinct notch in fixed finger, lobe rounded dorsally and lacking a sharp conical tooth; (?) unknown. [LP 35] *
+30. Trichobothria: Femur, number of e trichobothria: (0) 1; (1) 2; (2) 4. [LP 39]
+31. Trichobothria: Femur, position of trichobothrium i: (0) internal; (1) dorsal. [LP 40] *
+32. Trichobothria: Patella, position of trichobothrium d2: (0) dorsal; (1) internal. [LP 41] *
+33. Trichobothria: Patella, v trichobothria: (0) absent; (1) 3 prolaterals; (2) 3 or more retrolaterals. Additive [LP 42]
+34. Trichobothria: Patella, number of v trichobothria: (0) absent; (1) single row of 3; (2) single row of 4ֲ0; (3) 2 or more rows, with more than 30. [LP 43]
+35. Trichobothria: Patella, position of distal v trichobothrium: (0) ventral; (1) external. [LP 44]
+36. Trichobothria: Patella, number of e trichobothria: (0) 7; (1) 13, rarely 12; (2) 14 or more. Additive [LP 45]
+37. Trichobothria: Chela, number of i trichobothria: (0) 1; (1) 2. [LP 46] *
+38. Trichobothria: Chela, position of trichobothrium it: (0) basal or midfinger; (1) distal; (֩ inapplicable. [LP 47] *
+39. Trichobothria: Chela, position of trichobothria ib and it: (0) basal; (1) midfinger; (֩ inapplicable. [LP 48] *
+40. Trichobothria: Chela, number of V trichobothria: (0) 1; (1) 2; (2) 4; (3) 5; (4) 6 or more. [LP 49]
+41. Trichobothria: Chela, distance between trichobothria V2 and V3: (0) normal; (1) widely separated; (֩ inapplicable. [LP 50]
+42. Trichobothria: Chela, position of trichobothrium Db: (0) external surface; (1) dorsal surface; (֩ inapplicable. [LP 51]
+43. Trichobothria: Chela, position of trichobothrium Dt: (0) manus, at proximal end; (1) manus, mid-length or slightly less than mid-length; (2) manus, distal half, near base of fixed finger; (3) proximal end of fixed finger; (֩ inapplicable. Additive [LP 52]
+44. Trichobothria: Chela, external surface with accessory trichobothria: (0) absent; (1) 10ֱ5. [LP 53] *
+45. Trichobothria: Chela, position of trichobothrium Est: (0) distal; (1) midpalm; (֩ inapplicable. [LP 55] *
+46. Trichobothria: Chela, position of trichobothrium Et2: (0) external surface; (1) ventral surface. [LP 56]
+47. Trichobothria: Chela, number of d trichobothria: (0) 2; (1) 4. [LP 57]
+48. Trichobothria: Chela, position of trichobothrium db: (0) fixed finger; (1) manus. [LP 58]
+49. Trichobothria: Chela, position of trichobothrium db: (0) dorsal; (1) internal. [LP 59] 
+50. Trichobothria: Chela, position of trichobothrium dsb: (0) below dbפst axis; (1) in line with dbפst axis; (֩ inapplicable. [LP 60]
+51. Trichobothria: Chela, position of trichobothrium eb: (0) proximal region of fixed finger; (1) manus, behind point of articulation between fixed and movable fingers; (֩ inapplicable. [LP 61] *
+52. Trichobothria: Chela, position of trichobothrium esb: (0) manus, behind point of articulation between fixed and movable fingers and below ebץstץt axis; (1) midway along fixed finger, in line with ebץstץt axis; (֩ inapplicable. [LP 62]
+53. Legs: Retrolateral pedal spurs: (0) present; (1) absent. [LP 63]
+54. Legs: Telotarsi, laterodistal lobes: (0) truncated, base of median dorsal lobe flush; (1) rounded, notches at base of median dorsal lobe. [LP 65]
+55. Legs: Telotarsi, laterally compressed: (0) absent; (1) present. [LP 66]
+56. Legs: Telotarsi, well developed ventromedian row of setae: (0) spiniform; (1) setiform; (2) absent. [LP 68]
+57. Legs: Telotarsi I׉V, ventrosubmedian setae distribution: (0) setiform on I׉V; (1) setiform on I or I and II, spiniform on III and IV; (2) spiniform (or secondarily setiform) on I׉V. Additive [LP 69]
+58. Legs: Telotarsi, ventrosubmedian setae type: (0) stout spiniform; (1) slender spiniform; (2) few secondarily setiform; (֩ inapplicable. [LP 70]
+59. Legs: Basitarsi I and II, retrolateral row of macrosetae: (0) absent; (1) spiniform; (2) setiform, sand comb; (?) unknown. Additive [LP 72]
+60. Legs: Stridulatory surface on opposing surfaces of coxae of pedipalps and first walking legs: (0) absent; (1) present, partially developed. [LP 74] *
+61. Legs: Maxillary lobes, shape of first pair: (0) rounded-truncate anteriorly; (1) tapering anteriorly. [LP 76] *
+62. Reproductive anatomy: Embryonic development: (0) apoikogenic; (1) katoikogenic; (?) unknown. [LP 77]
+63. Reproductive anatomy: Ovariuterine follicles: (0) sessile; (1) stalked. [LP 78]
+64. Reproductive anatomy: Testis: (0) straight; (1) coiled; (?) unknown. [LP 79]
+65. Reproductive anatomy: Genital opercula (?): (0) separated; (1) loosely joined; (2) fused. [LP 80]
+66. Reproductive anatomy: Genital opercula (?): (0) separated; (1) loosely joined; (?) unknown. [LP 81]
+67. Hemispermatophore and paraxial organ: Hemispermatophore: (0) flagelliform; (1) fusiform; (2) lamelliform; (?) unknown. Additive [LP 82]
+68. Hemispermatophore and paraxial organ: Hemispermatophore, truncal flexure: (0) absent; (1) present; (?) unknown. [LP 83]
+69. Hemispermatophore and paraxial organ: Paraxial organ, internobasal reflection of sperm duct: (0) absent; (1) present; (?) unknown. [LP 84]
+70. Hemispermatophore and paraxial organ: Paraxial organ, internal wall of sperm duct: (0) simple; (1) with semilunar shelf; (?) unknown. [LP 85]
+71. Hemispermatophore and paraxial organ: Hemispermatophore, distal lamina: (0) smooth; (1) with prominent crest; (?) unknown. [LP 86]
+72. Hemispermatophore and paraxial organ: Hemispermatophore, lamellar hook and median lobe: (0) separate; (1) fused; (?) unknown. [LP 88] *
+73. Hemispermatophore and paraxial organ: Hemispermatophore, position of lamellar hook: (0) basal; (1) distal; (?) unknown; (֩ inapplicable. [LP 89]
+74. Hemispermatophore and paraxial organ: Hemispermatophore, spines in capsular region: (0) absent; (1) present; (?) unknown. [LP 91]
+75. Hemispermatophore and paraxial organ: Hemispermatophore, sclerotized mating plug: (0) absent; (1) present; (?) unknown. [LP 92] *
+76. Mesosoma: Pretergites III and VI with stridulatory granules: (0) absent; (1) present. [LP 93]
+77. Metasoma: Metasomal segments I׉V, carinae: (0) paired ventrosubmedian carinae; (1) single ventromedian carina. [LP 95]
+78. Metasoma: Metasomal segments I׉V, carinae: (0) more strongly developed on III and IV than I and II; (1) more strongly developed on I and II than III and IV; (֩ inapplicable. [LP 96]
+79. Metasoma: Metasomal segment I, ventromedian carinae with circular configuration: (0) absent; (1) present. [LP 97] *
+80. Metasoma: Metasomal segment V, ventrolateral carinae: (0) continuous from proximal to distal edges; (1) discontinuous, interrupted in distal region. [LP 98]
+81. Metasoma: Metasomal segment V, ventromedian carina distal portion: (0) straight; (1) bifurcating; (2) breaking up into numerous granules; (֩ inapplicable. [LP 99]
+82. Metasoma: Metasomal segment V, transverse carina: (0) absent; (1) type I, discontinuous and merging proximally with ventrolateral carinae; (2) type II, continuous, not merging proximally with ventrolateral carinae. Additive [LP 100]
+83. Metasoma: Metasomal segment V (?), dorsal surface with paired androvestigia (metasomal glands): (0) absent; (1) present; (?) unknown. [LP 103]
+84. Telson: Vesicle (?), dorsal surface with androvestigia (metasomal glands): (0) absent; (1) single; (2) paired; (?) unknown. [LP 104]
+85. Telson: Aculeus: (0) long, shallowly curved; (1) very short, sharply curved. [LP 105]
+86. Telson: Subaculear tubercle: (0) absent; (1) distinct. [LP 106] *
+87. Telson: Vesicle (?), laterally compressed: (0) absent; (1) present; (?) unknown. [LP 107]
+88. Telson: Vesicle (?), laterally compressed: (0) absent; (1) present. [LP 108]
+89. Telson: Vesicle (?), elongated with pair of distal lobes: (0) absent; (1) present; (?) unknown. [LP 109]  *
+90. Telson: Vesicle, anterodorsal lateral lobes: (0) present; (1) absent. [LP 110]
+91. Telson: Vesicle, ventral surface: (0) with 2 or more longitudinal granular carinae extending towards aculeus; (1) without granules. [LP 111] 
+92. Telson: Vesicle, ventral surface with semicircular carina: (0) absent; (1) present. [LP 112]
+93. Telson: Venom glands: (0) complex; (1) simple. [LP 113]
+94. Telson: Venom pigment: (0) opalescent; (1) reddish. [LP 114] *
+95. Behaviour: Mesosomal percussion: (0) absent; (1) present. [LP 115] *

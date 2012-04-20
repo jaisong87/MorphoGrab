@@ -1,0 +1,45 @@
+﻿Prendini, L. 2004. Systematics of the genus Pseudolychas Kraepelin (Scorpiones: Buthidae). Annals of the Entomological Society of America 97(1): 37–63.
+
+Table 1. Distribution of 28 characters among the species of Pseudolychas Kraepelin, 1911 and eight buthid outgroup taxa. Character states are scored 0–3 and ? (unknown). Seven autapomorphies, indicated by †, were excluded from all analyses. Unknown states in A. minshullae are attributed to the fact that the adult male is presently unknown.
+  
+Centruroides gracilis			10010 10000 00000 00000 00000 000
+Afroisometrus minshullae  		1???? 00010 10000 ??10? 01001 000
+Lychas burdoi  			10100 00011 10002 10000 00000 000
+Babycurus jacksoni			21021 11110 10001 00001 00000 000
+Odonturus dentatus			21010 11110 10002 00001 00000 000
+Grosphus madagascariensis		21021 31111 01002 00000 01000 010
+Parabuthus capensis			21000 30011 00112 00000 11110 110
+Uroplectes triangulifer			00100 21111 01002 00000 01110 000
+Pseudolychas ochraceus		11010 01110 01002 10110 01000 001
+Pseudolychas pegleri			11020 01110 01002 10110 01100 001
+Pseudolychas transvaalicus		11021 01110 02002 11110 01100 001
+
+
+1. Cheliceral fixed finger, number of denticles on ventral surface: none (0); one (1); two (2). 
+2. Pedipalp chela (♂), manus: not incrassate (0); incrassate (1); unknown (?).
+3. Pedipalp chela (♂), fixed finger: curved dorsally (0); straight (1); unknown (?).
+4. Pedipalp chela (♂), movable finger, median lobe: absent (0); weak (1); well developed (2); unknown (?). 
+5. Pedipalp chela (♂), fingers, when closed: no proximal ‘gap’ (0); distinct proximal ‘gap’ (1); unknown (?).
+6. Pedipalp chela fingers, granular rows, number of rows: 6–7 (0); 8–9 (1); 11 (2); 12–14 (3). 
+7. Pedipalp chela fingers, granular rows: imbricated (0); not imbricated (1).
+8. Pedipalp chela fingers, granular rows, number of external accessory granules: one (1); two (2).
+†9. Pedipalp chela fingers, supernumary granules: present (0); absent (1).
+10. Pedipalp patella: dorsointernal, dorsoexternal and, to lesser extent, externomedian carinae distinct, granular (0); dorsointernal, dorsoexternal and externomedian carinae absent or obsolete (1).
+11. Pedipalp femur dorsal trichobothria: α configuration (0); β configuration (1).
+12. Pectines (♀), basal pectinal tooth: unmodified (0); enlarged (1); reduced (2).
+†13. Pectines (♀), proximal median lamella: unmodified (0); enlarged and lobate (1).
+†14. Legs I and II, tibiae and telotarsi, macrosetal combs: absent (0); present (1).
+15. Legs III and IV, tibial spurs: absent, legs III and IV (0); present, leg IV only (1); present, legs III and IV (2).
+16. Hemispermatophore, pars recta: straight (0); coiled (1); unknown (?).
+†17. Hemispermatophore, pars reflecta: parallel to distal lamina (0); S-shaped (1); unknown (?).
+18. Mesosomal tergites III–VI, submedian carinae: absent or obsolete (0); present (1).
+19. Sternites VI and VII, surface macrosculpture: smooth, at least medially (0); granular (1).
+20. Sternite V (♂), posteromedial surface: unmodified (0); with raised, smooth area (1); unknown (?).
+†21. Metasomal segments I–III, dorsomedian surfaces, stridulatory granules: absent (0); present (1).
+22. Metasomal segment II, median lateral carinae: absent (0); present (1).
+23. Metasomal segment III, median lateral carinae: absent (0); present (1).
+24. Metasomal segment IV, median lateral carinae: absent (0); present (1).
+†25. Metasomal segment V, ventrolateral carinae: present (0); absent (1).
+†26. Metasomal segment V, ventrolateral carinae, subdistal granules: unmodified (0); enlarged into laterally compressed, lobate processes (1).
+27. Subaculear tubercle: present (0); absent (1).
+28. Aculeus, length relative to telson vesicle: as long as, or longer than vesicle (0); considerably shorter than vesicle (1).

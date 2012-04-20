@@ -1,0 +1,93 @@
+﻿Volschenk, E.S. and Prendini, L. 2008. Aops oncodactylus gen. et sp. nov., the first troglobitic urodacid (Urodacidae: Scorpiones), with a re-assessment of cavernicolous, troglobitic and troglomorphic scorpions. Invertebrate Systematics 22: 235–257.
+
+Table 2. Distribution of 56 characters among nine species of Urodacidae Pocock, 1893 and six outgroup taxa. Character states are scored 0–3, * (polymorphic), ? (unknown), and - (inapplicable).
+
+Lisposoma josehermana
+000000000000000000000000000000000000000000000-0000000000
+Hemiscorpius lepturus
+21020111100101111011110310110001010101000100110011011110
+Opisthacanthus validus
+21010111100110100001100100110000010100111110100001112110
+Nebo hierichonticus
+11020101011010110111110300100000011100000000100000001011
+Scorpio maurus mogadorensis
+01010101001000100101110210100010021100001100100100011001
+Heteroscorpion opisthacanthoides
+11021101100201111001010001--1100010101101110110001111100
+Aops oncodactylus
+1*0220200002?1110101011001--1101020???01?1110-1-??01100?
+Urodacus macrurus
+01021101010201110001011001--1110021110000000110200011001
+Urodacus manicatus
+01021101010201110001011001--1110021110000000110200010001
+Urodacus mckenziei
+01121101010201110001011001--1120021111000000110221111011
+Urodacus megamastigus
+01121101010001110001011001--1120021111001100110221111011
+Urodacus novaehollandiae
+01021101010201110001011001--1110021110000000110200011001
+Urodacus planimanus
+11021101010201110001011001--1110021111000000110200010001
+Urodacus varians
+01121101000001110001011001--1120121110001100110231110001
+Urodacus yaschenkoi
+01121101000001110101011001--1120021110000000110200011001
+
+Appendix 2. Characters and character states employed in cladistic analysis of nine species of Urodacidae Pocock, 1893 and six outgroup taxa. Character states are scored 0–3, * (polymorphic), ? (unknown), and - (inapplicable). Eight uninformative characters, indicated by †, were excluded from all analyses. Unknown states in Aops oncodactylus gen. et sp. n. are attributed to the fact that the adults are presently unknown. Previous character numbers as follows (author/number): P00 = Prendini (2000), P03 = Prendini (2003), PCW03 = Prendini et al. (2003).
+
+1. Cheliceral movable finger, distal external and distal internal teeth: unequal, with distal external tooth considerably smaller than distal internal tooth, aligned longitudinally and not opposable (0); unequal, with distal external tooth noticeably smaller than distal internal tooth, and opposable, i.e. forming a bicusp (1); subequal, with distal external tooth only slightly smaller than distal internal tooth, and opposable, i.e. forming a bicusp (2). Previous characters: P00/11, P03/10, PCW03/2. 
+†2. Cheliceral movable finger, number of subdistal teeth: two (0); one (1). Previous characters: P00/10, P03/9. 
+3. Cheliceral fingers, secondary serrations: absent (0); present (1). Previous characters: P00/12. 
+4. Carapace, median notch in anterior margin: absent (0); shallow (1); strongly excavated (2). Previous characters: P00/3, P03/3, PCW03/5. 
+5. Carapace, lateral ocelli, number of pairs: three (0); two (1); none (2). Previous characters: P00/1, P03/1. 
+6. Carapace, median longitudinal furrow: broad, shallow, without suture (0); narrow, suturiform (1). Previous characters: P00/4, P03/4. 
+7. Carapace, median ocular tubercle: raised (0); shallow (1); none (2). Previous characters: P00/2, P03/2. 
+8. Carapace, posterior sutures: absent (0); present (1). Previous characters: P00/7, P03/6. 
+9. Prosoma, mesosoma, metasoma and legs, nongranular surfaces: smooth (0); distinctly punctate (1). Previous characters: P00/8, P03/7. 
+10. Pedipalp chela fingers, terminal teeth interlocking when closed: unevenly, with movable finger displaced to exterior, with notch near tip of fixed finger (0); evenly, movable finger not displaced to exterior (1). Previous characters: PCW03/23 [merged states 1 and 2]. 
+11. Pedipalp chela fingers, dentate margins: entire (0); markedly scalloped (1). Previous characters: P00/34, P03/28. 
+12. Pedipalp chela fingers, number of rows of primary denticles: single (0); double along entire length, but often fused basally (1); multiple (more than two), at least basally, sometimes becoming single or double distally (2). Previous characters: P00/33, P03/27. 
+13. Pedipalp chela movable finger, lobe (♂): absent or at most weakly developed, close to base movable finger and lacking an obvious notch in fixed finger (0); well-developed, almost midway along movable finger (if dentate margin markedly scalloped, second lobe more strongly developed than other lobes on the movable finger), with a distinct notch in fixed finger, lobe rounded dorsally and lacking a sharp conical tooth (1); unknown (?). Previous characters: P00/35, P03/29, PCW03/25 (part) [corrected state in Nebo].
+14. Pedipalp chela manus, dorsal secondary carina: obsolete (0); distinct (1). Previous characters: P00/22, P03/18. 
+†15. Pedipalp chela manus, ventroexternal carina: oblique to longitudinal axis of chela, distal edge disconnected from external movable finger condyle and directed toward (almost connecting) internal movable finger condyle (0); parallel to longitudinal axis of chela, distal edge disconnected from external movable finger condyle and directed toward a point between external and internal movable finger condyles, but closer to external condyle (1). Previous characters: P00/27, P03/21. 
+16. Pedipalp chela manus, ventrointernal carina: equally developed as internomedian carina (0); more strongly developed than internomedian carina, which may be obsolete (1). Previous characters: P00/29, P03/23, PCW03/36. 
+17. Pedipalp patella, anterior process: absent (0); present (1). Previous characters: P00/18, P03/14. 
+18. Pedipalp patella, dorso-external carina: distinct (0); obsolete (1). Previous characters: P00/16, P03/12 [corrected state in U. yaschenkoi]. 
+19. Pedipalp chela, position trichobothrium it: manus or base of fixed finger (0); midway (Hemiscorpius) to distal (Nebo) along fixed finger (1). Previous characters: P00/47, P03/38. 
+†20. Pedipalp chela, position trichobothrium dsb: below db–dst axis (0); in line with db–dst axis (1). Previous characters: P00/60, P03/50. 
+21. Pedipalp chela, position trichobothrium db: dorsal surface (0); internal surface (1). Previous characters: P00/59, P03/49. 
+22. Pedipalp chela, position trichobothrium esb: manus, behind point of articulation between fixed and movable fingers and below eb–est–et axis (0); midway along fixed finger, in line with eb–est–et axis (1). Previous characters: P00/62, P03/52. 
+23. Pedipalp chela, external surface with accessory trichobothria: absent (0); present (1). Previous characters: P00/53, P03/44. 
+24. Pedipalp chela, position trichobothrium Dt: manus, at basal end (0); manus, mid-length or slightly less than mid-length (1); manus, distal half, near base of fixed finger (2); proximal end of fixed finger (3). Previous characters: P00/52, P03/43. 
+25. Pedipalp chela, position trichobothrium Db: external surface (0); dorsal surface (1). Previous characters: P00/51, P03/42. 
+26. Pedipalp chela, number V trichobothria: 4 (0); 6 or more (1). Previous characters: P00/49, P03/40, PCW03/51.
+†27. Pedipalp chela, position trichobothria V1–V3: evenly spaced, distance V1–V2 similar to distance V2–V3 (0); unevenly spaced, distance V1–V2 much less than distrance V2–V3 (1); inapplicable (-). Previous characters: P00/50, P03/41. 
+28. Pedipalp chela, position trichobothria V2–V4: evenly spaced, distance V3–V4 similar to distance V2–V3 (0); unevenly spaced, distance V3–V4 much less than distrance V2–V3 (1); inapplicable (-). Previous characters: P00/50, P03/41, PCW03/52. 
+29. Pedipalp patella, number e trichobothria: 13 (0); 15 or more (1). Previous characters: P00/45, P03/36, PCW03/54 (part).
+30. Pedipalp patella, number v trichobothria: single row of 3 (0); single row of 4–10 (1). Previous characters: P00/43, P03/34, PCW03/55.
+31. Legs I and II, basitarsi, retrolateral margins, setation: no macrosetae (0); a row of 3 or more spiniform macrosetae (1); a comb-like row of 3 or more setiform macrosetae which may or may not be interspersed with slender spiniform macrosetae (2). Previous characters: PCW03/67 (merged P00/72, P00/73 and P03/59). 
+32. Legs, telotarsi, ventrosubmedian setae type: stout, spiniform (0); slender, subspiniform (1). Previous characters: P00/70, P03/58. 
+†33. Legs IV, telotarsi, prolateral row of ventrosubmedian spiniform setae: present (0); absent (1). Previous characters: P00/71, PCW03/71 (part). 
+34. Legs, telotarsi, well-developed ventromedian row of setae: setiform (0); spiniform (1); absent (2). Previous characters: P00/68, P03/56. 
+35. Legs, telotarsi, laterodistal lobes: truncated, base of median dorsal lobe flush (0); rounded, notches at base of median dorsal lobe (1). Previous characters: P00/65, P03/54. 
+†36. Embryonic development: apoikogenic (0); katoikogenic (1); unknown (?). Previous characters: P00/77, P03/62. 
+37. Hemispermatophore, sclerotised mating plug: absent (0); present (1); unknown (?). Previous characters: P00/92, P03/75. 
+38. Metasomal segments (♂): similar to or slightly longer than ♀ (0); much longer than ♀ (1); unknown (?). 
+39. Metasomal segments I–IV, dorsolateral carinae: present and distinct on at least some segments (0); absent or obsolete on all segments (1). 
+40. Metasomal segment V, dorsolateral carinae: present and distinct (0); absent or obsolete (1). Previous characters: PCW03/77. 
+41. Metasomal segment I, median lateral carinae (♂): present and distinct (0); absent or obsolete (1); unknown (?). 
+42. Metasomal segment I, median lateral carinae (♀): present and distinct (0); absent or obsolete (1). 
+43. Metasomal segment V, median lateral carinae: present and distinct (0); absent or obsolete (1). 
+†44. Metasomal segment V, ventrolateral carinae: present and distinct (0); absent or obsolete (1). [corrected entries in L. josehermana].
+45. Metasomal segments I–IV, ventral carinae: absent on all segments (0); present and distinct on at least some segments (1). Previous characters: P00/95, PCW03/80 (part). 
+46. Metasomal segments I–IV, ventral carinae: paired ventrosubmedian carinae (0); single ventromedian carina (1); inapplicable (-). Previous characters: P00/95, P03/77. 
+†47. Metasomal segment V, ventromedian carina: present and distinct (0); absent or obsolete (1). [corrected entries in L. josehermana].
+48. Metasomal segment V, ventromedian carina distal portion: straight (0); breaking up into numerous granules (1); bifurcating (2); inapplicable (-). Previous characters: P00/99, P03/81, PCW03/86 [corrected entries in L. josehermana].
+49. Telson vesicle, shape (♂): unmodified (0); elongated, with pair of distal lobes (1); elongated, without pair of distal lobes (2); unknown (?). Previous characters: P00/109, P03/89. 
+50. Telson vesicle, shape (♂): unmodified (0); laterally compressed (1); unknown (?). Previous characters: P00/107, P03/87. 
+51. Telson vesicle, shape (♀): unmodified (0); laterally compressed (1). Previous characters: P00/108, P03/88. 
+52. Telson vesicle, anterodorsal lateral lobes: present (0); absent (1). Previous characters: P00/110, P03/90. 
+53. Telson vesicle, surface macrosculpture: entirely smooth (0); longitudinal rows of granules on ventral and lateral surfaces (1); 2 or more longitudinal rows of granules on all or part of ventral surface only (2). Previous characters: P00/111 (modified), P03/91, PCW03/89. 
+54. Telson, venom glands: complex (0); simple (1). Previous characters: P00/113, P03/93. 
+55. Telson, aculeus: long, shallowly curved (0); very short, sharply curved (1). Previous characters: P00/105, P03/85. 
+56. Burrows constructed: absent (0); present (1); unknown (?). Previous characters: PCW03/104, PCW03/105 (modified). 

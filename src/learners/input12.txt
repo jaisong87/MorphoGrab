@@ -1,0 +1,104 @@
+﻿Prendini, L. and Esposito, L.A. 2010. A reanalysis of Parabuthus (Scorpiones: Buthidae) phylogeny with descriptions of two new Parabuthus species endemic to the Central Namib gravel plains, Namibia. Zoological Journal of the Linnean Society 159: 673–710.
+
+Table 1. Distribution of 68 characters among 27 species of the genus Parabuthus Pocock, 1890. The first two taxa are outgroups. Refer to Appendix 1 for character list. Character states are scored 0 to 2, ? (unknown) and - (inapplicable). Characters that are polymorphic in particular taxa are indicated as follows: states [01] represented by ‘A’, and states [12] represented by ‘B’.  
+G. flavopiceus	01010 00100 01000 00000 00000 00000 00000 00000 000-- ---00 00000 00000 00000 000
+U. triangulifer	10000 00000 00000 00000 01000 00000 00000 00001 000-- ---00 01000 00000 00100 000
+P. brevimanus	10000 01001 10000 01011 01110 12100 00001 00011 00110 00001 01100 20001 10100 020
+P. calvus	00000 01100 00000 10010 01012 01010 00000 00000 10111 00000 10101 20110 10100 1??
+P. capensis	0AAAA 00000 10000 10010 01010 02000 00000 00001 11111 00010 00101 12210 10000 1B0
+P. distridor	10000 01001 10000 01011 01110 12101 00000 01001 000-- ---00 1101- 20000 00100 020
+P. glabrimanus	10000 01001 10000 00011 01110 12100 00000 01101 00110 00000 0001- 20000 10100 020
+P. gracilis	10000 00011 10001 -0111 01110 12100 10100 01111 00110 00001 0001- 20000 00100 020
+P. granimanus	01111 00010 10010 10010 01010 02000 00010 00001 11200 00000 00000 12110 01000 1??
+P. granulatus	010AA 00100 11100 00010 01000 12100 00000 00000 10110 01000 00000 10010 10010 021
+P. heterurus	00100 00000 10000 10010 01010 02000 00010 00001 11200 00000 00000 12110 11000 1??
+P. hunteri	00100 00010 10010 10010 01010 02000 00010 00001 11200 00000 00000 12110 01000 1??
+P. kalaharicus	01010 00101 11100 00011 01100 12101 00000 00000 10110 01000 00000 10010 00110 021
+P. kraepelini	00000 00000 11000 10010 01010 02000 00000 00001 11110 10000 00100 12221 10000 120
+P. kuanyamarum	10000 01001 11100 01011 01110 12101 00000 01000 00110 00000 1001- 20000 00100 020
+P. laevifrons	00100 01101 11100 00011 01110 12100 00000 00000 00211 00000 10000 11000 11000 021
+P. leiosoma	00100 00000 10000 10010 01010 02000 00010 00001 11100 00000 00000 12110 11000 1??
+P. mossambicensis	00000 00000 10000 10010 01010 02000 00000 00001 11111 10100 00100 12220 10000 120	
+P. muelleri	00100 00001 01100 10010 01011 02000 00000 00001 10111 00010 00101 12210 10000 110
+P. namibensis	00100 01000 11100 01011 01010 12000 00000 00001 00211 00000 00000 11110 11000 021
+P. nanus		10000 00010 00001 -0111 11110 12100 10100 11121 00110 00001 0101- 20000 00100 020
+P. pallidus	00000 00000 00000 10010 01011 01000 00000 00001 11100 00000 00101 12110 10000 1??
+P. planicauda	00000 00000 00000 10010 01011 01000 00000 00001 10111 0A000 00101 12110 10000 110
+P. raudus	0AA00 00000 11000 10010 01010 02000 00000 00001 11110 11000 00101 12220 00000 120
+P. schlechteri	0A000 00000 11000 10010 01010 02000 00000 00001 11110 11000 00101 12221 00000 120
+P. setiventer	10000 00011 10001 -0111 01110 12100 10100 01121 00110 00002 0101- 20000 00100 021
+P. stridulus	00A00 01101 11100 00011 01010 12100 00000 00000 00211 00100 10000 11000 01001 021
+P. transvaalicus	01011 00000 11000 10010 01010 02000 00000 00001 11110 10000 00101 12221 00000 110
+P. villosus	010AA 10000 11000 10010 00010 02000 0A000 00002 10111 1A000 00101 12221 00000 111	
+
+
+Appendix 1. List of 68 characters for 27 species in the genus Parabuthus Pocock, 1890 and two outgroup taxa. Character states were scored 0–2, ? (unknown), - (inapplicable) or polymorphic. Multistate characters were treated as unordered (nonadditive). Eight uninformative characters, indicated by †, were excluded from all analyses. Characters from previous analyses that correspond partially or entirely to those in present matrix are as follows (author/number): L78 = Lamoral (1978); P0103 = Prendini (2001a, 2003). Refer to Table 1 for character matrix.
+
+1. Size: Adult general size: large, carapace length 6.5–17.0 mm (0); small, carapace length 2.5–5.0 mm (1). [L78/2, P0103/1]
+2. Color: Color of carapace, mesosoma and metasoma: pale yellow to light brown (0); dark brown to black (pedipalps and legs may be dark or pale) (1); polymorphic (0 1). [P0103/2]
+3. Color: Color pattern of metasoma: metasomal segments I–V and telson uniformly colored (0); metasomal segments III–V and telson infuscated (i.e
+4. Color: Pedipalps, color: pale (though perhaps very lightly infuscated) (0); very dark or heavily infuscated (1)
+5. Color: Legs, color: pale (though perhaps very lightly infuscated) (0); very dark or heavily infuscated (1)
+6. Carapace: †Carapace dorsoventrally compressed: absent (0); present (1). [P0103/4]
+7. Carapace: Granulation of median ocular tubercle (male, female) and surrounding surfaces (female): entire (0); smooth areas (1). [P0103/5]
+8. Pedipalps: Pedipalps, setation: setose (0); smooth (1). [P0103/6]
+9. Pedipalps: Chela manus, surface: smooth (0); granular (1). [P0103/7]
+10. Pedipalps: Chela movable finger, length compared with length of manus (measured along ventroexternal carina), in female: long (length finger/length manus: 1.70–2.00) (0); short (length finger/length manus: ± 1.50) (1). [L78/15, P0103/8]
+11. Pedipalps: Chela manus, shape in adult male, compared with adult female: similar (0); sexually dimorphic (1). [P0103/9]
+12. Pedipalps: Chela fixed finger, shape in adult male: straight or slightly curved dorsally, such that proximal dentate margin linear when fingers are closed (0); strongly curved dorsally, proximal dentate margin distinctly emarginate when fingers are closed (1). [P0103/10]
+13. Pedipalps: Chela movable finger, shape in adult male: straight, proximal dentate margin linear when fingers are closed (0); curved ventrally, proximal dentate margin distinctly emarginate when fingers are closed (1). [P0103/11]
+14. Pedipalps: Chela fixed and movable fingers with basal lobe in adult male: absent (0); present (1). [P0103/12]
+15. Trichobothria: Pedipalp femur, d2: present, unmodified (0); very reduced or absent (1)
+16. Trichobothria: Pedipalp femur, position of d2: dorsal side of dorsointernal carina (0); internal side of dorsointernal carina (1)
+17. Trichobothria: Pedipalp femur, position of e1: level with or distal to d5 (0); proximal to d5, almost halfway between d4 and d5 (1). [L78/13, P0103/13]
+18. Trichobothria: Pedipalp patella, d2: present, unmodified (0); very reduced or absent (1)
+19. Trichobothria: Pedipalp patella, position of em: very close to et (0); medial between est and esb2 or slightly closer to et (1)
+20. Trichobothria: Pedipalp patella, position of esb2: distinctly distal to esb1 (0); level with or slightly distal to esb1 (1). [L78/10, P0103/14]
+21. Trichobothria: †Chela manus, position of Esb: in line with or dorsal to Eb2–Et axis (0); ventral to Eb2–Et axis (1)
+22. Trichobothria: †Chela fixed finger, position of eb: proximal to basal dentate margin (0); distal to basal dentate margin (1)
+23. Trichobothria: Chela fixed finger, position of dt: in line with or distal to et (0); proximal to et (1). [P0103/15]
+24. Pectines: Proximal median lamella of pectines, in female: arcuate (0); enlarged and lobate (dilate) (1). [L78/3, P0103/16]
+25. Pectines: Proximal median lamella of pectines, in male: subrectangular (0); weakly lobate (dilate) (1); strongly lobate (dilate) (2). [P0103/17]
+26. Legs: Legs IV, length: moderately long, not reaching to posterior edge of metasomal segment III (0); very long, reaching past posterior edge of metasomal segment III (1). [L78/19, P0103/18]
+27. Legs: Basitarsi of legs I and II, macrosetal combs: absent (0); weakly developed (1); strongly developed (2). [P0103/19]
+28. Legs: Basitarsi of legs I and II, laterally expanded: absent (0); present (1). [P0103/20]
+29. Legs: †Basitarsi of legs III and IV, prolateral surfaces with dense tufts of macrosetae: absent (0); present (1). [P0103/21]
+30. Legs: Telotarsal ungues, relative length: equal (0); subequal (1). [P0103/22]
+31. Hemispermatophore: Hemispermatophore, pars recta: parallel to axis (0); S-shaped (1). [P0103/23]
+32. Mesosoma: †Tergites, posterior margins: sparsely setose (0); densely setose (1)
+33. Mesosoma: Sternites, surface: smooth (0); punctate (1). [L78/12, P0103/24]
+34. Mesosoma: Sternite III, ‘pit’ organ at proximal apex: absent (0); present (1). [P0103/25]
+35. Mesosoma: †Sternites III and VI, with pale raised surface posteromedially: absent or very weakly developed (0); prominent (1)
+36. Mesosoma: †Sternites III and VI, short, truncate setae: absent or sparse (0); very dense (1)
+37. Mesosoma: Sternite VII, carinae: present (0); absent (1). [P0103/26]
+38. Mesosoma: Sternite VII, median surface: smooth (0); granular (1)
+39. Mesosoma: Sternite VII and metasomal segment I, ventral surface, short, truncate setae: absent (0); sparse (1); very dense (2)
+40. Metasoma: Metasomal segments I–V and telson, setation: absent (0); sparse (1); very dense (2). [L78/9, P0103/27]
+41. Metasoma: Metasomal segments, width relative to length: much narrower (length IV/width IV: 1.7–2.11) (0); slightly narrower (length IV/width IV: 1.2–1.5) (1). [P0103/28]
+42. Metasoma: Metasomal segments, width from I–IV: becoming narrower distally, metasomal segment I wider than segment IV (0); becoming wider distally, metasomal segment I narrower than segment IV (1). [L78/8, P0103/29]
+43. Metasoma: Metasomal segments I–III, stridulatory region on dorsal surface: absent on I–III (0); strongly developed on I–III (1); strongly developed on I and II, weakly developed to absent on III (2). [P0103/30]
+44. Metasoma: Metasomal segment I, shape of stridulatory region (if present) in dorsal aspect: narrow, parallel-sided (0); broad, rounded anteriorly, with posterior constriction (1); inapplicable (-). [P0103/31]
+45. Metasoma: Metasomal segments I, and to a lesser extent II, shape of stridulatory region (if present) in lateral aspect: truncated at anterodorsal edge of segment (0); rounded, extended beyond anterodorsal edge of segment (1); inapplicable (-). [P0103/32]
+46. Metasoma: Metasomal segment I, extent of stridulatory region (if present) in dorsal aspect: terminating at anterodorsal edge of segment (0); extended forwards in V-shape onto anterior surface (1); inapplicable (-). [P0103/33]
+47. Metasoma: Metasomal segment II, extent of stridulatory region (if present) in dorsal aspect: reaching posterodorsal margin (0); not reaching posterodorsal margin (1); inapplicable (-); polymorphic (0 1). [L78/7, P0103/34]
+48. Metasoma: Metasomal segment II, nature of stridulatory region (if present): fine to coarse granules (0); horizontal ridges (1); inapplicable (-). [P0103/35]
+49. Metasoma: Metasomal segments II and III, posterodorsal edge: sublinear (0); anteromedially curved in a V-shape (1). [P0103/36]
+50. Metasoma: Metasomal segments II–IV, ventral surface, short, truncate setae: absent (0); sparse (1); very dense (2)
+51. Metasoma: Metasomal segments IV and V, lateral intercarinal surfaces: granular (0); smooth (1). [L78/11, P0103/37]
+52. Metasoma: Metasomal segment I, ventrosubmedian carinae: present (0); absent (1) 
+53. Metasoma: Metasomal segments II and III or II–IV, distal spiniform granules of dorsosubmedian carinae (if present), size relative to preceding granules: equally developed (0); noticeably more pronounced (1); inapplicable (-). [P0103/40]
+54. Metasoma: Metasomal segment IV, dorsosubmedian carinae: present (0); absent (1). [P0103/38]
+55. Metasoma: Metasomal segment IV, dorsosubmedian carinae (if present): continuous (0); discontinuous (1); inapplicable (-). [P0103/39]
+56. Metasoma: Metasomal segment IV, ventrosubmedian and ventrolateral carinae: present and continuous to edge of segment (0); present but ventrosubmedian carinae becoming obsolete distally (1); absent (2). [L78/1, P0103/41]
+57. Metasoma: Metasomal segment IV, median lateral carina: absent to obsolete anteriorly (0); continuous but poorly developed (1); continuous and distinct (2). [L78/4, P0103/42]
+58. Metasoma: Metasomal segment V, dorsosubmedian carinae: absent (0); present, poorly developed with blunt, rounded granules (1); present, distinct with sharp, spiniform granules (2). [L78/6, P0103/43]
+59. Metasoma: Metasomal segment V, dorsolateral carinae: absent, except for a few proximal granules (0); posteriorly obsolete (1); continuous to distal edge of segment (2). [P0103/44]
+60. Metasoma: Metasomal segment V, ventrolateral carinae: converging posteriorly (0); subparallel to diverging posterioirly (1). [L78/17, P0103/45]
+61. Metasoma: Metasomal segment V, posterior half of ventrolateral carinae: with spinose processes (0); with lobate processes (1). [L78/14, P0103/46]
+62. Metasoma: Metasomal segment V, ventrosubmedian carinae: absent or indistinct from surrounding granules (0); distinct (1). [P0103/47]
+63. Metasoma: Metasomal segment V, ventromedian carina: present (may be indistinct) (0); absent (1). [P0103/48]
+64. Telson: Telson vesicle, width relative to width of metasomal segment V: approximately equal (0); considerably narrower (1). [L78/5, P0103/49]
+65. Telson: †Telson vesicle, dorsoproximal surface: very shallowly excavated along longitudinal half (0); deeply excavated (1). [L78/18, P0103/50]
+66. Telson: Telson aculeus, shape: gently curved (0); abruptly bent (1). [P0103/51]
+67. Behavior: Diurnal retreat: hides under rocks (0); burrows under rocks (1); burrows in open ground (2); unknown (?); polymorphic (1 2). [P0103/52]
+68. Behavior: Foraging strategy: sit-and-wait (0); errant (1); unknown (?). [P0103/53]

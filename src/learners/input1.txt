@@ -1,0 +1,80 @@
+﻿Prendini, L. and Linder, H.P. 1998. Phylogeny of the South African species of restioid leafhoppers (Cicadellidae, Cephalelini). Entomologica scandinavica  29: 11–18.
+
+Table 1. Character distribution used to infer a cladogram for the South African species of Cephalelini Evans
+Alocephaleus ianthe Evans †	1 0 0 – 4 1 0 0 1 1 0 – – 0 0 – 0 0 0 – – – – – – – – – – 0 – – – – 1 0 – – 0 0 1 0 0 0 1 0 0 0 0 0
+Anacephaleus minutus Evans †	1 0 0 2 4 1 0 0 0 1 0 – – 0 0 – 0 0 0 – – – – – – – – – – 0 – – – – 1 0 – – 0 0 0 0 0 0 2 0 0 0 0 0
+Duospina capensis (Evans)	1 1 0 2 5 2 0 0 1 0 0 2 – 0 1 0 0 0 0 – – – – – – – – – – 1 0 0 0 0 1 0 1 – 0 0 0 0 0 0 0 0 1 3 1 0
+Duospina sheilae Davies	1 1 0 2 4 0 0 0 1 0 0 2 – 0 1 1 1 1 0 – – – – – 0 – 0 0 0 1 0 0 0 0 2 0 1 – 0 0 1 0 2 0 1 0 1 3 1 1
+Duospina twanella Davies	1 1 0 2 4 0 0 0 1 0 0 2 – 0 1 1 1 1 0 – – – – – 0 – 0 0 0 1 0 0 0 0 1 0 1 – 0 0 0 2 1 0 2 1 1 3 1 1
+Cephalelus angustatus Evans	0 0 0 0 1 0 0 0 1 1 0 0 1 2 0 – 0 0 1 2 0 – – – 0 – 1 0 1 0 – – – – 1 0 1 – 0 1 2 0 0 1 0 0 0 1 2 0
+Cephalelus appendiculatus Davies	0 0 0 0 0 1 0 0 1 1 0 1 – 0 0 – 0 0 1 0 0 – – – 2 – 0 1 0 0 – – – – 2 0 0 1 0 1 2 1 1 0 0 0 1 0 0 0
+Cephalelus attenuatus Davies	0 0 0 0 1 0 0 1 0 1 0 0 1 2 0 – 0 0 0 – – – – – – – – – – 0 – – – – 1 0 1 – 0 2 2 0 0 1 0 0 0 1 2 0
+Cephalelus bicoloratus Evans	0 0 0 1 2 0 0 0 0 0 1 1 – 0 0 – 0 0 0 – – – – – – – – – – 1 1 2 0 1 2 1 2 – 1 1 1 0 0 0 1 0 1 1 1 0
+Cephalelus bilobatus Davies	0 0 0 1 3 0 1 0 1 0 0 1 – 0 0 – 0 0 0 – – – – – – – – – – 1 1 0 0 0 2 1 2 – 0 1 1 1 2 0 2 0 1 2 1 0
+Cephalelus brevipilus Davies	0 0 0 0 2 1 0 0 1 1 0 0 1 1 0 – 0 0 1 0 0 – – – 0 – 0 0 0 0 – – – – 1 0 0 0 0 1 2 1 1 1 0 0 1 0 0 0
+Cephalelus campbelli Davies	0 0 0 1 2 1 0 0 0 0 1 1 – 0 0 – 0 0 1 0 2 0 0 1 1 0 0 0 0 0 – – – – 2 0 2 – 1 1 1 1 1 0 0 0 1 1 1 0
+Cephalelus cygnastylus Davies	0 0 1 0 0 1 0 0 1 0 0 – – 1 0 – 0 0 1 0 0 – – – 1 1 0 0 0 0 – – – – 1 0 0 0 0 1 2 1 1 0 0 0 1 0 0 0
+Cephalelus daviesi Davies	0 0 0 1 2 0 0 0 0 0 1 1 – 0 0 – 0 0 0 – – – – – – – – – – 1 1 1 1 0 2 1 2 – 1 1 1 0 0 0 1 0 1 1 1 0
+Cephalelus gonubiensis Davies	0 0 0 1 2 1 0 0 0 0 1 1 – 0 0 – 0 0 1 0 2 0 1 1 1 0 0 0 0 0 – – – – 2 0 2 – 1 1 2 1 0 0 0 0 1 1 1 0
+Cephalelus ivyae Davies	0 0 0 1 2 1 0 0 0 0 1 1 – 0 0 – 0 0 1 0 2 0 1 0 1 1 0 0 0 1 1 0 0 0 2 0 2 – 1 1 2 1 1 0 2 1 1 1 1 0
+Cephalelus linderi Prendini	0 0 0 1 2 1 0 0 0 0 1 1 – 0 0 – 0 0 1 0 2 2 0 0 1 1 0 0 0 0 – – – – 2 0 2 – 1 1 1 1 1 0 0 0 1 1 1 0
+Cephalelus nivenus Davies	0 0 0 0 1 0 0 0 3 1 0 0 0 1 0 – 0 0 1 1 0 – – – 0 – 1 0 0 0 – – – – 1 0 0 1 0 1 2 0 0 1 0 0 0 1 2 0
+Cephalelus pickeri Prendini	0 0 0 0 1 0 0 0 3 1 0 0 0 1 0 – 0 0 1 2 0 – – – 0 – 1 0 1 0 – – – – 1 0 0 0 0 1 2 0 0 1 0 0 0 1 2 0
+Cephalelus rawsonia Davies	0 0 0 1 2 1 0 0 0 0 1 1 – 0 0 – 0 0 1 0 2 1 0 0 1 1 0 0 0 1 1 0 0 0 2 0 2 – 1 1 2 1 2 0 2 1 1 1 1 0
+Cephalelus smithi Davies	0 0 0 1 2 0 1 0 1 0 0 1 – 0 0 – 0 0 0 – – – – – – – – – – 1 1 0 0 0 3 1 2 – 0 1 1 1 2 0 2 0 1 2 1 0
+Cephalelus turneri Evans	0 0 0 1 2 0 1 1 1 0 0 – – 0 0 – 0 0 1 0 1 0 0 0 1 1 0 0 0 0 – – – – 0 1 2 – 0 1 0 0 0 0 1 0 1 2 1 0
+Cephalelus uncinatus Davies	0 0 0 0 1 1 0 0 2 1 0 0 0 1 0 – 0 0 0 – – – – – – – – – – 0 – – – – 1 0 3 – 0 1 2 0 0 1 0 0 0 1 2 0
+
+
+Appendix 1. Characters and character states used to infer a cladogram for the South African species of Cephalelini Evans. Multistate characters were coded additively, unless otherwise indicated. Characters indicated with an asterisk are autapomorphies that were excluded from the analysis.
+
+1. Styles: Stylar apophysis is absent (0) or present (1).
+2. Styles: Pair of stylar appendages are absent (0) or present (1).
+3. Styles: Stylar tip is hook-shaped (0) or swan-shaped (1).*
+4. Pygofer: Posterodorsally, pygofer is sloping (0), rounded (1), or square (2). [nonadditive]
+5. Pygofer: Posteroventrally, pygofer is without lobes or extensions (0), with beak-like extension (1), with one rounded lobe (2), with two rounded lobes (3), with triangular extension (4), or with rectangular extension (5). [nonadditive]
+6. Aedeagal shaft: In cross-section, shaft is dorsoventrally flattened (0), cylindrical (1), or laterally flattened (2).
+7. Aedeagal shaft: Dorsal surface of shaft is concave: no (0); yes (1).
+8. Aedeagal shaft: Shaft is expanded subapically: no (0); yes (1).
+9. Aedeagal shaft: In lateral aspect, shaft is straight (0), curved (1), uncinate (2), or sinuate (3).
+10. Aedeagal shaft: Shaft is relatively short (0) or relatively long (1).
+11. Aedeagal apex: Tip of apex is obtuse (0) or acute (1).
+12. Aedeagal apex: Apex is shovel-shaped or arrow-shaped (0), wedge-shaped (1), or elongated and curved in lateral aspect (2). [nonadditive]
+13. Aedeagal apex: If shovel-shaped or arrow-shaped, apex is small (0) or large (1).
+14. Aedeagal apex: Subapical teeth are absent (0), short (1), or long (2).
+15. Aedeagal apex: Midventral ridge on apical third is absent (0) or present (1).*
+16. Aedeagal apex: If present, midventral ridge with barb at tip absent (0) or present (1).
+17. Aedeagal appendages: Single appendage is absent (0) or present (1).
+18. Aedeagal appendages: Membrane connecting appendage to aedeagal shaft is absent (0) or present (1).
+19. Aedeagal appendages: Paired appendages are absent (0) or present (1).
+20. Aedeagal appendages: If paired, appendages are not lyre-shaped (0), small and lyre-shaped (1), large and lyre-shaped (2). [nonadditive]
+21. Aedeagal appendages: If paired, appendages are not horn-like (0), small and horn-like (1), large and horn-like (2). [nonadditive]
+22. Aedeagal appendages: If paired and horn-like, appendages are distally parallel (0), diverging slightly (1), or diverging markedly (2).
+23. Aedeagal appendages: If paired and horn-like, appendages are tapering (0), or claviform (1).
+24. Aedeagal appendages: If paired and horn-like, appendages are strongly elbowed: no (0); yes (1).
+25. Aedeagal appendages: If present, appendages arise from socle (0), shaft (1), or subapically (2). [nonadditive]
+26. Aedeagal appendages: If appendages arising from shaft, arising ventrally (0), or laterally (1).
+27. Aedeagal appendages: If present, appendages are adpressed to aedeagal shaft: no (0); yes (1).
+28. Aedeagal appendages: If present, appendages are hinged: no (0); yes (1).*
+29. Aedeagal appendages: If present, appendages with outer edges smooth (0) or serrated (1).
+30. Aedeagal teeth: Teeth are absent (0) or present (1).
+31. Aedeagal teeth: If present, vertical position of teeth on aedeagal shaft is near base (0) or at mid-length (1).
+32. Aedeagal teeth: If present, lateral position of teeth on aedeagal shaft is dorsally-angled (0), midway between dorsal and ventral surfaces (1), or ventrally-angled (2).
+33. Aedeagal teeth: If present, teeth are small (0) or large (1).*
+34. Aedeagal teeth: If present, number of pairs of teeth: one (0); two (1).*
+35. Gonopore: Gonopore is square (0), round (1), teardrop-shaped (2), or elongate (3). [nonadditive]
+36. Gonopore: Gonopore is small (0) or large (1).
+37. Gonopore: Gonopore is located ca. two-thirds along length of aedeagal shaft (0), subapically on aedeagal shaft (1), apically (2), at tip of aedeagal apex (3).
+38. Gonopore: If gonopore is located ca. two-thirds along length of aedeagal shaft, groove connecting gonopore to aedeagal apex is absent (0) or present (1).
+39. Gonopore: Subapical teeth of gonopore are absent (0) or present (1).
+40. Crown: In cross-section, crown is dorsoventrally flattened (0); cylindrical (1), or laterally flattened (2).
+41. Crown: Crown is extremely short (0), medium in length (1), or extremely long (2).
+42. Crown: In dorsal aspect, crown tapers towards apex (0), expands towards apex (1), or tapers rapidly and expands subsequently (2).
+43. Crown: Crown apex is unmodified (0), swollen (1), or spatulate (2).
+44. Crown: Crown apex is attenuated: no (0); yes (1).
+45. Crown: Mid-dorsal ridge of crown is absent (0), weakly-developed (1), or strongly-developed (2).
+46. Crown: Mid-ventral ridge of crown is absent (0) or weakly-developed (1).
+47. Tegmina: Tegminal venation is obscure (0) or distinct (1).
+48. Pregenital sternite of female: Margin entire (0), with groove or incision (1), with V-shaped indentation (2), or with U-shaped indentation (3).
+49. Ovipositor: Ovipositor extends to edge of tegmina, or stops short thereof (0), extends just beyond edge of tegmina (1), or extends far beyond edge of tegmina (2).
+50. Pronotum: Pronotum with a pair of pits absent (0) or present (1).

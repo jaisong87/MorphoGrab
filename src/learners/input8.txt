@@ -1,0 +1,45 @@
+﻿Prendini, L., Weygoldt, P. and Wheeler, W.C. 2005. Systematics of the Damon variegatus group of African whip spiders (Chelicerata: Amblypygi): Evidence from behaviour, morphology and DNA. Organisms, Diversity and Evolution 5: 203–236. (cover article)
+
+Table 2. Morphological character matrix for Damon variegatus and other phrynichid taxa. Character states are scored 0–4, ? (unknown) or - (inapplicable) and character descriptions are provided below. Uninformative characters are indicated by ‘†’.
+
+Xerophynus machadoi	0	0	0	0	0	0	0	0	0	-	0	0	0	0	1	3	0	?	0
+Euphrynichus bacillifer	1	2	0	0	2	2	0	1	1	1	0	1	0	1	0	2	0	1	0
+Phrynichus scaber	1	2	0	0	2	1	0	0	1	1	0	1	0	1	0	2	0	1	0
+Phrynichodamon scullyi	1	0	0	0	2	0	0	0	1	0	0	0	1	0	1	0	0	0	?
+Musicodamon atlanteus	1	1	0	0	1	1	0	0	1	1	1	0	1	0	0	1	0	1	0
+Damon medius	1	0	0	1	1	0	0	0	1	0	0	0	1	0	0	2	0	2	1
+Damon diadema 1	1	0	0	1	1	0	1	0	1	0	0	0	1	0	1	2	1	3	1
+Damon diadema 2	1	0	0	1	1	0	1	0	1	0	0	0	1	0	1	2	1	3	1
+Damon annulatipes 1	1	0	1	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	1
+Damon annulatipes 2	1	0	1	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	1
+Damon annulatipes 3	1	0	1	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	1
+Damon gracilis 1	1	0	0	1	1	2	0	0	1	0	0	0	1	0	1	2	2	4	2
+Damon gracilis 2	1	0	0	1	1	2	0	0	1	0	0	0	1	0	1	2	2	4	2
+Damon sylviae 1	1	0	0	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	2
+Damon sylviae 2	1	0	0	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	2
+Damon variegatus 1	1	0	0	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	2
+Damon variegatus 2	1	0	0	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	2
+Damon variegatus 3	1	0	0	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	2
+Damon variegatus 4	1	0	0	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	2
+Damon variegatus 5	1	0	0	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	2
+Damon variegatus 6	1	0	0	1	1	0	0	0	1	0	0	0	1	0	1	2	1	3	2
+
+1. Chelicerae, uppermost or distal, bicuspidate tooth: lower cusp larger (0); upper cusp larger (1).† 
+2. Cheliceral stridulating organ: absent (0); present, type I (1); present, type II, row of setae that may be a stridulating organ (2).
+3. Antenniform legs, tibia: not thickened (0); thickened (1).
+4. Antenniform legs, tarsal segments with leaf-like setae: absent (0); present (1).
+5. Fourth leg tibia (basitibia IV): divided into three articles, i.e. 3-segmented (0); divided in two articles, i.e. 2-segmented (1); undivided, i.e. 1-segmented (2).
+6. Pedipalps, shape: short and stout (0); slightly elongated (1); greatly elongated and slender (2).
+7. Pedipalp trochanter, number of large spines on ventral surface: one (0); two (1).
+8. Pedipalp femoral spines: well developed, spiniform (0); reduced to bacilliform apophyses (1).†
+9. Pedipalp tibia, arrangement of spines: three large dorsal spines (1 to 3) form a catching basket, with smaller spines between the large ones (0); three large dorsal spines (1 to 3) are shifted to the distal end and form the phrynichid “hand” (1).†
+10. Pedipalp tibia, development of phrynichid “hand”: weakly developed, with straight spines (0); well developed, with curved spines (1); inapplicable (-).
+11. Pedipalp tibial spine I: normal (0); bifid (1).†
+12. Pedipalp tibial spine II: does not participate in formation of the hand (0); has shifted distally and participates in formation of the hand (1).
+13. Pedipalp basitarsus with backwardly directed spine: absent (0); present (1).
+14. Pedipalp distitarsus with two small denticles above cleaning organ: absent (0); present (1).
+15. Ventral sac covers: absent (0); present (1).
+16. Female genitalia, gonopodial appendage vestiges: soft finger-like (0); hook-like (1); reduced or missing (2); flat, with a sharp edge (3).†
+17. Gonopods with unpaired sclerotized bar or plate anteriad: absent (0); present, of D. variegatus type (1); present, of D. gracilis type (2).
+18. Spermatophores: simple, with free sperm packages (0); sperm packages on distal ends of movable bars (1); with reduced bars (2); of D. variegatus type (3); with reduced stalk (4); unknown (?).
+19. Egg sac development: brood pouch absent (0); brood pouch present, weakly developed, eggs visible from the sides (1); brood pouch present, well developed, egg sac surrounded by large lateral and posterior pleural folds (2); unknown (?).

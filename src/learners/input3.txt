@@ -1,0 +1,57 @@
+﻿Appendix 3. Characters and character states used for cladistic analysis of the genus Parabuthus.
+
+   Character states were scored 0 to 2, ? (unknown), ֠(inapplicable), or * (polymorphic). Multistate characters were treated as unordered (nonadditive). Three characters indicated with an asterisk are autapomorphies that were excluded from all analyses. Characters corresponding to Lamoralӳ (1978) list (Appendix 1) are noted. Refer to Table 2 for data matrix. 
+
+1. General: Adult general size: large, carapace length 6.5-17.0 mm (0); small, carapace length 2.5-5.0 mm (1).
+2. General: Colour of carapace, mesosoma and metasoma: pale yellow to light brown (0); dark brown to black (pedipalps and legs may be dark or pale) (1); polymorphic (*).
+3. General: Colour pattern of metasoma: metasomal segments Iז and telson uniformly coloured (0); metasomal segments IIIז and telson infuscated (i.e.
+4. Carapace: Carapace dorsoventrally compressed: absent (0); present (1). *
+5. Carapace: Granulation of median ocular tubercle (?, ?), and surrounding surfaces (?): entire (0); smooth areas (1).
+6. Pedipalps: Pedipalps: setose (0); smooth (1).
+7. Pedipalps: Chela manus, surface: smooth (0); granular (1).
+8. Pedipalps: Chela movable finger, length compared with length of manus (measured along ventroexternal carina), in ?: long (length finger/length carina: 1.70ֲ.00 (0); short (length finger/length carina: Ѡ1.50) (1).
+9. Pedipalps: Chela manus, shape in adult ?, compared with adult ?: similar (0); sexually dimorphic (1); unknown (?).
+10. Pedipalps: Chela fixed finger, shape in adult ?: straight or slightly curved dorsally, such that proximal dentate margin linear when fingers are closed (0); strongly curved dorsally, proximal dentate margin distinctly emarginate when fingers are closed (1); unknown (?).
+11. Pedipalps: Chela movable finger, shape in adult ?: straight, proximal dentate margin linear when fingers are closed (0); curved ventrally, proximal dentate margin distinctly emarginate when fingers are closed (1); unknown.
+12. Pedipalps: Chela fixed and movable fingers with basal lobe in adult ?: absent (0); present (1); unknown (?).
+13. Trichobothria: Pedipalp femur, location of e1: level with or distal to d5 (0); almost halfway between d4 and d5 (1).
+14. Trichobothria: Pedipalp patella, location of esb2: distinctly distal to esb1 (0); level with or slightly distal to esb1 (1).
+15. Trichobothria: Chela fixed finger, location of dt: in line with or distal to et (0); proximal to et (1).
+16. Pectines: Proximal middle lamella of pectines, in ?: arcuate (0); enlarged and lobate (dilate) (1).
+17. Pectines: Proximal middle lamella of pectines, in ?: subrectangular (0); weakly lobate (dilate) (1); strongly lobate (dilate) (2); unknown (?).
+18. Legs: Legs IV, length: moderately long, not reaching to posterior edge of metasomal segment III (0); very long, reaching past posterior edge of metasomal segment III (1).
+19. Legs: Basitarsi of legs I׉I, setal combs: absent (0); weakly developed (1); strongly developed (2).
+20. Legs: Basitarsi of legs I׉I, laterally expanded: absent (0); present (1).
+21. Legs: Basitarsi of legs III׉V, prolateral surfaces with dense macrosetae: absent (0); present (1). *
+22. Legs: Telotarsal ungues, relative length: equal (0); subequal (1).
+23. Hemispermatophore: Hemispermatophore, pars recta: parallel to axis (0); S-shaped (1); unknown (?).
+24. Mesosoma: Sternites: smooth (0); punctate (1).
+25. Mesosoma: Sternite III, ԰itԠorgan at proximal apex: absent (0); present (1).
+26. Mesosoma: Sternite VII, carinae: present (0); absent (1).
+27. Metasoma: Metasomal segments Iז and telson: virtually asetose (0); sparsely to moderately setose (1); very densely setose (2).
+28. Metasoma: Metasomal segments, width relative to length: much narrower (length IV/width IV: 1.7ֲ.11) (0); slightly narrower (length IV/width IV: 1.2ֱ.5) (1).
+29. Metasoma: Metasomal segments, width from I׉V: becoming narrower distally, metasomal segment I wider than segment IV (0); becoming wider distally, metasomal segment I narrower than segment IV (1).
+30. Metasoma: Metasomal segments I׉II, stridulatory region on dorsal surface: absent from I׉II (0); strongly developed on I׉II (1); strongly developed on I׉I, weakly developed to absent on III (2).
+31. Metasoma: Metasomal segment I, shape of stridulatory region (if present) in dorsal aspect: narrow, parallel-sided (0); broad, rounded anteriorly, with posterior constriction (1); inapplicable (֩.
+32. Metasoma: Metasomal segments I, and to a lesser extent II, shape of stridulatory region (if present) in lateral aspect: truncated at anterodorsal edge of segment (0); rounded, extended beyond anterodorsal edge of segment (1); inapplicable (֩.
+33. Metasoma: Metasomal segment I, extent of stridulatory region (if present) in dorsal aspect: terminating at anterodorsal edge of segment (0); extended forwards in V-shape onto anterior surface (1); inapplicable (֩.
+34. Metasoma: Metasomal segment II, shape of stridulatory region (if present) in dorsal aspect: reaching posterodorsal margin (0); not reaching posterodorsal margin (1); inapplicable (֩; polymorphic (*).
+35. Metasoma: Metasomal segment II, nature of stridulatory region (if present): fine to coarse granules (0); horizontal ridges (1); inapplicable (֩.
+36. Metasoma: Metasomal segments II׉II, posterodorsal edge: straight (0); anteromedially curved in a V-shape (1).
+37. Metasoma: Metasomal segments IVז, lateral intercarinal surfaces: granular (0); smooth (1).
+38. Metasoma: Metasomal segments I׉V, dorsosubmedian carinae: present (0); absent (1).
+39. Metasoma: Metasomal segment IV, dorsosubmedian carinae (if present): continuous (0); discontinuous (1); inapplicable (֩.
+40. Metasoma: Metasomal segments II׉V, distal spiniform granules of dorsosubmedian carinae (if present), size relative to preceding granules: equally developed (0); noticeably more pronounced (1); inapplicable (֩.
+41. Metasoma: Metasomal segment IV, ventrosubmedian and ventrolateral carinae: present and continuous to edge of segment (0); present but ventrosubmedian carinae becoming obsolete distally (1); absent (2).
+42. Metasoma: Metasomal segment IV, median lateral carina: absent to proximally obsolete (0); continuous but poorly developed (1); continuous and distinct (2).
+43. Metasoma: Metasomal segment V, dorsosubmedian carinae: absent (0); present, poorly developed with blunt, rounded granules (1); present, distinct with sharp, spiniform granules (2).
+44. Metasoma: Metasomal segment V, dorsolateral carinae: absent, except for a few proximal granules (0); distally obsolete (1); continuous to distal edge of segment (2).
+45. Metasoma: Metasomal segment V, ventrolateral carinae: converging distally (0); subparallel to diverging distally (1).
+46. Metasoma: Metasomal segment V, distal half of ventrolateral carinae: with spinose processes (0); with lobate processes (1).
+47. Metasoma: Metasomal segment V, ventrolateral carinae: absent or indistinct from surrounding granules (0); distinct (1).
+48. Metasoma: Metasomal segment V, ventromedian carina: present (may be indistinct) (0); absent (1).
+49. Telson: Telson vesicle, width relative to width of metasomal segment V: approximately equal (0); considerably narrower (1).
+50. Telson: Telson vesicle, dorsoproximal surface: very shallowly excavated along longitudinal half (0); deeply excavated (1). *
+51. Telson: Telson aculeus, shape: gently curved (0); abruptly bent (1).
+52. Behavior: Diurnal retreat: hides under rocks (0); burrows under rocks (1); burrows in open ground (2); polymorphic (*); unknown (?).
+53. Behavior: Foraging strategy: sit-and-wait (0); errant (1); unknown (?).

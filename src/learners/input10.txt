@@ -1,0 +1,99 @@
+﻿Francke, O.F. and Prendini, L. 2008. Phylogeny and classification of the giant hairy scorpions, Hadrurus Thorell (Iuridae Thorell): A reappraisal. Systematics and Biodiversity 6(2): 205–223.
+
+Table 4. Revised matrix of 61 characters for the eight species of Hadrurus Thorell and three outgroup taxa. Character states are scored 0–2 and - (inapplicable). Refer to Appendix 3 for character descriptions.
+
+    Iurus d. asiaticus
+    000000000000000000000000000-00000000000000000000-000000000000
+    Caraboctonus keyserlingi
+    000000011111211111120111111011101100100111111000-101011110010
+    Hadruroides charcasus
+    221000011111110111121111111011101200100111111000-101011110010
+    Hadrurus a. arizonensis
+    2001000011112101111101121211221012011001101211110011111000110
+    Hadrurus a. austrinus
+    2011010011112101111101121211221012011001101211110011111000010
+    Hadrurus a. pallidus
+    2011010011112101111101121211221012011001101211110011111000110
+    Hadrurus aztecus
+    2000000111112101111101121211221012011001101110111011111000011
+    Hadrurus concolorous 1
+    2100001011112101111101121211221012111001101211110011111000011
+    Hadrurus concolorous 2
+    2210011011112101111101121211221012111001101211110011111000011
+    Hadrurus gertschi
+    2000102111112101111101121211221112111101101110111011111000010
+    Hadrurus hirsutus
+    2100001011112101111101121211221012111001101211110011111000010
+    Hadrurus obscurus 1
+    1000000011112101111101121211221012011001101211110011111001110
+    Hadrurus obscurus 2
+    2000000011112101111101121211221012011001101211110011111001110
+    Hadrurus pinteri
+    0000102011112101111101121211221112111111101211110011111001011
+    Hadrurus spadix
+    0000000011112101111101121211221012011001101211110011111001110
+
+
+Appendix 3. Revised list of 61 characters for the eight species of Hadrurus Thorell and three outgroup taxa. Character states are scored 0–2 and - (inapplicable). Twenty-nine uninformative characters, indicated by †, were excluded from all analyses. Refer to Table 4 for character matrix. Previous character numbers as follows (author/number): L80 = Lamoral (1980); S89 = Stockwell (1989); P00 = Prendini (2000); FSB01 = Fet et al. (2001); S&S01 = Soleglad & Sissom (2001); S&F01 = Soleglad & Fet (2001); P03 = Prendini (2003); S&F03.4 = Soleglad & Fet (2003), Table 4; S&F03.5 = Soleglad & Fet (2003), Table 5; P04 = Prendini (2004).
+
+1. Colouration: Carapace, interocular surface, infuscation: entirely infuscated (0); partially infuscated (1); triangle lacking infuscation between lateral and median ocelli (2). Previous characters: FSB01/9–11 (part).
+2. Colouration: Carapace, circumocular surfaces, infuscation: infuscated to lateral ocelli (0); infuscation not reaching lateral ocelli (1); not infuscated (2). Previous characters: FSB01/9–11 (part).
+3. Colouration: Carapace, posterior (posterolateral and posteromedian) surfaces, infuscation: infuscated (0); not infuscated (1). Previous characters: FSB01/9–11 (part).
+4. Colouration: Pedipalp chela fingers, colouration: reddish or brownish, darker than manus (0); light yellow, similar to manus (1). Previous characters: FSB01/8.
+5. Colouration: Pedipalp chela manus, infuscation: absent (0); present (1). Previous characters: FSB01/12 (part).
+6. Colouration: Mesosomal tergites, infuscation: entirely to mostly infuscated (except for lateral and posterior edges) (0); little to no infuscation (1). Previous characters: FSB01/9 (part).
+7. Colouration: Metasomal segments, infuscation: not infuscated (0); segment V infuscated only (1); infuscated (at least ventrally) on all segments (2). Previous characters: FSB01/12 (part), 13.
+8. Colouration: Metasoma, ventral surface, carinae, infuscation: not infuscated (0); infuscated (1).
+†9. Chelicerae: Cheliceral fixed finger, subdistal and median teeth: U-spaced (0); V-spaced (1). Previous characters: L80/19.
+†10. Chelicerae: Cheliceral movable finger, distal denticle alignment (inner and outer distal teeth): subequal, with distal external tooth only slightly smaller than distal internal tooth, and opposable, i.e
+†11. Chelicerae: Cheliceral movable finger, dorsal edge, number of subdistal teeth: one (0); two (1). Previous characters: L80/10; S89/31, 32; P00/10; S&S01/3.
+†12. Chelicerae: Cheliceral movable finger, ventral edge, serrula: present (0); absent (1). Previous characters: L80/10; S89/31, 32; S89/37–39; P00/10; S&S01/3, 7; S&F03.5/41.
+†13. Chelicerae: Cheliceral movable finger, ventral edge, large denticle, position: medial (0); suprabasal (1); basal (2).
+†14. Carapace: Carapace, anterior margin: sublinear, with median notch, lateral ocular carinae well developed (0); convex, without median notch, lateral ocular carinae inconspicuous (1).
+†15. Carapace: Lateral ocelli, number: three (0); four (1). Previous characters: S89/21, 25; P00/1 (part); S&F03.5/102.
+†16. Pedipalps: Pedipalp patella, internal projections (‘spurs’): dorsal and ventral projections similarly developed (0); absent (1). Previous characters: S&S01/15–17.
+†17. Pedipalps: Pedipalp chela, subdigital carina: absent (0); present, vestigial (1). Previous characters: S89/40 (corrected); P00/19; S&S01/20, 23; S&F03.5/91.
+†18. Pedipalps: Pedipalp chela, ventromedian carina: absent (0); weak to obsolete, present only in proximal half (1). Previous characters: S&S01/26; P00/28.
+†19. Pedipalps: Pedipalp chela fingers, median denticle row, primary subrows, orientation: oblique, imbricated (0); oblique, not imbricated (1). Previous characters: P04/7.
+20. Pedipalps: Pedipalp chela, movable finger, number of internal denticles: 10–14 (0); nine (1); seven (2).
+†21. Pedipalps: Pedipalp chela finger dentition, inner and outer accessory denticles [supernumary granules sensu Sissom (1990)]: absent (0); present (1). Previous characters: S&S01/30, 33; S&F03.5/49, 51, 52.
+†22. Trichobothria: Pedipalp femur, trichobothrium d position: external surface (0); dorsal surface (1). Previous characters: S&S01/39.
+†23. Trichobothria: Pedipalp patella, external surface, trichobothrium et2, size: smaller than other trichobothria (‘petite’) (0); similar to other trichobothria (1). Previous characters: S&S01/49, S&F01/45, S&F03.4/45; S&F03.5/25.
+24. Trichobothria: Pedipalp patella, external surface, number of trichobothria in em series: two (0); three (single accessory trichobothrium) (1); more than ten (more than eight accessory trichobothria) (2). Previous characters: L80/17; S89/60–68; P00/45; S&S01/51, 54–56, 59–65; S&F03.5/30, 36.
+†25. Trichobothria: Pedipalp patella, external surface, trichobothrium eb2, size: smaller than other trichobothria (‘petite’) (0); similar to other trichobothria (1). Previous characters: S&S01/49; S&F01/35; S&F03.4/35; S&F03.5/25.
+26. Trichobothria: Pedipalp patella, ventral surface, number of trichobothria: one (0); three (1); more than three (2), Previous characters: L80/1, 17; S89/52, 56–59; P00/42, 43; S&S01/52, 53; S&F03.5/35.
+†27. Trichobothria: Pedipalp patella, ventral surface, trichobothrium v1 position: suprabasal (0); basal (1). Previous characters: S&S01/50.
+28. Trichobothria: Pedipalp patella, ventral series trichobothria, positions: one (v3) positioned externally (0); more than two positioned externally (1); inapplicable (-). Previous characters: S89/53–55; P00/44; S&S01/48; S&F03.5/23, 24.
+29. Trichobothria: Pedipalp chela, trichobothrium Db, position: manus, ventroexternal surface, distal third (0); manus, dorsoexternal surface, distal third (1); manus, dorsoexternal surface, proximal third (2). Previous characters: S89/81, 83–85; P00/51, 52; S&F03.5/19.
+30. Trichobothria: Pedipalp chela, trichobothrium Dt, position: manus, external surface, distal third (0); near base of fixed finger, dorsal surface (1); manus, dorsal surface, proximal third (2). Previous characters: S89/81, 83–85; P00/52; S&F03.5/19.
+†31. Trichobothria: Pedipalp chela manus, external surface, trichobothrium Est, size: smaller than other trichobothria (‘petite’) (0); similar to other trichobothria (1). Previous characters: S&S01/47; S&F01/17; S&F03.4/17; S&F03.5/17.
+32. Trichobothria: Pedipalp chela manus, external surface, accessory trichobothria in Esb–Est series: absent (0); present (1). Previous characters: L80/14; P00/53; FSB01/1, 2 (part); S&F03.5/33.
+†33. Trichobothria: Pedipalp chela manus, trichobothrium Et1, position: external surface (0); ventral surface (1).
+†34. Trichobothria: Pedipalp chela, trichobothrium Et5, position: on manus, near to trichobothrium Et4 (0); basal on fixed finger, removed from Et4 (1); suprabasal on fixed finger, considerably removed from Et4 (2). Previous characters: S&F03.5/15, 22.
+35. Trichobothria: Pedipalp chela manus, external surface, accessory trichobothria in Et series: absent (0); present (1). Previous characters: L80/14; P00/53; FSB01/1, 2 (part); S&F03.5/33.
+36. Trichobothria: Pedipalp chela manus, ventral surface, number of trichobothria: four (0); more than four (1). Previous characters: L80/14; S89/75, 76; P00/49; FSB01/4, 5; S&S01/57; S&F03.5/32.
+†37. Trichobothria: Pedipalp chela manus, ventral surface, trichobothrium V2, size: smaller than other trichobothria (‘petite) (0); similar to other trichobothria (1). Previous characters: S&S01/47; S&F01/24; S&F03.4/24; S&F03.5/17.
+38. Trichobothria: Pedipalp chela manus, ventral surface, arrangement of trichobothria: in a single row (0); forming a double row in at least the distal third (1).
+†39. Trichobothria: Pedipalp chela, fixed finger, external accessory trichobothrium: absent (0); present (1). Previous characters: FSB01/0.
+†40. Trichobothria: Pedipalp chela, fixed finger, trichobothria eb–et and db–dt positions: confined to distal one-third to two-thirds of finger (0); evenly distributed across most of finger (1). Previous characters: S89/73; P00/58, 60–62; S&S01/42, 58; S&F03.5/13.
+†41. Trichobothria: Pedipalp chela, fixed finger, trichobothrium esb, size: smaller than other trichobothria (‘petite’) (0); similar to other trichobothria (1). Previous characters: S&S01/47; S&F01/10; S&F03.4/10; S&F03.5/17.
+42. Trichobothria: Pedipalp chela, fixed finger, trichobothrium esb, position: approximately in line with to slightly below eb–est–et axis (usually making an obtuse angle, dorsally, with eb and est–et) (0); considerably below eb–est–et axis (usually making an acute angle, dorsally, with eb and est–et) (1). Previous characters: P00/62; S&F03.5/20, 21.
+†43. Trichobothria: Pedipalp chela, fixed finger, trichobothrium eb, position: medial to distal third (0); proximal third (1). Previous characters: P00/61.
+44. Trichobothria: Pedipalp chela, trichobothrium ib position: on manus, behind movable finger condyle (0); basal on fixed finger (1); suprabasal on fixed finger (2). Previous characters: S89/71, 72; P00/48; S&S01/40, 41; S&F03.5/10.
+†45. Trichobothria: Pedipalp chela, fixed finger, trichobothrium it position: distal (0); basal to suprabasal (1). Previous characters: S89/70–72; P00/47; S&S01/40, 41; S&F03.5/11, 14.
+46. Trichobothria: Pedipalp chela, internal surface, number of trichobothria: two (no accessory trichobothria) (0); more than two (2–7 accessory trichobothria) (1). Previous characters: L80/14; S89/69; P00/46; FSB01/3; S&F03.5/34.
+47. Legs: Basitarsus, pedal spurs, spination: smooth, lacking spinules (0); pectinate, with conspicuous spinules (1).
+48. Legs: Telotarsus, ventromedian surface, armature: with conspicuous, concentrated spinule clusters (‘tarsal tufts’) (0); with fused spinule clusters (1). Previous characters: L80/9; S89/93, 94, 97 (part); P00/70; S&S01/84, 86–88.
+49. Legs: Telotarsus, fused spinule clusters, ultrastructure: with well developed ridges (0); with obsolete ridges (1); inapplicable (-).
+50. Legs: Posttarsus, dactyl (unguicular spine), development: sharp, pronounced (0); blunt, reduced (1). Previous characters: S89/98.
+51. Mesosoma: Genital papillae (♂): present, visible at posterior edge of genital operculum (0); absent (1). Previous characters: S&S01/72; S&F03.5/81.
+†52. Mesosoma: Genital operculum, sclerites (♀): loosely connected (0); separated for most of length (1). Previous characters: L80/12 (part); S89/105–107; P00/80; S&F03.5/82.
+53. Mesosoma: Accessory ‘genital operculum’: absent (0); present (1). Previous characters: S89/108.
+†54. Mesosoma: Testis: straight (0); coiled (1). Previous characters: S89/104.
+†55. Mesosoma: Seminal vesicle, size: normal (0); enlarged (1).
+56. Mesosoma: Hemispermatophore, truncal flexure: present (0); absent (1). Previous characters: S89/114, 115; P00/83; S&F03.5/78.
+57. Mesosoma: Respiratory spiracles (stigmata), shape: slit-like (0); oval (1). Previous characters: L80/20 (part); S&F03.5/101.
+58. Metasoma and telson: Metasomal segments I–III, ventral intercarinal surfaces, setation: sparsely setose (0); densely setose (1). Previous characters: FSB01/7.
+59. Metasoma and telson: Metasomal segment III, dorsal carinae, setation (♂): sparsely setose (0); densely setose (1).
+†60. Metasoma and telson: Metasomal segment IV, median lateral carinae: absent (0); present, partial (1). Previous characters: S&F03.5/87; P03/42; P04/24.
+61. Metasoma and telson: Telson, pair of subaculear glands (♂): absent (0); present (1). Previous characters: FSB01/14.

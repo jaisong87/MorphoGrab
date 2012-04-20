@@ -1,0 +1,107 @@
+ï»¿Appendix 2. Characters, states and optimizations in cladistic analysis of the family Scorpionidae.
+Character states were scored 0 to 3, ? (unknown), or – (inapplicable). Multistate characters were treated as unordered (nonadditive). Refer to Table 3 for data matrix. Terminology follows Vachon (1974) for trichobothrial notation, Couzijn (1976) for segmentation of legs, Hjelle (1990) and Sissom (1990) for segmentation of pedipalps, Prendini (2000a) for pedipalp and metasomal carinae, and Stahnke (1970), Lamoral (1979), Couzijn (1981) and Sissom (1990) for remaining features. Characters corresponding to the lists of Lamoral (1979: table 6), Couzijn (1981: tables 2 and 9), and Prendini (2000a: appendix 3) are denoted, respectively, by the abbreviations BHL, HWC, and LP, followed by the corresponding number. However, character optimizations are based on the optimal tree obtained in the present investigation. Ambiguous optimizations were mostly resolved using ACCTRAN, but DELTRAN was also used in some cases. Five uninformative characters (excluded from all analyses) are indicated by †.
+
+1. Overall size: Adult length, measured from anterior margin of carapace to tip of aculeus: medium, minimum length of 50 mm to maximum length of 120 mm (0); extremely large, minimum length >120 mm (1).
+2. Chelicerae: Cheliceral movable finger, distal external and distal internal teeth: subequal, with distal external tooth only slightly smaller than distal internal tooth, and opposable, i.e., forming a bicusp (0); unequal, with distal external tooth considerably smaller than distal internal tooth, aligned longitudinally and usually not opposable or, at most, moderately opposable (1). [LP 11] 
+3. Chelicerae: Cheliceral coxae, scaphotrix (stridulatory setae) on dorsointernal surfaces: absent (0); present (1). [LP 13] 
+4. Chelicerae: Cheliceral coxae, trichocopae (chemoreceptive lamelliform setae) on internal surfaces: absent (0); present (1). [LP 14] 
+5. Carapace: Median notch in anterior margin: strongly excavated (0); shallow (1). [LP 3] 
+6. Carapace: Median notch or anterior median depression with median lobe projecting anteriorly: absent (0); present (1).
+7. Carapace: Anterior median depression: absent (0); present (1).
+8. Carapace: Anterocular depression: absent, distal portions of superciliary carinae parallel (0); present, distal portions of superciliary carinae subparallel or diverging (1).
+9. Carapace: Circumocular depressions: converging distally (0); diverging distally (1).
+10. Carapace: Position of median ocular tubercle, expressed as the ratio of distance from anterior margin of carapace to median ocular tubercle:carapace length: anteromedial, 0.40–0.50 (0); posteromedial, 0.51–0.62 (1); distinctly posterior, 0.63–0.78 (2). [Modified BHL 3: merged states 2 and 3.]
+11. Carapace: Superciliary carinae: with anterocular extensions (0); without anterocular extensions (1). [Incorporating HWC 7.] 
+12. Carapace: Superciliary carinae: higher than median ocelli (0); lower than median ocelli (1). [Merged BHL 9 and 10.] 
+13. Carapace: Rostrolateral margin of carapace: with distinct incision next to posterior lateral ocelli (0); entire (1). [Mentioned by Couzijn (1981) but not listed in his table 2.] 
+14. Carapace: Interocular suture: slender (0); broad (1); absent (2).
+15. Carapace: Posterior sutures, configuration: extending from posterior carapace margin to median ocular tubercle (0); extending from posterior carapace margin, anteriorly past median ocular tubercle (1); absent (2).
+16. Carapace: Posterior sutures, configuration: connected distally to posterior furcations of interocular suture (0); regardless of the presence or absence of interocular suture, posterior sutures connected by short cross-suture anterior to postocular depression (1); absent (2).
+17. Carapace: Interocular surface, macrosculpture, distribution (?): entirely smooth (0); granular along median longitudinal and anterior furcated sulci only (1); frontal lobes and median region granular, with smooth areas (2); entire surface uniformly granular (3). [Modified BHL 4 by adding two states to account for variation in the distribution of granulation.] 
+18. Carapace: Interocular surface, macrosculpture, distribution (?): entirely smooth (0); granular along median longitudinal and anterior furcated sulci only (1); frontal lobes and median region granular, with smooth areas (2); entire surface uniformly granular (3). [Modified BHL 5 by adding two states to account for variation in the distribution of granulation.] 
+19. Carapace: Anterolateral surfaces, macrosculpture (?): granular (0); smooth or nearly so (1). [Part of BHL 6.] 
+20. Carapace: Posteromedian surface, macrosculpture (?): granular (0); smooth or nearly so (1). [BHL 7] 
+21. Pedipalps: †Femur, length (?), expressed as ratios of femur length:posterior carapace width (fl:pcw) and femur length:carapace length (fl:cl): long, fl:pcw <0.77, fl:cl <0.74 (0); short, fl:pcw =0.80, fl:cl =0.76 (1). [Surrogate for BHL 16, which could not be applied objectively.] 
+22. Pedipalps: Chela, macrosetal development (adult ?): virtually asetose (0); sparsely setose (1); moderately to densely setose (2).
+23. Pedipalps: Chela fingers, terminal teeth interlocking when closed: evenly, movable finger not displaced to exterior (0); unevenly, with movable finger displaced to exterior, with weakly developed notch near tip of fixed finger (1); unevenly, with movable finger displaced to exterior, with strongly developed notch near tip of fixed finger (2).
+24. Pedipalps: Chela movable finger, basal lobe (?): arising gradually from base of finger, leaving a small to large gap behind when fingers are closed (0); arising abruptly from base of finger, without leaving gap behind when fingers are closed (1).
+25. Pedipalps: Chela movable finger, second lobe (?): more strongly developed than other lobes on the movable finger, with correspondingly well-developed notch in fixed finger (0); not noticeably larger or only slightly larger than other lobes on the movable finger (1). [Modified LP 35: state 0 now also recognised in Nebo.] 
+26. Pedipalps: Chela fingers, surface macrosculpture: smooth (0); granular (1).
+27. Pedipalps: Chela manus, dorsomedian carina, posteromarginal portion: present (0); absent (1).
+29. Pedipalps: Chela manus, dorsal surface, macrosculpture (?): shallowly reticulate (0); reticulation absent (1). [State 0 of BHL 17.
+30. Pedipalps: Chela manus, dorsal surface, macrosculpture (?): shallowly reticulate (0); reticulation absent (1). [State 0 of BHL 18.
+31. Pedipalps: Chela manus, dorsal secondary and subdigital carinae (?): absent or obsolete (0); entirely to predominantly granular (1). [Incorporates HWC 61.] 
+32. Pedipalps: Chela manus, digital carina: entirely to predominantly costate (0); entirely to predominantly granular (1); absent or obsolete (2). [Merged BHL 19 and 20 because these have the same distribution and do not appear to be independent.] 
+33. Pedipalps: Chela manus, external intercarinal surfaces, macrosculpture (?): granular (0); smooth or nearly so (1).
+34. Pedipalps: Chela manus, external intercarinal surfaces, macrosculpture (?): granular (0); smooth or nearly so (1).
+35. Pedipalps: Chela manus, internomedian carina (?): present, granular (0); absent or obsolete (1).
+36. Pedipalps: †Chela manus, ventrointernal carina (?): more strongly developed than internomedian carina, which may be obsolete (0); equally developed as internomedian carina (1); absent (2). [LP 29 with the addition of state 2.] 
+37. Pedipalps: Chela manus, ventromedian carina: absent or reduced to a few proximal granules (0); present and strongly sclerotised (1); present and weakly sclerotised (2). [Modified LP 28 with a new state to distinguish between weak or strong sclerotisation of the ventromedian carina.] 
+38. Pedipalps: †Patella, dorsal surface, shape: flat (or nearly so), dorsomedian and dorsoexternal carinae in same axis (0); convex, dorsomedian carina raised above horizontal axis of dorsoexternal carina (1). [LP 15] 
+39. Pedipalps: Patella, dorsomedian carina (?): entirely to predominantly granular (0); entirely to predominantly costate (1); absent or obsolete (2).
+40. Pedipalps: Patella, dorsal intercarinal surfaces, macrosculpture (?): granular (0); smooth or nearly so (1). [HWC 37] 
+41. Pedipalps: Patella, dorsoexternal and ventroexternal intercarinal surfaces, macrosculpture (?): granular (0); smooth or nearly so (1). [Merged BHL 32 and 33 because of identical distributions.
+42. Pedipalps: Patella, dorsoexternal carina (?): absent or obsolete (0); as strongly developed as, or more strongly developed than, externomedian carinae (1).
+43. Pedipalps: Patella, paired externomedian carinae (?): granular or costate (0); absent or obsolete (1).
+44. Pedipalps: Femur, dorsoexternal carina: less strongly developed than dorsointernal carina (0); more strongly developed than dorsointernal carina (1). [Modified HWC 28.
+45. Pedipalps: Femur, dorsointernal carina: present and distinct (0); absent or obsolete (1).
+46. Pedipalps: Femur, internomedian carina: oriented parallel to dorsointernal and ventrointernal carinae (0); oriented diagonally across from ventrointernal carina to dorsointernal carina (1).
+47. Pedipalps: Femur, ventroexternal carina (?): absent or obsolete (0); present (1).
+48. Pedipalps: Stridulatory organ on opposing surfaces of coxae of pedipalps and first walking legs: absent (0); weakly developed (1); well developed (2). [LP 74] 
+49. Pedipalps: Stridulatory organ on opposing surfaces of coxae of pedipalps and first walking legs: absent (0); granular tubercles of “rasp” and stridulatory setae (scaphotrix) of “scraper” situated on coxae of pedipalp and first leg, respectively (1); granular tubercles of “rasp” and stridulatory setae (scaphotrix) of “scraper” situated on coxae of first leg and pedipalp, respectively (2). [LP 75] 
+50. Trichobothria (t): Chela, distance est–esb: greater than half distance esb–eb (0); ca.
+51. Trichobothria (t): Chela, number of V t: 4 (0); 8–10 (1); 15–20 (2). [Modified BHL 26 and LP 49 with extra states recognised.] 
+52. Trichobothria (t): If only 4 V t, longitudinal position of t V3 on chela manus: distal third (0); proximal third (1); inapplicable (–). [BHL 25 with state for Nebo and P.
+53. Trichobothria (t): Chela, number of i t: 2 (0); 3 or 4 (1). [LP 46] 
+54. Trichobothria (t): Patella, number of e t: 13 (0); 14 (1); 16 (2); 24–31 (3). [Modified BHL 27 and LP 45 with extra states recognised.] 
+55. Trichobothria (t): Patella, number of v t: single row of 3 (0); single row of 4–13 (1); two or more rows of >25 (2). [Modified BHL 28 and LP 43 with extra states recognised.] 
+56. Trichobothria (t): Femur, position of t i: internal surface (0); dorsal surface. [LP 40] 
+57. Genitalia: Genital opercula (?): not overlapping (0); overlapping (1).
+58. Genitalia: †Hemispermatophore, distal crest of distal lamina: tapering, diplocentrid type (0); truncate (1); tapering, scorpionid type (2). [Mentioned by Lamoral (1978b, 1979) but not listed as a character.] 
+59. Genitalia: Hemispermatophore, with well-developed accessory distal lobe protruding between articular suture and distal lobe (hook): absent (0); present (1). [Mentioned by Couzijn (1981) but not listed in his table 2.] 
+60. Pectines: Pecten length, expressed relative to length of coxa of leg IV (?): long, distal edge reaching beyond distal edge of coxa (0); moderate, distal edge reaching to, but not beyond, distal edge of coxa (1); short, distal edge not reaching to distal edge of coxa (2).
+61. Pectines: First proximal median lamella (scape), angle (?): approximately 90° (0); obtuse, >90° but <180° (1).
+62. Pectines: First proximal median lamella (scape), angle (?): distinctly angular, >90° but <180° (0); straight or shallowly curved (1).
+63. Pectines: Pectinal teeth, shape (?): short, curved (0); long, straight (1).
+64. Pectines: Internal fulcral plates, setation: smooth to sparsely setose (3–4 microsetae distally) (0); smooth proximally but densely setose (microsetae only) distally (1); sparsely setose (scattered macrosetae) across entire surface (2). [Modified HWC 86.
+65. Legs: Femora, ventromedian surfaces: acarinate, no discernable carina demarcating anterior and posterior surfaces (0); unicarinate, distinct anterior and posterior surfaces marked by macrosetae and, usually, granules (1); bicarinate, distinct ventromedian surface as well as anterior and posterior surfaces marked by macrosetae and, usually, granules, although anterior carinae often weakly developed (2).
+66. Legs: Tibia I–II, retrolateral margin, setation: no macrosetae (0); a row of spiniform macrosetae only (1); a comb-like row of setiform macrosetae (2).
+67. Legs: Basitarsi I–II, retrolateral margin, setation: no macrosetae (0); a row of 3 or more spiniform macrosetae (1); a row of only 2 spiniform macrosetae (2); a comb-like row of 3 or more setiform macrosetae which may or may not be interspersed with slender spiniform macrosetae (3). [Modified BHL 76; merged LP 72 and 73.] 
+68. Legs: Telotarsi, shape in dorsal and lateral views: type I, short, stout, distally broadened in dorsal and especially lateral view (0); type II, long, narrow, parallel-sided in dorsal and lateral views (1).
+69. Legs: Telotarsi, laterodistal lobes, setation: 3 or more spiniform macrosetae on each laterodistal lobe (0); only 2 spiniform macrosetae on each laterodistal lobe (1).
+70. Legs: Telotarsi, number of spiniform macrosetae in prolateral row: constant or increasing from telotarsi I–IV (0); constant or increasing from telotarsi I–III, but decreasing on telotarsus IV (1).
+71. Legs: Telotarsi, prolateral row of spiniform macrosetae (excluding macrosetae on laterodistal lobes): present on telotarsi I–IV (0); present on telotarsi I–III, absent on telotarsus IV (1); absent on telotarsi I–IV (2). [Incorporates BHL 77 and 79, LP 71.] 
+72. Legs: Telotarsi, ungues, shape: short and distinctly curved (0); elongated and weakly curved (proximally or distally) to sublinear (1). [Modified BHL 82.] 
+73. Legs: Telotarsi, ungues, relative length within each pair: equal to subequal on telotarsi I–IV (0); unequal on telotarsi I–II, equal to subequal on telotarsi III–IV (1). [Merged BHL 83 and 84.] 
+74. Tergites: Tergites I–VI, surface macrosculpture, distribution (?): mesial and lateral surfaces granular (0); mesial surfaces smooth, lateral surfaces granular (rarely smooth) (1). [Modified BHL 34, states 0, 1, and 2.
+75. Tergites: Tergites I–VI, surface macrosculpture, distribution (?): mesial and lateral surfaces smooth (0); mesial granular, lateral surfaces smooth (1); mesial and lateral surfaces granular (2). [HWC 91] 
+76. Tergites: Tergites I–VI, surface macrosculpture, texture (?): uniformly finely granular (0); unevenly finely and coarsely granular to predominantly coarsely granular (1). [BHL 34, states 1 and 2, with state 0 transferred to another character.] 
+77. Metasoma: Metasomal segment V, dorsolateral carinae: strong, continuous (0); weak to absent, discontinuous (1). [Merged BHL 66 and 67.] 
+78. Metasoma: Metasomal segments II–IV, dorsosubmedian carinae, distal spiniform granules: weak to absent (not noticeably larger than preceding granules) (0); moderate to strong (distinctly larger than preceding granules) (1). [Modified BHL 58: merged states 1 and 2 because these could not be objectively delimited.] 
+79. Metasoma: Metasomal segment V, dorsal surface, macrosculpture (?): granular (0); smooth (1). [BHL 64] 
+80. Metasoma: Metasomal segment V, dorsal surface, macrosculpture (?): granular (0); smooth (1). [BHL 65] 
+81. Metasoma: Metasomal segments I–IV, ventrosubmedian carinae: present and distinct on segments I–IV (0); absent or obsolete on segments I, I–II, or I–IV (1). [Merged BHL 40, 45, 50, 51, 59 and modified, by merging states 1, 2 and 3.] 
+82. Metasoma: Metasomal segments I–IV, ventrosubmedian and ventrolateral carinae: more strongly developed on segments III–IV than on segments I–II (0); more strongly developed on segments I–II than on segments III–IV (1). [LP 96] 
+83. Metasoma: Metasomal segment V, ventrolateral carinae, distally: divergent (0); subparallel to convergent (1). [BHL 70] 
+84. Metasoma: Metasomal segment V, ventrolateral carinae: comprising rounded granules (0); comprising spiniform or denticulate granules (1). [BHL 69] 
+85. Metasoma: Metasomal segment V, ventrolateral carinae, distal spiniform granules: absent (not noticeably larger than preceding granules) (0); weakly developed (slightly larger than preceding granules) (1); strongly developed (distinctly larger than preceding granules) (2). [Incorporates HWC 113.] 
+86. Metasoma: Metasomal segment V, ventromedian carina, distal portion: unmodified (0); breaking up into numerous granules (1); inapplicable (–). [Part of LP 99.] 
+87. Metasoma: Metasomal segment V, anal arch, anterior carina: costate (0); serrate (1).
+88. Telson: Vesicle, shape: globose (0); elongate (1).
+89. Telson: Vesicle, surface macrosculpture: longitudinal rows of granules on ventral and lateral surfaces (0); longitudinal rows of granules on all or part of ventral surface only (1); entirely smooth (2). [Merged BHL 73 and 74.] 
+90. Color patterns: Chelicerae, dorsal surfaces: entirely pale or nearly so, fingers may be very slightly infuscated (manus similar to or paler than carapace interocular surface) (0); bicoloured, dorsointernal half of manus much paler than dorsoexternal half and fingers (manus similar to or paler than carapace interocular surface) (1); entirely dark (manus darker than carapace interocular surface) (2).
+91. Color patterns: Carapace, interocular surface: similar to or darker than lateral and posterior surfaces (0); noticeably paler than lateral and posterior surfaces (1).
+92. Color patterns: Carapace, posterolateral and posteromedian surfaces: as dark as or darker than tergites (0); as pale as tergites, if tergites not infuscated, or paler than tergites, if tergites infuscated (1).
+93. Color patterns: Pedipalps, infuscation: none (0); infuscation of femur and patella only (1); infuscation of femur, patella and chela (2).
+94. Color patterns: Tergites, overall colouration: uniform (0); distal third noticeably paler (1).
+95. Color patterns: Tergites, extent of infuscation (?): little (less than two-thirds per tergite) to no infuscation (0); entirely or almost entirely (more than two-thirds) infuscated (1).
+96. Color patterns: Metasoma, intercarinal surfaces (?): dark (as dark as tergites, if pigmented) (0); at least metasomal segments I–II or I–III, pale (as pale as tergites, if tergites have no pigmentation, or markedly paler than, if tergites pigmented) (1).
+97. Color patterns: Ventrosubmedian and/or ventrolateral carinae, infuscation (which may be present even if the actual carinae are obsolete or absent): none (0); infuscation on metasomal segments III–V but not I–II, or on metasomal segments IV–V but not I–III (1); infuscation on metasomal segments I–V (2).
+98. Color patterns: Sternites III–VII: III–VI pale (no infuscation), though VII occasionally darkened (0); III–VII dark (1).
+99. Color patterns: Legs, overall colour: pale (though perhaps very lightly infuscated) (0); very dark or heavily infuscated (1).
+100. Sternites-metasoma: Sternite VII, longitudinal carinae: four strongly developed carinae (paired ventrosubmedian and ventrolateral) (0); two weakly developed ventrolateral carinae (1); none (2).
+101. Sternites-metasoma: Sternite VII, surface, and metasomal segment I, ventral surface, macrosculpture (?): none (0); scattered granules (1); rounded tubercles (2). [Components of BHL 35, 42, 48, 55, and 61.] 
+102. Sternites-metasoma: Metasomal segment II, ventral surface, macrosculpture (?): none (0); scattered granules (1); rounded tubercles (2). [Components of BHL 35, 42, 48, 55, and 61.] 
+103. Sternites-metasoma: Metasomal segment III, ventral surface, macrosculpture (?): none (0); scattered granules (1); rounded tubercles (2). [Components of BHL 35, 42, 48, 55, and 61.] 
+104. Behavior: †Burrows constructed in the open: absent (0); present (1); unknown (?).
+105. Behavior: Burrows constructed under stones: present (0); absent (1); unknown (?).
