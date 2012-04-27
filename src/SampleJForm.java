@@ -54,6 +54,8 @@ public class SampleJForm extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("MorphoBank");
@@ -102,6 +104,10 @@ public class SampleJForm extends javax.swing.JFrame {
         jTextArea3.setRows(5);
         jScrollPane4.setViewportView(jTextArea3);
 
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane3.setViewportView(jTextArea2);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -122,8 +128,10 @@ public class SampleJForm extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
+                    .addComponent(jScrollPane3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 412, Short.MAX_VALUE)
                     .addComponent(jScrollPane4)))
@@ -131,22 +139,25 @@ public class SampleJForm extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton6)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addGap(28, 28, 28)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addContainerGap(110, Short.MAX_VALUE))
-            .addComponent(jScrollPane2)
-            .addGroup(layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane4))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton6)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
         );
 
         pack();
@@ -156,7 +167,7 @@ public class SampleJForm extends javax.swing.JFrame {
     
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        FileDialog fileDlg = new FileDialog(this,"Select the File");
+        FileDialog fileDlg = new FileDialog(this,"Select the file");
         fileDlg.show();
         String fileName = fileDlg.getDirectory() + "//" + fileDlg.getFile();
         
@@ -283,10 +294,12 @@ public class SampleJForm extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    Vector<String> dataRows = new Vector<String>();
+    
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         
-              Vector<String> dataRows = new Vector<String>();
+              dataRows.clear();
 		
 		FileInputStream fin;
 		try {
@@ -347,9 +360,11 @@ public class SampleJForm extends javax.swing.JFrame {
                    
                 
                 
-		HashMap<String, Vector<String> > h1 =  myLearner.extractCharacterAndStates();                
-		Vector<Pairs> chAndStates = new Vector<Pairs>(); //myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
-
+            	//Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
+            	Vector<Pairs> chAndStates = myLearner.extractCharacterAndStates();
+                            
+                
+                
                 for(int  i = 0 ; i <chAndStates.size() ;i++)
                 {
                     Pairs p = chAndStates.get(i);
@@ -366,6 +381,23 @@ public class SampleJForm extends javax.swing.JFrame {
 
                     jTextArea3.setText(jTextArea3.getText()+ "\n");
               }
+                
+                Vector<String> regExs = myLearner.getRegExpr();
+                String expressions ="";
+                
+                for(int i =0 ;i< regExs.size();i++)
+                {
+                    expressions += regExs.elementAt(i);
+                    
+                    Pattern pattern = Pattern.compile(regExs.elementAt(i));
+                    
+                    expressions +="\n";
+                }
+                jTextArea2.setText(expressions);
+                   
+                Marker(myLearner);
+
+               // jTextArea1.setText(myLearner.getDataFromDataRows());
                 
                 /*
                 Set s=chAndStates.entrySet();
@@ -396,7 +428,47 @@ public class SampleJForm extends javax.swing.JFrame {
             
         
         
+               
+        
+        
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
+ 
+     void Marker(ReLearner mylearner)
+     {
+                Vector<String> mattachedString = mylearner.regexMatchedStates;
+                
+                for(int  i = 0 ;i< mattachedString.size();i++)
+                {
+                	int startpos = 0;
+                	while(true)
+                	{
+	                	
+	                	startpos =	jTextArea1.getText().indexOf(mattachedString.elementAt(i),startpos+1);
+	                    
+	                    if( startpos>=0 )
+	                    {
+	                        Highlighter hilite = jTextArea1.getHighlighter();
+	                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.yellow);
+	                
+	                        try {
+								hilite.addHighlight(startpos, startpos+mattachedString.elementAt(i).length(), p);
+							} catch (BadLocationException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+	                    }
+	                    else
+	                    	break;
+	               }    
+                    
+                   
+               } 
+         
                 /*
+                int startline;
+                int endline;
+                
                 try
                 {
                 int lineNumber = 0;
@@ -411,13 +483,12 @@ public class SampleJForm extends javax.swing.JFrame {
                     {
                         break;
                     }
-                    String text= jTextArea1.getText(startline, endline - startline +1);
-                    Matcher matcher = regex.matcher(text);
+                    String text= jTextArea1.getText(startline, endline - startline);
                     
-                    if(matcher.find())
+                    if(mylearner.mappedDataRows.contains(text.trim()))
                     {
                         Highlighter hilite = jTextArea1.getHighlighter();
-                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.red);
+                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.lightGray);
                         hilite.addHighlight(startline, endline, p);
                         
                    }
@@ -428,13 +499,13 @@ public class SampleJForm extends javax.swing.JFrame {
                 {
                     ;
                 }
+                * 
                 
-        
-        */
-        
-        
-    }//GEN-LAST:event_jButton2ActionPerformed
-
+                */
+     }
+     
+     
+     
      void LoadContents(String fileName) 
      {
       	 try
@@ -509,9 +580,11 @@ public class SampleJForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTable jTable2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     // End of variables declaration//GEN-END:variables
 }

@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
  * tries to generalize a regular expression.
  */
 public class regexTemplate {
-		static String specialChars = "()"; /* Some special characters */
+		static String specialChars = "()?;-+"; /* Some special characters */
 
 		Vector<Integer> charType;
 		Vector<Boolean> repeatAllowed;
@@ -69,6 +69,7 @@ public class regexTemplate {
 	
 	private int getCharType(char ch)
 		{
+		
 		int ctype = -1;
 		
 		int i=0;
@@ -83,6 +84,9 @@ public class regexTemplate {
 		else if( (ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
 			ctype = i+1;
 
+		else if ( ch==' ' || ch==',')
+			ctype = i+1;
+		
 		else if(ctype == -1){ 
 			ctype = i+2; /* Other characters */
 		}
@@ -104,6 +108,7 @@ public class regexTemplate {
 			if(ctype < specialCharCount)
 			{
 				pattern+="["+specialChars.charAt(ctype)+"]";
+				//pattern+=specialChars.charAt(ctype);
 				if(repeatAllowed.elementAt(i)==true) pattern+="+";
 			}
 			else if(ctype == specialCharCount )
@@ -115,44 +120,20 @@ public class regexTemplate {
 			}
 			else if(ctype== specialCharCount+1)
 			{
+				if(i==0)
+					pattern+="[\\w\\s]";
 				pattern+="[\\w\\s,]";
-				if(repeatAllowed.elementAt(i)==true) pattern+="+";
+				if(repeatAllowed.elementAt(i)==true) { 
+						pattern+="+";
+						}
+				if(i==charType.size()-1)
+					pattern+="[\\w\\s]";
 			}
 			else if(ctype == specialCharCount+2)
 			{
-				pattern+=".";
+				pattern+="."; /* This should be changed to a custom character */
 			}
 		}
 		return pattern;
 	}
-	
-public static void main(String args[])
-{	
-	String inp = /*"1. Pigmentation: †Carapace, tergites, pedipalps and metasoma (e.g., pedipalpal and metasomal carinae):*/ "pigmented/#infuscated (0); not pigmented/infuscated (1).";
-	regexTemplate rtemplate = new regexTemplate("pigmented/#infuscated (0)");
-	String ptrn = rtemplate.getRegex();
-	System.out.println("Template learned is "+ptrn);
-	
-    Pattern pattern = Pattern.compile(ptrn);
-
-    Matcher matcher = pattern.matcher(inp/*console.readLine("Enter input string to search: ")*/);
-
-    boolean found = false;
-    int i =0;
-    while (matcher.find()) {
-//                System.out.println("I found the text - " + matcher.group() + " starting at " +"index " + matcher.start() +" and ending at index " + matcher.end());
-    	System.out.println(matcher.group()+ "  ");
-    	i++;
-    	found = true;
-    }
-    if(!found){
-        System.out.println("No match found.%n");
-    }
-    else {
-    	System.out.println("\nWe found "+i+" matches.\n");
-    }
-
-	return;
-}
-
-}
+};

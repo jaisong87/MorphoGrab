@@ -27,6 +27,8 @@ import learners.regexTemplate;
  * States should be maintained and regex's should be saved in the class
  */
 public class ReLearner {   
+	public Vector<String> regexMatchedStates = new  Vector<String>();
+
         public static enum AlgoType{ DELIMITER_SEPARATOR, REGEX_TEMPLATE, KNN_LEARNER };
     
 	boolean learningOver; /* Is learning Over - state variable */
@@ -52,7 +54,16 @@ public class ReLearner {
 		learningOver = false;
 		enableDebugging = true;                   /* Enable debugging by default */
 		charStateDelimiter = new String();        /* Char-State delimiter */ 
-		dataRows = new Vector<String>(dr);		  /* Initialise the data-rows. More could be added later */
+		/* Initialise the data-rows. More could be added later */
+		dataRows = new Vector<String>();
+		for(int i=0;i<dr.size();i++)
+		{
+			String str = dr.elementAt(i);
+			//str.replace(",", ";"); - No replace for now
+			System.out.print("Going to add "+str);
+			dataRows.add(str);
+		}
+		
 		stateDelimiters = new Vector<String>();   /* Used in DELIMITER_SEPARATOR */
 		stateTemplates = new Vector<regexTemplate>(); /* Used in REGEX_TEMPLATE*/ 
                 //statesDelimiter = new String();
@@ -129,8 +140,24 @@ public class ReLearner {
 		 */
 		for(int i=0;i<startStatePos.size();i++)
 		{
-		regexTemplate rtemplate = new regexTemplate(dataRow.substring(startStatePos.elementAt(0), endStatePos.elementAt(0)));
-		stateTemplates.addElement(rtemplate);
+		regexTemplate rtemplate = new regexTemplate(dataRow.substring(startStatePos.elementAt(i), endStatePos.elementAt(i)));
+		String rtemplateExpr = rtemplate.getRegex();
+		
+		
+		boolean isExistingTemplate = false;
+		/*
+		for(int j=0;j<stateTemplates.size();j++)
+		{
+				String curExpr = stateTemplates.elementAt(j).getRegex();
+				if(curExpr.equals(rtemplateExpr))
+						isExistingTemplate = true;
+		}
+		*/
+		if(false == isExistingTemplate)
+					{
+					stateTemplates.addElement(rtemplate);
+					System.out.println("Latest added expression is "+rtemplate.getRegex());
+					}
 		System.out.println("Latest learned expression is "+rtemplate.getRegex());
 		}
 		
@@ -194,7 +221,7 @@ public class ReLearner {
 		
 		for(int i=0;i<stateTemplates.size();i++)
 		{
-		regexTemplate stateTemplate = stateTemplates.elementAt(0);
+		regexTemplate stateTemplate = stateTemplates.elementAt(i);
 		System.out.println("Template#"+i+" : "+stateTemplate.getRegex());
 		}
 	}
@@ -349,7 +376,16 @@ public class ReLearner {
                 printSummary();
                 return pp;
 	}
-        
+       	
+	public Vector<String> getRegExpr()
+	{
+		Vector<String> regExprs = new Vector<String>();
+		  for(int i=0;i<stateTemplates.size();i++)
+                   regExprs.add(stateTemplates.elementAt(i).getRegex());
+		return regExprs;
+	}
+		
+	 
         private /*HashMap<String, Vector<String>>*/ Vector<Pairs>  getCharacterAndStatesUsingRegexTemplates()
 	{
         	System.out.println("*********** ExtractCharacterAndStates() using RegexTemplates @jaison");
@@ -371,15 +407,27 @@ public class ReLearner {
 			String curLine = dataRows.elementAt(i);
 		if(curLine.contains(charStateDelimiter))
 		{
+			boolean char_over = false;
 			String[] tokens = dataRows.elementAt(i).split(charStateDelimiter);
 			String curCharacter = "";
 			String combinedStates = "";
-			for(int j=0;j<tokens.length-1;j++)
+			int startOfState = -1; 
+			
+			for(int j=0;j<tokens.length-0;j++)
 			{
-				if(j>0) curCharacter+= charStateDelimiter;
-				curCharacter += tokens[j];
-			}
-			combinedStates = tokens[tokens.length-1];
+			    Matcher matcher_test = pattern.matcher(tokens[j]);
+			    if(matcher_test.find())
+			    	char_over = true;
+			    	
+				//if(j>0) curCharacter+= charStateDelimiter;
+				//curCharacter += tokens[j];
+				if(char_over) combinedStates += ":" + tokens[j];
+				else {	
+						if(j>0) curCharacter+=":";
+						curCharacter += tokens[j];
+						}
+				}
+			//combinedStates = tokens[tokens.length-1];
 			
 			if(true == enableDebugging)
 				{
@@ -396,7 +444,9 @@ public class ReLearner {
                     int noOfStates = 0 ;
 		    while (matcher.find()) {
 //		                System.out.println("I found the text - " + matcher.group() + " starting at " +"index " + matcher.start() +" and ending at index " + matcher.end());
-                            curStates.addElement(matcher.group());
+                        String curre = matcher.group().trim();  
+			  curStates.addElement(curre);
+			  regexMatchedStates.add(curre);
                             noOfStates++;
                     }
 
@@ -425,6 +475,7 @@ public class ReLearner {
 			}
 		}
 	printSummary();
+	System.out.println("There are "+regexMatchedStates.size()+" matches ");
 	return pp;//characterAndStates;
 	}
 	
@@ -502,11 +553,21 @@ public class ReLearner {
 		return characterAndStates;
 	}
 	
-	
-        /*
+	/*
 	public static void main(String args[])
 	{
-		String data = "hello world";
+		String regexp = "[\w\s,]+.[(][\d][)]";
+		String line = "Row is : ﻿Prendini, L. and Linder, H.P. 1998. Phylogeny of the South African species of restioid leafhoppers (Cicadellidae, Cephalelini). Entomologica scandinavica  29: 11–18.";
+		
+
+
+"
+		return;
+	}
+      
+	public static void main(String args[])
+	{
+		String data = "1. Colouration: Carapace, interocular surface, infuscation: entirely infuscated (0); partially infuscated (1); triangle lacking infuscation between lateral and median ocelli (2). Previous characters: FSB01/9–11 (part).";
 		String[] tokens = data.split(":");
 		System.out.println("tokens are "+tokens.length+" in number");
 		
@@ -518,7 +579,7 @@ public class ReLearner {
 		else 
 			System.out.println("String does not contain delimter ");
 	}
-		
+	
 		System.out.println("Hello World!!!");
 		Vector<String> dataRows = new Vector<String>();
 		
