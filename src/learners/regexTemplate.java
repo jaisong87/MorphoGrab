@@ -101,10 +101,12 @@ public class regexTemplate {
 		//String tmp = "[\\w]*.[\\w]*.[(][\\d]*[)]";
 		String pattern ="";
 		int specialCharCount = specialChars.length();
+		int ctype=-1, prevtype=-1;
 		
 		for(int i=0;i<charType.size();i++)
 		{
-			int ctype = charType.elementAt(i);
+			prevtype = ctype;
+			ctype = charType.elementAt(i);
 			if(ctype < specialCharCount)
 			{
 				pattern+="["+specialChars.charAt(ctype)+"]";
@@ -120,14 +122,23 @@ public class regexTemplate {
 			}
 			else if(ctype== specialCharCount+1)
 			{
-				if(i==0)
+				if(i==0){
 					pattern+="[\\w\\s]";
+					if(repeatAllowed.elementAt(i)==true) 
+						pattern+="[\\w\\s,]+";
+					}
+				else if(i==charType.size()-1)
+					{
+					if(repeatAllowed.elementAt(i)==true) 
+						pattern+="[\\w\\s,]+";
+					pattern+="[\\w\\s]";
+					}
+				else {
 				pattern+="[\\w\\s,]";
 				if(repeatAllowed.elementAt(i)==true) { 
 						pattern+="+";
 						}
-				if(i==charType.size()-1)
-					pattern+="[\\w\\s]";
+					}
 			}
 			else if(ctype == specialCharCount+2)
 			{
@@ -136,4 +147,15 @@ public class regexTemplate {
 		}
 		return pattern;
 	}
+	
+	public static void main(String args[])
+	{
+	String pattern = "[\\w\\s]+";
+	String str = "abcd..,, 12345 abcd 123 ...";
+	Pattern tst = Pattern.compile(pattern);
+	Matcher m = tst.matcher(str);
+	while(m.find())
+			System.out.println(" Match : "+m.group());
+	}
 };
+
