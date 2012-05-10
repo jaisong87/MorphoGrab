@@ -1,0 +1,196 @@
+﻿1. Pigmentation: †Carapace, tergites, pedipalps and metasoma (e.g., pedipalpal and metasomal carinae): pigmented/infuscated (0); not pigmented/infuscated (1).
+2. Chelicerae: Fixed finger, median and basal teeth: fused into a bicusp (conjoined on a ‘trunk’) (0); separate, not fused into a bicusp (not conjoined on a ‘trunk’) (1). [S&S01/9; S&F03.5/44]
+3. Chelicerae: Fixed finger, number of teeth: four (subdistal present) (0); three (subdistal absent) (1).
+4. Chelicerae: Movable finger, distal tooth alignment (internal distal and external distal teeth): opposable, internal distal tooth completely overlaps external distal tooth in dorsal view, U-shape in anterior aspect (0); not opposable, internal distal tooth does not overlap or at most partially overlaps external distal tooth in dorsal view, V-shape in anterior aspect (1). [L80/21; P00/11; S&S01/1, 6; S&F03.5/39]
+5. Chelicerae: Movable finger, dorsal edge, number of subdistal teeth: two (0); one (1); none (2). [L80/10; S89/31, 32; P00/10; S&S01/3; S&F03.5/41]
+6. Carapace: Anteromedian projection (epistome): absent or obsolete (0); present, well developed (1).
+7. Carapace: Anteromedian longitudinal sulcus: present (0); absent or obsolete (1).
+8. Carapace: Lateral ocelli, ‘first’ (anterior) ocellus: present, large (0); absent (1). [S89/21, 25; P00/1; S&F03.5/102]
+9. Carapace: †Lateral ocelli, ‘second’ (ventromedian) ocellus: present, large (similar in size to ‘first’ ocellus) (0); present, greatly reduced (much smaller than ‘first’ ocellus) (1); absent (2). [S89/21, 25; P00/1; S&F03.5/102]
+10. Carapace: †Lateral ocelli, ‘third’ (posterior) ocellus: present, slightly to greatly reduced (slightly to much smaller than ‘first’ and ‘second’ ocelli) (0); absent (1); polymorphic (0 1). [S89/21, 25; P00/1; S&F03.5/102]
+11. Carapace: Lateral ocelli, ‘fourth’ (dorsomedian) ocellus: present, greatly reduced (much smaller than ‘first’ ocellus) (0); absent (1). [S89/21, 25; P00/1; S&F03.5/102]
+12. Carapace: †Median ocelli: present (0); absent (1). [S89/24]
+13. Pedipalp chela dentition: †Chela fingers dentition, median denticle row, primary subrows alignment: straight (0); oblique (1). [S89/46; S&S01/28; S&F03.5/47]
+14. Pedipalp chela dentition: Chela fingers dentition, median denticle row, oblique primary subrows: not imbricated (0); imbricated (1); inapplicable (-). [P04/7]
+15. Pedipalp chela dentition: Chela movable finger dentition, median denticle row, primary subrows: similar in length (0); basal row noticeably longer (1).
+16. Pedipalp chela dentition: Chela movable finger dentition, median denticle row, first (terminal) primary subrow: absent (0); one (occasionally two) granules (1). [S&F03.5/55, P04/6]
+17. Pedipalp chela dentition: Chela movable finger dentition, fourth external denticle: present (0); absent (1). [S&S01/33]
+18. Pedipalp chela dentition: Chela movable finger dentition, fifth external denticle: present (0); absent (1). [S&S01/33]
+19. Pedipalp chela dentition: Chela movable finger dentition, sixth external denticle: present (0); absent (1). [S&S01/33]
+20. Pedipalp chela dentition: Chela movable finger dentition, seventh external denticle: present (0); absent (1). [S&S01/33]
+21. Pedipalp chela dentition: †Chela movable finger dentition, fifth internal denticle: present (0); absent (1). [S&S01/33]
+22. Pedipalp chela dentition: †Chela movable finger dentition, sixth internal denticle: present (0); absent (1). [S&S01/33]
+23. Pedipalp chela dentition: Chela movable finger dentition, seventh internal denticle: present (0); absent (1). [S&S01/33]
+24. Pedipalp chela dentition: Chela movable finger dentition, eighth internal denticle: present (0); absent (1). [S&S01/33]
+25. Pedipalp chela dentition: †Chela movable finger dentition, internal denticles development relative to external denticles: internal denticles larger than external denticles (0); internal denticles smaller than external denticles (1).
+26. Pedipalp chela dentition: Chela movable finger dentition, internal denticle development: all internal denticles similar in size (0); basal four internal denticles significantly larger (1). [S&F03.5/54]
+27. Pedipalp chela dentition: Chela fixed finger, distal diastema (notch) to accommodate terminal denticle of movable finger: present, well developed (0); weakly developed or absent (1).
+28. Pedipalp chela dentition: †Chela movable finger, distal diastema (notch) to accommodate terminal denticle of fixed finger: absent or weakly developed (0); present, well developed (1).
+29. Pedipalp chela dentition: Chela fingers, terminus: fixed finger, terminal denticle considerably larger than preceding denticles, hook-like, fingertips interlocking unevenly when closed, movable finger markedly displaced to exterior (0); fixed finger, terminal denticle slightly larger than preceding denticles, fingertips interlocking evenly when closed, movable finger at most slightly displaced to exterior (1).
+30. Pedipalp chela ornamentation: †Chela fixed finger, proximal half: smooth (0); dorsal surface granular (1); dorsal, lateral and internal surfaces granular (2).
+31. Pedipalp chela ornamentation: †Chela fingers, curvature and closure (♂): fingers straight, fit together evenly, no gap evident when closed (0); fixed finger curved dorsally, movable finger curved ventrally, fingers fit together unevenly, distinct gap evident when closed (1); unknown (?).
+32. Pedipalp chela ornamentation: Chela manus, internal surface, granulation along distal margin from base of movable finger to base of fixed finger: no prominent granules (0); row of prominent, isolated granules from base of movable finger to base of fixed finger (1); pair of prominent, isolated granules situated close together at base of fixed finger (2).
+33. Pedipalp chela ornamentation: Chela manus, internal surface, granulation near movable finger condyle: no prominent granules (0); one very prominent, isolated granule (1).
+34. Pedipalp chela ornamentation: Chela manus, dorsal secondary carina: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2). [P00/22; S&S01/24]
+35. Pedipalp chela ornamentation: Chela manus, digital carina: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); absent (1).
+36. Pedipalp chela ornamentation: †Chela manus, external secondary carina: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+37. Pedipalp chela ornamentation: Chela manus, ventroexternal carina: distinct (strongly sclerotized, protruding above intercarinal surfaces)(0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+38. Pedipalp chela ornamentation: Chela manus, ventromedian carina: absent (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); distinct (strongly sclerotized, protruding above intercarinal surfaces) (2). [P00/28; S&S01/26]
+39. Pedipalp chela ornamentation: Chela manus, ventromedian carina, one to three proximal granules in profile: present (0); absent (1).
+40. Pedipalp chela ornamentation: Chela manus, ventrointernal carina: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); absent (1). [P00/29, 30; S&S01/27]
+41. Pedipalp chela ornamentation: Chela manus, ventromedian and ventrointernal carinae, relative development: ventromedian carina stronger than ventrointernal carina (0); ventromedian and ventrointernal carinae similarly developed (1).
+42. Pedipalp patella ornamentation: †Patella internal surface, dorsal process (‘dorsal patellar spur’): well developed projection comprising one or more prominent, spiniform granules (0); projection absent or very weakly developed, comprising at most a low granule (1). [P00/18; S&S01/15–17; S&F03.5/97, 98]
+43. Pedipalp patella ornamentation: †Patella, (dorsal) internomedian carina (‘dorsal patellar spur carina’): absent, at most one or two granules besides dorsal process (‘dorsal patellar spur’) (0); present, row of multiple granules (1); fully developed, granular row (2). [S89/41, 42; S&F03.5/96]
+44. Pedipalp patella ornamentation: †Patella, (dorsal) externomedian carina: obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (0); absent (1).
+45. Pedipalp patella ornamentation: †Patella, (ventral) externomedian carina: obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (0); absent (1).
+46. Pedipalp patella ornamentation: Patella, dorsoexternal carina: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+47. Pedipalp patella ornamentation: Patella, dorsointernal carina: obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (0); absent (1).
+48. Pedipalp patella ornamentation: Patella, ventrointernal carina: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+49. Pedipalp patella ornamentation: Patella, ventroexternal carina: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+50. Pedipalp femur ornamentation: Femur, dorsoexternal carina: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+51. Pedipalp femur ornamentation: Femur, dorsointernal carina: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+52. Pedipalp femur ornamentation: Femur, ventrointernal carina: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+53. Pedipalp femur ornamentation: Femur, ventroexternal carina: distinct (uninterrupted row of granules) (0); absent (no granules) (1).
+54. Pedipalp trichobothria: †Femur, trichobothrium i1: absent (0); present, full size (1).
+55. Pedipalp trichobothria: †Femur, trichobothrium i2: absent (0); present, full size (1).
+56. Pedipalp trichobothria: †Femur, trichobothrium d1: absent (0); present, full size (1).
+57. Pedipalp trichobothria: Femur, trichobothrium d2: absent (0); present, full size (1).
+58. Pedipalp trichobothria: Femur, trichobothrium d3: absent (0); present, full size (1).
+59. Pedipalp trichobothria: Femur, trichobothrium d4: absent (0); present, full size (1).
+60. Pedipalp trichobothria: Femur, trichobothrium d5: absent (0); present, full size (1).
+61. Pedipalp trichobothria: Patella, trichobothrium d1: present, petite (0); present, full size (1).
+62. Pedipalp trichobothria: Patella, trichobothrium d2: present, petite (0); present, full size (1).
+63. Pedipalp trichobothria: Patella, trichobothrium i1: absent (0); present, full size (1).
+64. Pedipalp trichobothria: Patella, trichobothrium i2: absent (0); present, full size (1).
+65. Pedipalp trichobothria: Patella, trichobothrium v2: absent (0); present, full size (1).
+66. Pedipalp trichobothria: †Patella, trichobothrium v3: absent (0); present, full size (1).
+67. Pedipalp trichobothria: Patella, trichobothrium v4: absent (0); present, full size (1).
+68. Pedipalp trichobothria: Patella, trichobothrium et1: absent (0); present, full size (1).
+69. Pedipalp trichobothria: Patella, trichobothrium et2: absent (0); present, petite (1); present, full size (2).
+70. Pedipalp trichobothria: Patella, trichobothrium et3: absent (0); present, petite (1); present, full size (2).
+71. Pedipalp trichobothria: Patella, trichobothrium et4: absent (0); present, full size (1).
+72. Pedipalp trichobothria: Patella, trichobothrium et5: absent (0); present, petite (1); present, full size (2); polymorphic (0 1).
+73. Pedipalp trichobothria: Patella, trichobothrium et6: absent (0); present, full size (1).
+74. Pedipalp trichobothria: †Patella, trichobothrium et7: absent (0); present, full size (1).
+75. Pedipalp trichobothria: Patella, trichobothrium et8: absent (0); present, full size (1).
+76. Pedipalp trichobothria: Patella, trichobothrium et9: absent (0); present, full size (1).
+77. Pedipalp trichobothria: †Patella, trichobothrium est2: absent (0); present, full size (1).
+78. Pedipalp trichobothria: Patella, trichobothrium em2: absent (0); present, full size (1).
+79. Pedipalp trichobothria: Patella, trichobothrium em3: absent (0); present, full size (1).
+80. Pedipalp trichobothria: Patella, trichobothrium em4: absent (0); present, full size (1).
+81. Pedipalp trichobothria: Patella, trichobothrium esb2: absent (0); present, petite (1); present, full size (2).
+82. Pedipalp trichobothria: Patella, trichobothrium esb3: absent (0); present, petite (1); present, full size (2).
+83. Pedipalp trichobothria: Patella, trichobothrium esb4: absent (0); present, petite (1); present, full size (2).
+84. Pedipalp trichobothria: †Patella, trichobothrium esb5: absent (0); present, full size (1).
+85. Pedipalp trichobothria: Patella, trichobothrium eb1: absent (0); present, full size (1).
+86. Pedipalp trichobothria: †Patella, trichobothrium eb2: absent (0); present, petite (1); present, full size (2).
+87. Pedipalp trichobothria: Patella, trichobothrium eb3: absent (0); present, petite (1); present, full size (2).
+88. Pedipalp trichobothria: Patella, trichobothrium eb4: absent (0); present, full size (1).
+89. Pedipalp trichobothria: Patella, trichobothrium eb5: absent (0); present, full size (1).
+90. Pedipalp trichobothria: Patella, trichobothrium eb6: absent (0); present, full size (1).
+91. Pedipalp trichobothria: Patella, trichobothrium eb7: absent (0); present, full size (1).
+92. Pedipalp trichobothria: Patella, trichobothrium eb8: absent (0); present, full size (1).
+93. Pedipalp trichobothria: Patella, trichobothrium eb9: absent (0); present, full size (1).
+94. Pedipalp trichobothria: Chela, trichobothrium i1: absent (0); present, full size (1).
+95. Pedipalp trichobothria: Chela, trichobothrium i2: absent (0); present, full size (1).
+96. Pedipalp trichobothria: †Chela, trichobothrium i3: absent (0); present, full size (1).
+97. Pedipalp trichobothria: Chela, trichobothrium i4: absent (0); present, full size (1).
+98. Pedipalp trichobothria: Chela, trichobothrium V1: present, petite (0); present, full size (1).
+99. Pedipalp trichobothria: †Chela, trichobothrium V2: absent (0); present, full size (1).
+100. Pedipalp trichobothria: Chela, trichobothrium V3: absent (0); present, full size (1).
+101. Pedipalp trichobothria: Chela, trichobothrium V4: absent (0); present, full size (1).
+102. Pedipalp trichobothria: Chela, trichobothrium V5: absent (0); present, full size (1).
+103. Pedipalp trichobothria: Chela, trichobothrium V6: absent (0); present, full size (1).
+104. Pedipalp trichobothria: †Chela, trichobothrium Esb1: present, petite (0); present, full size (1).
+105. Pedipalp trichobothria: †Chela, trichobothrium Esb2: absent (0); present, full size (1).
+106. Pedipalp trichobothria: Chela, trichobothrium D1: present, petite (0); present, full size (1).
+107. Pedipalp trichobothria: †Chela, trichobothrium D2: absent (0); present, full size (1).
+108. Pedipalp trichobothria: †Chela, trichobothrium D3: absent (0); present, full size (1).
+109. Pedipalp trichobothria: †Chela, trichobothrium Et3: absent (0); present, petite (1).
+110. Pedipalp trichobothria: Chela, trichobothrium Et4: absent (0); present, petite (1); present, full size (2).
+111. Pedipalp trichobothria: Chela, trichobothrium Et5: absent (0); present, full size (1).
+112. Pedipalp trichobothria: Chela, trichobothrium Et6: absent (0); present, full size (1).
+113. Pedipalp trichobothria: Chela, trichobothrium Est1: absent (0); present, full size (1).
+114. Pedipalp trichobothria: †Chela, trichobothrium Est2: absent (0); present, full size (1).
+115. Pedipalp trichobothria: Chela, trichobothrium Est4: absent (0); present, petite (1); present, full size (2).
+116. Pedipalp trichobothria: Chela, trichobothrium Est5: absent (0); present, petite (1); present, full size (2).
+117. Pedipalp trichobothria: Chela, trichobothrium Est6: absent (0); present, petite (1); present, full size (2).
+118. Pedipalp trichobothria: Chela, trichobothrium Est7: absent (0); present, full size (1).
+119. Pedipalp trichobothria: †Chela, trichobothrium d2: absent (0); present, full size (1).
+120. Pedipalp trichobothria: †Chela, trichobothrium d3: absent (0); present, full size (1).
+121. Pedipalp trichobothria: †Chela, trichobothrium d4: absent (0); present, full size (1).
+122. Pedipalp trichobothria: Chela, trichobothrium d5: absent (0); present, full size (1).
+123. Pedipalp trichobothria: †Chela, trichobothrium d6: absent (0); present, full size (1).
+124. Pedipalp trichobothria: Chela, trichobothrium d7: absent (0); present, petite (1); present, full size (2).
+125. Pedipalp trichobothria: Chela, trichobothrium d8: absent (0); present, petite (1); present, full size (2).
+126. Pedipalp trichobothria: †Chela, trichobothrium m1: absent (0); present, full size (1).
+127. Pedipalp trichobothria: Chela, trichobothrium m2: absent (0); present, full size (1).
+128. Pedipalp trichobothria: Chela, trichobothrium m3: absent (0); present, full size (1).
+129. Pedipalp trichobothria: Chela, trichobothrium m4: absent (0); present, petite (1); present, full size (2).
+130. Pedipalp trichobothria: Chela, trichobothrium e2: absent (0); present, full size (1).
+131. Pedipalp trichobothria: †Chela, trichobothrium e4: absent (0); present, full size (1).
+132. Pedipalp trichobothria: †Chela, trichobothrium e5: present, petite; present, full size (1).
+133. Pedipalp trichobothria: Chela, trichobothrium e6: absent (0); present, petite (1); present, full size (2).
+134. Pedipalp trichobothria: Chela, trichobothrium e7: absent (0); present, full size (1).
+135. Pedipalp trichobothria: Chela, trichobothrium e8: absent (0); present, full size (1).
+136. Pedipalp trichobothria: Patella, trichobothrium v1, position relative to trichobothrium esb1: proximal to (0); level with (1); distal to (2).
+137. Pedipalp trichobothria: Chela, trichobothrium d4, position relative to trichobothrium e5: distal to (0); level with (1); inapplicable (-).
+138. Legs: Legs I–IV, prolateral pedal spurs: present (0); absent (1). [L80/11; S89/90; P00/64; S&F03.5/60]
+139. Legs: Legs I and II, retrolateral pedal spurs: present (0); absent (1). [L80/11; S89/90; P00/63; S&F03.5/60]
+140. Legs: Legs III and IV, retrolateral pedal spurs: present (0); absent (1). [L80/11; S89/90; P00/63; S&F03.5/60]
+141. Legs: †Basitarsi I–III, retrolateral spinules or spinule clusters: absent (0); short distal row (1); long, well developed continuous row (2). [S&S01/85]
+142. Legs: Basitarsus (IV), retrolateral spinules or spinule clusters: absent (0); distal spinules or spinule clusters only (1). [S&S01/85]
+143. Legs: †Basitarsi I and II, retroventral spinules or spinule clusters: absent (0); short distal row (1); long row (2). [S&S01/86]
+144. Legs: Basitarsus III, retroventral spinules or spinule clusters: absent (0); short distal row (1). [S&S01/86]
+145. Legs: †Basitarsus IV, retroventral spinules or spinule clusters: absent (0); distal spinules or spinule clusters only (1). [S&S01/86]
+146. Legs: Basitarsi I and II, proventral spinules or spinule clusters: absent (0); short subdistal row (1); long row, at least half length of segment (2). [S&S01/87]
+147. Legs: †Basitarsi III and IV, proventral spinules or spinule clusters: absent (0); short distal row (1). [S&S01/87]
+148. Legs: Basitarsi, ventral and lateral surfaces, spinules, type: simple, isolated spinules (0); loose clusters of elongated spinules (1); inapplicable (-). [S&S01/85–87]
+149. Legs: Telotarsi, ventral surface, spinules or spinule clusters, curved proximal row: present (0); absent (1).
+150. Legs: Telotarsi, ventral surface, spinules or spinule clusters, straight ventromedian row: present (0); absent (1). [L80/9; S89/93, 94, 97; P00/68, 70; S&S01/83, 84, 88, 89; S&F03.5/57; S&F03.5/58]
+151. Legs: Telotarsi, ventral surface, spinules or spinule clusters, number of ventrodistal pairs: more than three (0); none (1). [S89/97; S89/100; S&S01/83; S&F03.5/62]
+152. Legs: Telotarsi, ventral surface, spinules or spinule clusters, rows flanking pseudonychium (dactyl): absent (0); present (1).
+153. Legs: Telotarsi, ventral surface, spinules, type: simple, isolated spinules (0); loose clusters of elongated spinules (1); inapplicable (-). [L80/9; S89/93, 94, 97; P00/68, 70; S&S01/83, 84, 88, 89; S&F03.5/57; S&F03.5/58]
+154. Legs: Telotarsi, ventral macrosetae, arrangement: irregularly arranged, ‘non-flanking’ (0); regularly arranged into pair of distinct ventrosubmedian rows (1). [L80/9; S89/93, 94, 97; P00/68, 70; S&S01/83, 84, 88, 89; S&F03.5/57; S&F03.5/58]
+155. Legs: Telotarsi, ventral macrosetae, development: thin, acuminate (0); subspiniform (1). [L80/9; S89/93, 94, 97; P00/68, 70; S&S01/83, 84, 88, 89; S&F03.5/57; S&F03.5/58]
+156. Legs: Telotarsi, ventrosubmedian (‘flanking’) setal pairs, number: 3–5 (0); 6–8 (1); more than 10 (2). [S89/93, 94; P00/70; S&S01/88]
+157. Sternum: Sternum, vertical compression: absent, length greater than or equal to posterior width (0); minimal, length less than width (1). [S&S01/70; S&F03.5/67]
+158. Sternum: Sternum apex, shape: pointed (0); rounded (1). [S&F03.5/69]
+159. Sternum: Sternum lateral lobes, development: strongly convex (lobes create deep cleft medially) (0); weakly convex (lobes create shallow cleft medially) (1); flat (2). [S&F03.5/69]
+160. Tergites: Tergite VII, dorsosubmedian carinae, longitudinal development: vestigial (few posterior granules) (0); absent (1).
+161. Tergites: Tergite VII, dorsolateral carinae, longitudinal development: distinct, complete (0); vestigial (few posterior granules) (1); absent (2).
+162. Genital opercula: †Genital opercula (♀), sclerites, extent of fusion: entirely fused, no indication of suture (0); entirely fused, but loosely connected by membrane along entire length of suture (1); separated for most of length, loosely connected by membrane at extreme anterior edge only (2); unknown (?). [L80/12; S89/105–107; P00/80; S&S01/71; S&F03.5/82]
+163. Pectines: †Pectinal fulcra, development: well developed (0); absent (1). [S&S01/73; S&F03.5/104]
+164. Pectines: Pectinal lamellae, sutures, transverse suture between second (subdistal) and third marginal lamellae: present, lamellae separated (0); absent, lamellae fused (1). [S&F03.5/105]
+165. Pectines: Pectinal lamellae, sutures, longitudinal suture between second (subdistal) marginal lamella and second (subdistal) or second and third medial lamellae: present, lamellae separated (0); absent, lamellae fused (1).
+166. Pectines: †Pectinal lamellae, sutures, transverse suture between second (subdistal) and third medial lamellae: present, lamellae separated (0); absent, lamellae fused (1).
+167. Pectines: Pectinal lamellae, sutures, transverse suture between third and fourth medial lamellae: present, lamellae separated (0); absent, lamellae fused (1).
+168. Pectines: Pectinal lamellae, sutures, transverse suture between fourth and fifth medial lamellae: present, lamellae separated (0); absent, lamellae fused (1).
+169. Pectines: Pectines, proximal medial lamella (scape), angle (♂): acute, less than 90° (0); approximately 90° (1); obtuse, greater than 90° but less than 180° (2); unknown (?).
+170. Pectines: †Pecten development, length, expressed relative to length of coxa of leg IV (♂): long, distal edge reaching beyond distal edge of coxa (0); moderate, distal edge reaching to, but not beyond, distal edge of coxa (1); unknown (?). [S&F03.5/103]
+171. Pectines: Pecten development, length, expressed relative to length of coxa of leg IV (♀): moderate, distal edge reaching to, but not beyond, distal edge of coxa (0); short, distal edge not reaching to distal edge of coxa (1); unknown (?). [S&F03.5/103]
+172. Pectines: †Pectinal teeth, number (♂): 5 (0); 6 (1); 7 (2); unknown (?). [S&F03.5/103]
+173. Pectines: †Pectinal teeth, number (♀): 5 (0); 6 (1); 7 (2); unknown (?). [S&F03.5/103]
+174. Pectines: Pectinal teeth, shape: curved, slightly overlapping (0); straight, non-overlapping (1).
+175. Sternites: †Sternite V, posteromedian surface (♂): unmodified (0); smooth, raised surface (1); unknown (?).
+176. Sternites: †Sternite VII, ventrolateral carinae: present (0); absent (1).
+177. Sternites: †Stigmata, shape: oval (0); round (1). [L80/20; S&F03.5/101]
+178. Metasoma: Metasomal segments I–III, dorsosubmedian carinae: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1).
+179. Metasoma: Metasomal segments I–III, dorsosubmedian carinae, distal granules: not noticeably larger than preceding granules (0); significantly larger than preceding granules (1).
+180. Metasoma: Metasomal segment IV, dorsosubmedian carinae: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1).
+181. Metasoma: Metasomal segments I–III, dorsolateral carinae: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+182. Metasoma: Metasomal segment IV, dorsolateral carinae: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); absent (1).
+183. Metasoma: Metasomal segment V, dorsosolateral carinae: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1).
+184. Metasoma: Metasomal segments I, dorsolateral carinae, longitudinal development: present, complete (0); present, incomplete (1); absent (2).
+185. Metasoma: Metasomal segments II and III, dorsolateral carinae, longitudinal development: present, complete (0); present, incomplete (1); absent (2).
+186. Metasoma: Metasomal segment I, median lateral carinae, longitudinal development: present, incomplete (0); absent (1).
+187. Metasoma: Metasomal segment II, median lateral carinae, longitudinal development: present, incomplete (0); absent (1).
+188. Metasoma: Metasomal segment III and IV, median lateral carinae, longitudinal development: present, incomplete (0); absent (1). [S&F03.5/87; P0103/42; P04/24]
+189. Metasoma: Metasomal segment I, ventrolateral carinae: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+190. Metasoma: Metasomal segments II–IV, ventrolateral carinae: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+191. Metasoma: Metasomal segment V, ventrolateral carinae: distinct (strongly sclerotized, protruding above intercarinal surfaces) (0); obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (1); absent (2).
+192. Metasoma: Metasomal segment V, ventrolateral carinae, longitudinal development: complete (0); restricted to distal third of segment (1); inapplicable (-).
+193. Metasoma: †Metasomal segment V, ventromedian carina: obsolete (weakly sclerotized, if at all, not protruding above intercarinal surfaces) (0); absent (1).
+194. Telson: Telson vesicle, width relative to metasomal segment V, distal width: broader than (0); similar to (1).
+195. Telson: Telson vesicle, anterodorsal lateral lobes: present (0); absent (1).
+196. Habitat: †Ecomorphotype: epigean (0); endogean (1); hypogean (2).

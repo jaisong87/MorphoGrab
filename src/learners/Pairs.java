@@ -12,8 +12,9 @@ import java.util.Vector;
  * @author prasad
  */
 public class Pairs {
-        String character;
-            Vector<String> states;
+		
+            public String character;
+            public Vector<String> states;
             
          public String getChar ()
          {

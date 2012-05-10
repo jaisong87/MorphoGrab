@@ -56,6 +56,7 @@ public class SampleJForm extends javax.swing.JFrame {
         jTextArea3 = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("MorphoBank");
@@ -108,6 +109,13 @@ public class SampleJForm extends javax.swing.JFrame {
         jTextArea2.setRows(5);
         jScrollPane3.setViewportView(jTextArea2);
 
+        jButton3.setText("Reset");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -126,7 +134,9 @@ public class SampleJForm extends javax.swing.JFrame {
                         .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
@@ -154,7 +164,9 @@ public class SampleJForm extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2))
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton3))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
@@ -163,7 +175,7 @@ public class SampleJForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private String fileinput ;
+    private String fileinput;
     
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
@@ -230,6 +242,24 @@ public class SampleJForm extends javax.swing.JFrame {
                     }
                     col = 1;
                 }
+                else
+                {
+                    int size = pairs.size();
+                    for(int i = 0 ; i < size ;i++)
+                    {
+                        if(pairs.get(i).linenumber == lineNumber)
+                        {
+                            character c_char  = new character();
+                            c_char.value = jTextArea1.getSelectedText();
+                            c_char.startpos = jTextArea1.getSelectionStart() -  jTextArea1.getLineStartOffset(lineNumber);
+                            c_char.endpos = jTextArea1.getSelectionEnd() -  jTextArea1.getLineStartOffset(lineNumber);
+                            
+                            pairs.get(i).c = c_char;
+                        }
+                    }
+                    col = 0;
+                }
+                    
                 
                 int row =  Integer.parseInt(table.get(lineNumber).toString() );
                 
@@ -359,10 +389,9 @@ public class SampleJForm extends javax.swing.JFrame {
                 int endline ;
                    
                 
+        //Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
+		Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
                 
-            	//Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
-            	Vector<Pairs> chAndStates = myLearner.extractCharacterAndStates();
-                            
                 
                 
                 for(int  i = 0 ; i <chAndStates.size() ;i++)
@@ -433,75 +462,98 @@ public class SampleJForm extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        
+        jTextArea3.setText("");
+        jTextArea2.setText("");
+        
+        int rows = ((DefaultTableModel)jTable2.getModel()).getRowCount();
+        
+        for(int i = 0 ;i< rows;i++)
+        ((DefaultTableModel)jTable2.getModel()).removeRow(i);
+      
+        
+        pairs.clear();
+        
+             Highlighter hilite = jTextArea1.getHighlighter();
+                   hilite.removeAllHighlights();
+               
+        table.clear();
+        
+        rowCount = 0;
+    }//GEN-LAST:event_jButton3ActionPerformed
  
      void Marker(ReLearner mylearner)
      {
-                Vector<String> mattachedString = mylearner.regexMatchedStates;
+    	 		Vector<Pairs> charAndStates = mylearner.getCharacterAndStatesUsingRegexTemplates();
+               // Vector<String> mattachedString = mylearner.regexMatchedStates;
+                Vector<String> matchedChars = new Vector<String>();
+                Vector<String> matchedStates = new Vector<String>();
                 
-                for(int  i = 0 ;i< mattachedString.size();i++)
+                for(int i=0;i<charAndStates.size();i++)
                 {
-                	int startpos = 0;
-                	while(true)
+                	matchedChars.add(charAndStates.elementAt(i).character);
+                	System.out.println("****Character is"+charAndStates.elementAt(i).character+"*******");
+                	Vector<String> st = charAndStates.elementAt(i).states;
+                	for(int j=0;j<st.size();j++)
                 	{
-	                	
-	                	startpos =	jTextArea1.getText().indexOf(mattachedString.elementAt(i),startpos+1);
-	                    
-	                    if( startpos>=0 )
-	                    {
-	                        Highlighter hilite = jTextArea1.getHighlighter();
-	                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.yellow);
-	                
-	                        try {
-								hilite.addHighlight(startpos, startpos+mattachedString.elementAt(i).length(), p);
-							} catch (BadLocationException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
-	                    }
-	                    else
-	                    	break;
-	               }    
-                    
-                   
-               } 
-         
-                /*
-                int startline;
-                int endline;
+                    	matchedStates.add(st.elementAt(j));                		
+                	}
+                 }
                 
-                try
+                for(int  i = 0 ;i< matchedChars.size();i++)
                 {
-                int lineNumber = 0;
-                while(true)
-                {
-                    try
+                    int startpos = 0 ;
+                    while(true)
                     {
-                        startline = jTextArea1.getLineStartOffset(lineNumber);
-                        endline = jTextArea1.getLineEndOffset(lineNumber);
-                    }
-                    catch ( BadLocationException ex)
-                    {
-                        break;
-                    }
-                    String text= jTextArea1.getText(startline, endline - startline);
+                        startpos = jTextArea1.getText().indexOf(matchedChars.elementAt(i),startpos+1);
                     
-                    if(mylearner.mappedDataRows.contains(text.trim()))
+                    if( startpos>=0 )
                     {
                         Highlighter hilite = jTextArea1.getHighlighter();
-                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.lightGray);
-                        hilite.addHighlight(startline, endline, p);
-                        
-                   }
-                    lineNumber++;
+                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.yellow);
+                try {
+                    hilite.addHighlight(startpos, startpos+matchedChars.elementAt(i).length(), p);
+                } catch (BadLocationException ex) {
+                    Logger.getLogger(SampleJForm.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                }
-                catch ( Exception e)
+                    }
+                    else
+                        break;
+                            
+                    }
+                    
+               }
+         
+                               
+                for(int  i = 0 ;i< matchedStates.size();i++)
                 {
-                    ;
+                    int startpos = 0 ;
+                    while(true)
+                    {
+                        startpos = jTextArea1.getText().indexOf(matchedStates.elementAt(i),startpos+1);
+                    
+                    if( startpos>=0 )
+                    {
+                        Highlighter hilite = jTextArea1.getHighlighter();
+                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.green);
+                try {
+                    hilite.addHighlight(startpos, startpos+matchedStates.elementAt(i).length(), p);
+                } catch (BadLocationException ex) {
+                    Logger.getLogger(SampleJForm.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                * 
+                    }
+                    else
+                        break;
+                            
+                    }
+                    
+               } 
                 
-                */
+               System.out.println("CharAndStates have "+charAndStates.size()+" elements");
+              
      }
      
      
@@ -575,6 +627,7 @@ public class SampleJForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton6;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;

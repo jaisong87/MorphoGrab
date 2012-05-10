@@ -1,0 +1,98 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AlgoType	src/learners/ReLearner.java	/^        public static enum AlgoType{ DELIMITER_SEPARATOR, REGEX_TEMPLATE, KNN_LEARNER };$/;"	g	class:ReLearner
+BoolKNN	src/learners/BoolKNN.java	/^	public BoolKNN(int dim \/*, int k*\/) {$/;"	m	class:BoolKNN
+BoolKNN	src/learners/BoolKNN.java	/^public class BoolKNN {$/;"	c
+DELIMITER_SEPARATOR	src/learners/ReLearner.java	/^        public static enum AlgoType{ DELIMITER_SEPARATOR, REGEX_TEMPLATE, KNN_LEARNER };$/;"	e	enum:ReLearner.AlgoType	file:
+Files	src/Files.java	/^class Files {$/;"	c
+K	src/learners/BoolKNN.java	/^	int K;	$/;"	f	class:BoolKNN
+KNN_LEARNER	src/learners/ReLearner.java	/^        public static enum AlgoType{ DELIMITER_SEPARATOR, REGEX_TEMPLATE, KNN_LEARNER };$/;"	e	enum:ReLearner.AlgoType	file:
+LoadContents	src/SampleJForm.java	/^     void LoadContents(String fileName) $/;"	m	class:SampleJForm
+N	src/learners/BoolKNN.java	/^	int N; \/* Dimensioanlity *\/$/;"	f	class:BoolKNN
+Pairs	src/learners/Pairs.java	/^public class Pairs {$/;"	c
+REGEX_TEMPLATE	src/learners/ReLearner.java	/^        public static enum AlgoType{ DELIMITER_SEPARATOR, REGEX_TEMPLATE, KNN_LEARNER };$/;"	e	enum:ReLearner.AlgoType	file:
+ReLearner	src/learners/ReLearner.java	/^    public ReLearner(Vector<String> dr, AlgoType alg){$/;"	m	class:ReLearner
+ReLearner	src/learners/ReLearner.java	/^public class ReLearner {   $/;"	c
+SampleJForm	src/SampleJForm.java	/^    public SampleJForm() {$/;"	m	class:SampleJForm
+SampleJForm	src/SampleJForm.java	/^public class SampleJForm extends javax.swing.JFrame {$/;"	c
+Train	src/learners/ReLearner.java	/^        public boolean Train(String Character , String States , String line)$/;"	m	class:ReLearner
+addExample	src/learners/ReLearner.java	/^	public boolean addExample(String dataRow, int startCharPos, int endCharPos, Vector<Integer> startStatePos, Vector<Integer> endStatePos) \/* Add an example for Character*\/$/;"	m	class:ReLearner
+c	src/SampleJForm.java	/^        character c;$/;"	f	class:SampleJForm.characterStatePair
+charStateDelimiter	src/learners/ReLearner.java	/^	String charStateDelimiter; \/* To split between character and all of the remaining states*\/$/;"	f	class:ReLearner
+charType	src/learners/regexTemplate.java	/^		Vector<Integer> charType;$/;"	f	class:regexTemplate
+character	src/SampleJForm.java	/^    class character $/;"	c	class:SampleJForm
+character	src/learners/Pairs.java	/^        String character;$/;"	f	class:Pairs
+characterStatePair	src/SampleJForm.java	/^    class characterStatePair$/;"	c	class:SampleJForm
+checkiftemplateExist	src/learners/ReLearner.java	/^        private boolean checkiftemplateExist(Vector<regexTemplate> stateTemplateslocal,regexTemplate rtemplate)$/;"	m	class:ReLearner	file:
+clearStates	src/learners/ReLearner.java	/^	public void clearStates()$/;"	m	class:ReLearner
+dataRows	src/learners/ReLearner.java	/^	Vector<String> dataRows; \/* These are rows in the input document. We operate on this for information-extraction *\/$/;"	f	class:ReLearner
+enableDebugging	src/learners/ReLearner.java	/^	boolean enableDebugging; \/* For more debug prints*\/$/;"	f	class:ReLearner
+endpos	src/SampleJForm.java	/^        int endpos;$/;"	f	class:SampleJForm.character
+endpos	src/SampleJForm.java	/^        int endpos;$/;"	f	class:SampleJForm.states
+extractCharacterAndStates	src/learners/ReLearner.java	/^	public HashMap<String, Vector<String> > extractCharacterAndStates()$/;"	m	class:ReLearner
+fileinput	src/SampleJForm.java	/^    private String fileinput ;$/;"	f	class:SampleJForm	file:
+getChar	src/learners/Pairs.java	/^         public String getChar ()$/;"	m	class:Pairs
+getCharType	src/learners/regexTemplate.java	/^	private int getCharType(char ch)$/;"	m	class:regexTemplate	file:
+getCharacterAndStatesUsingDelimiters	src/learners/ReLearner.java	/^	private HashMap<String, Vector<String>> getCharacterAndStatesUsingDelimiters()$/;"	m	class:ReLearner	file:
+getCharacterAndStatesUsingRegexTemplates	src/learners/ReLearner.java	/^        private HashMap<String, Vector<String>> getCharacterAndStatesUsingRegexTemplates()$/;"	m	class:ReLearner	file:
+getCharacterAndStatesUsingRegexTemplatesPair	src/learners/ReLearner.java	/^        public Vector<Pairs> getCharacterAndStatesUsingRegexTemplatesPair()$/;"	m	class:ReLearner
+getDist	src/learners/BoolKNN.java	/^	private int getDist(ArrayList<Boolean> x1, ArrayList<Boolean> x2)$/;"	m	class:BoolKNN	file:
+getRegex	src/learners/ReLearner.java	/^        public Pattern getRegex()$/;"	m	class:ReLearner
+getRegex	src/learners/regexTemplate.java	/^	public String getRegex()$/;"	m	class:regexTemplate
+getStates	src/learners/Pairs.java	/^         public Vector<String> getStates()$/;"	m	class:Pairs
+initComponents	src/SampleJForm.java	/^    private void initComponents() {$/;"	m	class:SampleJForm	file:
+jButton1	src/SampleJForm.java	/^    private javax.swing.JButton jButton1;$/;"	f	class:SampleJForm	file:
+jButton1ActionPerformed	src/SampleJForm.java	/^    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_jButton1ActionPerformed$/;"	m	class:SampleJForm	file:
+jButton2	src/SampleJForm.java	/^    private javax.swing.JButton jButton2;$/;"	f	class:SampleJForm	file:
+jButton2ActionPerformed	src/SampleJForm.java	/^    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_jButton2ActionPerformed$/;"	m	class:SampleJForm	file:
+jButton6	src/SampleJForm.java	/^    private javax.swing.JButton jButton6;$/;"	f	class:SampleJForm	file:
+jButton6ActionPerformed	src/SampleJForm.java	/^    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_jButton6ActionPerformed$/;"	m	class:SampleJForm	file:
+jComboBox1	src/SampleJForm.java	/^    private javax.swing.JComboBox jComboBox1;$/;"	f	class:SampleJForm	file:
+jLabel1	src/SampleJForm.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:SampleJForm	file:
+jScrollPane1	src/SampleJForm.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:SampleJForm	file:
+jScrollPane2	src/SampleJForm.java	/^    private javax.swing.JScrollPane jScrollPane2;$/;"	f	class:SampleJForm	file:
+jScrollPane4	src/SampleJForm.java	/^    private javax.swing.JScrollPane jScrollPane4;$/;"	f	class:SampleJForm	file:
+jTable2	src/SampleJForm.java	/^    private javax.swing.JTable jTable2;$/;"	f	class:SampleJForm	file:
+jTextArea1	src/SampleJForm.java	/^    private javax.swing.JTextArea jTextArea1;$/;"	f	class:SampleJForm	file:
+jTextArea3	src/SampleJForm.java	/^    private javax.swing.JTextArea jTextArea3;$/;"	f	class:SampleJForm	file:
+learnExpressions	src/learners/ReLearner.java	/^	public boolean learnExpressions()$/;"	m	class:ReLearner
+learnedAnswers	src/learners/BoolKNN.java	/^	Vector<Boolean> learnedAnswers;$/;"	f	class:BoolKNN
+learnedInputs	src/learners/BoolKNN.java	/^	Vector<ArrayList<Boolean>> learnedInputs;$/;"	f	class:BoolKNN
+learners	src/learners/BoolKNN.java	/^package learners;$/;"	p
+learners	src/learners/Pairs.java	/^package learners;$/;"	p
+learners	src/learners/ReLearner.java	/^package learners;$/;"	p
+learners	src/learners/regexTemplate.java	/^package learners;$/;"	p
+learningAlgorithm	src/learners/ReLearner.java	/^    AlgoType learningAlgorithm; \/* Specify the type of learning algorithm *\/$/;"	f	class:ReLearner
+learningOver	src/learners/ReLearner.java	/^	boolean learningOver; \/* Is learning Over - state variable *\/$/;"	f	class:ReLearner
+lineContent	src/SampleJForm.java	/^        String lineContent;$/;"	f	class:SampleJForm.characterStatePair
+linenumber	src/SampleJForm.java	/^        int linenumber ;$/;"	f	class:SampleJForm.characterStatePair
+main	src/SampleJForm.java	/^    public static void main(String args[]) {$/;"	m	class:SampleJForm
+main	src/learners/BoolKNN.java	/^	public static void main(String args[])$/;"	m	class:BoolKNN
+main	src/learners/regexTemplate.java	/^public static void main(String args[])$/;"	m	class:regexTemplate
+multipleTemplates	src/learners/ReLearner.java	/^      private Vector<Vector<regexTemplate>>   multipleTemplates;$/;"	f	class:ReLearner	file:
+pairs	src/SampleJForm.java	/^    private Vector<characterStatePair> pairs = new Vector<characterStatePair>();$/;"	f	class:SampleJForm	file:
+predictOutput	src/learners/BoolKNN.java	/^	public boolean predictOutput(ArrayList<Boolean> featureVector)$/;"	m	class:BoolKNN
+printScheme	src/learners/regexTemplate.java	/^	private void printScheme()$/;"	m	class:regexTemplate	file:
+printSummary	src/learners/ReLearner.java	/^	public void printSummary()$/;"	m	class:ReLearner
+regexTemplate	src/learners/regexTemplate.java	/^	public regexTemplate(String str)$/;"	m	class:regexTemplate
+regexTemplate	src/learners/regexTemplate.java	/^public class regexTemplate {$/;"	c
+repeatAllowed	src/learners/regexTemplate.java	/^		Vector<Boolean> repeatAllowed;$/;"	f	class:regexTemplate
+resetStates	src/learners/ReLearner.java	/^	public void resetStates(){$/;"	m	class:ReLearner
+rowCount	src/SampleJForm.java	/^    private int rowCount = 0;$/;"	f	class:SampleJForm	file:
+s	src/SampleJForm.java	/^        Vector<states> s = new Stack<states>() ;$/;"	f	class:SampleJForm.characterStatePair
+specialChars	src/learners/regexTemplate.java	/^		static String specialChars = "()"; \/* Some special characters *\/$/;"	f	class:regexTemplate
+startpos	src/SampleJForm.java	/^        int startpos;$/;"	f	class:SampleJForm.character
+startpos	src/SampleJForm.java	/^        int startpos;$/;"	f	class:SampleJForm.states
+stateDelimiters	src/learners/ReLearner.java	/^    Vector<String> stateDelimiters; \/* Used by DELIMITER_SEPERATOR - Set of possible delimiters *\/$/;"	f	class:ReLearner
+stateExpr	src/learners/ReLearner.java	/^	String stateExpr; \/* Used by REGEX_TEMPLATE : Expression for character and states *\/$/;"	f	class:ReLearner
+stateTemplates	src/learners/ReLearner.java	/^    Vector<regexTemplate> stateTemplates; \/* All the regexTemplates for states are in this container *\/$/;"	f	class:ReLearner
+states	src/SampleJForm.java	/^    class states$/;"	c	class:SampleJForm
+states	src/learners/Pairs.java	/^            Vector<String> states;$/;"	f	class:Pairs
+table	src/SampleJForm.java	/^    private HashMap table = new HashMap();$/;"	f	class:SampleJForm	file:
+trainSample	src/learners/BoolKNN.java	/^	public boolean trainSample(ArrayList<Boolean> featureVector, boolean ans)$/;"	m	class:BoolKNN
+value	src/SampleJForm.java	/^        String value;$/;"	f	class:SampleJForm.character
+value	src/SampleJForm.java	/^        String value;$/;"	f	class:SampleJForm.states

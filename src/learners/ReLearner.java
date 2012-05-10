@@ -386,10 +386,10 @@ public class ReLearner {
 	}
 		
 	 
-        private /*HashMap<String, Vector<String>>*/ Vector<Pairs>  getCharacterAndStatesUsingRegexTemplates()
+        public /*HashMap<String, Vector<String>>*/ Vector<Pairs>  getCharacterAndStatesUsingRegexTemplates()
 	{
         	System.out.println("*********** ExtractCharacterAndStates() using RegexTemplates @jaison");
-               	Vector<Pairs> pp = new  Stack<Pairs>();
+               	Vector<Pairs> pp = new  Vector<Pairs>();
 	        String finalString ="";
                 regexTemplate stateTemplate = stateTemplates.elementAt(0);
                 finalString+= stateTemplate.getRegex();
@@ -398,7 +398,9 @@ public class ReLearner {
             	   finalString+="|"+stateTemplates.elementAt(i).getRegex();
                
                 Pattern pattern = Pattern.compile(finalString);
-               
+       
+                int ic = 0;
+                
 		for(int i=0;i<dataRows.size();i++)
 		{
 			System.out.println("-----------------------------------------------------------------");
@@ -460,7 +462,7 @@ public class ReLearner {
 			}
 			
 			System.out.println("");
-                        if(curStates.size() == statestokens.length) /* Line is not very clear */
+                        //if(curStates.size() == statestokens.length) /* Line is not very clear */
                         {
                      //       characterAndStates.put(curCharacter, curStates);
                         
@@ -470,21 +472,17 @@ public class ReLearner {
                         
                         if(!pp.contains(p))
                             pp.add(p);
-        
+                            ic++;
                         }
 			}
 		}
+	System.out.println("There are "+regexMatchedStates.size()+" matches added as "+pp.size()+" pairs");
 	printSummary();
-	System.out.println("There are "+regexMatchedStates.size()+" matches ");
-	return pp;//characterAndStates;
+	return pp;//characterAndStates
 	}
-	
-        
-        
-        
         
 	/* Show characters and states using delimters */
-	private  Vector<Pairs>/*HashMap<String, Vector<String>>*/ getCharacterAndStatesUsingDelimiters()
+	private  Vector<Pairs>  getCharacterAndStatesUsingDelimiters()
 	{
                 //HashMap<String, Vector<String>> characterAndStates = new HashMap<String, Vector<String>>(); /* Hashmap containing character->set(states) */
 		 Vector<Pairs> characterAndStates = new Vector<Pairs>();
@@ -513,13 +511,10 @@ public class ReLearner {
 			
 			for(int j=0;j<stateDelimiters.size();j++)
 			{
-	//			prevStates = curStates;
 				curStates.clear();
-	//			System.out.println("Using delimiter "+stateDelimiters.elementAt(j)+" on prevStates of "+prevStates.size()+" elements..curStates have "+curStates.size()+" elements");
 				for(int k=0;k<prevStates.size();k++)
 				{
 					String[] tmpTokens = prevStates.elementAt(k).split(stateDelimiters.elementAt(j));
-					//System.out.println("Got "+tmpTokens.length+" pieces from "+prevStates.elementAt(k));
 					for(int l = 0;l<tmpTokens.length;l++)
 							curStates.addElement(tmpTokens[l]);
 				}
@@ -537,7 +532,8 @@ public class ReLearner {
 			{	
 				System.out.println("");
 			}
-			   Pairs p = new Pairs();
+			
+			Pairs p = new Pairs();
                         p.character = curCharacter;
                         p.states = curStates;
 			characterAndStates.add(p);
