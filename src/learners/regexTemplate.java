@@ -24,8 +24,8 @@ public class regexTemplate {
 		int lastKnownIndex = -1;
 		boolean repeatSeen = false;
 		
-		System.out.println("Making Template for : "+str);
-		printScheme();
+		//System.out.println("Making Template for : "+str);
+		//printScheme();
 		
 		for(int i=1;i<str.length();i++)
 		{
@@ -38,24 +38,25 @@ public class regexTemplate {
 			}
 			else {
 				lastKnownIndex = i;
-				System.out.println("Adding "+prevChType+" ending at position "+i);
+				//System.out.println("Adding "+prevChType+" ending at position "+i);
 				charType.addElement(prevChType);
 				repeatAllowed.addElement(repeatSeen);
 				repeatSeen = false;
 			}
 		}
 		
-		System.out.println(lastKnownIndex+" : "+str.length()+" : "+curChType+" : "+prevChType);
+		//System.out.println(lastKnownIndex+" : "+str.length()+" : "+curChType+" : "+prevChType);
 		
 			charType.addElement(curChType);
 			repeatAllowed.addElement(repeatSeen);
 		
+			/*
 		System.out.println("");
 	
 		for(int i=0;i<charType.size();i++)
 			System.out.print(charType.elementAt(i)+" , "); 
 		System.out.println("");
-		
+		*/
 	}
 	
 	private void printScheme()
@@ -94,7 +95,7 @@ public class regexTemplate {
 			ctype = i+2; /* Other characters */
 		}
 		
-		System.out.print(ctype);
+		//System.out.print(ctype);
 		
 		return ctype;
 		}
@@ -123,6 +124,8 @@ public class regexTemplate {
 			}
 			else if(ctype== specialCharCount+1)
 			{
+				if(i==0)
+					pattern+="[\\w\\s]";
 				pattern+="[\\w\\s,]";
 				if(repeatAllowed.elementAt(i)==true) pattern+="+";
 			}

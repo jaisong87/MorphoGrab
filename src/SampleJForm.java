@@ -195,16 +195,22 @@ public class SampleJForm extends javax.swing.JFrame {
     private Vector<characterStatePair> pairs = new Vector<characterStatePair>();
     class characterStatePair
     {
-        String lineContent;
-        int linenumber ;
-        character c;
-        Vector<states> s = new Stack<states>() ;
-    }
+        public String lineContent = "";
+        public int linenumber =-1;
+        public character c = new character();
+        Vector<states> s = new Stack<states>() ; 
+   }
     class character 
     {
         String value;
         int startpos;
         int endpos;
+	public character()
+	{
+		value ="";
+		int startpos = -1;
+		int endpos = -1;
+	}
     }
     
     class states
@@ -363,15 +369,18 @@ public class SampleJForm extends javax.swing.JFrame {
                  {
                      String line =  pairs.get(i).lineContent;
                      character c_char = pairs.get(i).c;
+                     System.out.println("\n##########Adding example for character to reLearner#########");
+                     myLearner.addCharacterExample(line, c_char.startpos, c_char.endpos);
                      
                      for(int j = 0 ;j< pairs.get(i).s.size();j++)
                      {
                          states s_state = (states) pairs.get(i).s.get(j);
                          startPos.add(s_state.startpos);
                          endPos.add(s_state.endpos);
+                         myLearner.addStateExample(line.substring(s_state.startpos, s_state.endpos));
                      }
                      
-                     myLearner.addExample(line, c_char.startpos, c_char.endpos, startPos, endPos);
+                     //myLearner.addExample(line, c_char.startpos, c_char.endpos, startPos, endPos);
                      startPos.clear();
                      endPos.clear();
                  }
@@ -380,9 +389,7 @@ public class SampleJForm extends javax.swing.JFrame {
 		//myLearner.addExample(line1, 0, 101, startPos, endPos);
 		
                // myLearner.toString( "Character","list<states>","line1")
-                
-		myLearner.learnExpressions();
-		
+                	
                 //Pattern regex = myLearner.getRegex();
                      
                 int startline;

@@ -108,6 +108,61 @@ public class ReLearner {
             }
             return false ;
         }
+
+    public boolean addCharacterExample(String line, int startCharPos, int endCharPos)
+    {
+    	if(startCharPos<0 || endCharPos<0 || line.trim().length()==0)
+    			return false;
+    	String chr = line.substring(startCharPos,endCharPos);
+    	if(chr.trim().length()==0)
+    			return false;
+    	String newCharStateDelimter = "";
+    	int nwCount =0;
+    	for(int pos= endCharPos; (pos<line.length()-1 )&& nwCount==0;pos++ )
+    		{
+    		String curCh = ""+line.charAt(pos);
+    		if(curCh.matches(".*\\w.*"))
+    			{
+    			nwCount++;	
+    			}
+    		else {
+    			newCharStateDelimter +=curCh;
+    		}
+    		}
+    	if(newCharStateDelimter.trim().length() == 0)
+    			return false;
+    	
+    	charStateDelimiter = newCharStateDelimter.trim();
+    	
+    	System.out.println("CharStateDelimiter learned is "+charStateDelimiter+" from "+chr+"("+chr.length()+") "+startCharPos+":"+endCharPos);
+    	return true;
+    }
+        
+        /*
+         * Add a state example
+         */
+    public boolean addStateExample(String state)
+    {
+		regexTemplate rtemplate = new regexTemplate(state);
+		String rtemplateExpr = rtemplate.getRegex();
+		boolean isExistingTemplate = false;
+		
+		for(int j=0;j<stateTemplates.size();j++)
+		{
+				String curExpr = stateTemplates.elementAt(j).getRegex();
+				if(curExpr.equals(rtemplateExpr))
+						isExistingTemplate = true;
+		}
+		
+		if(false == isExistingTemplate)
+					{
+					stateTemplates.addElement(rtemplate);
+					System.out.println("Latest added expression is "+rtemplate.getRegex());
+					}
+		System.out.println("Latest learned expression is "+rtemplate.getRegex()+" from "+state);
+		
+    	return true;
+    }
         
 	public boolean addExample(String dataRow, int startCharPos, int endCharPos, Vector<Integer> startStatePos, Vector<Integer> endStatePos) /* Add an example for Character*/
 	{
@@ -231,16 +286,6 @@ public class ReLearner {
 		System.out.println("===================================================");
 	}
 	
-	public boolean learnExpressions()
-	{
-		
-		/*
-		 *  From a set of temporary expressions for states, Generalise a single expression
-		 */
-		learningOver = true;
-		return true;
-	}
-
 	/*
 	 * This part is cool , Just extract Information
 	 */
@@ -386,7 +431,7 @@ public class ReLearner {
 	}
 		
 	 
-        public /*HashMap<String, Vector<String>>*/ Vector<Pairs>  getCharacterAndStatesUsingRegexTemplates()
+    public Vector<Pairs>  getCharacterAndStatesUsingRegexTemplates()
 	{
         	System.out.println("*********** ExtractCharacterAndStates() using RegexTemplates @jaison");
                	Vector<Pairs> pp = new  Vector<Pairs>();
@@ -421,11 +466,9 @@ public class ReLearner {
 			    if(matcher_test.find())
 			    	char_over = true;
 			    	
-				//if(j>0) curCharacter+= charStateDelimiter;
-				//curCharacter += tokens[j];
-				if(char_over) combinedStates += ":" + tokens[j];
+				if(char_over) combinedStates += charStateDelimiter + tokens[j];
 				else {	
-						if(j>0) curCharacter+=":";
+						if(j>0) curCharacter+=charStateDelimiter;
 						curCharacter += tokens[j];
 						}
 				}
@@ -437,9 +480,9 @@ public class ReLearner {
 				}
 									
 		    Vector<String> curStates = new Vector<String>();
-                    String firstdel =stateDelimiters.elementAt(0).toString();
+                //  String firstdel =stateDelimiters.elementAt(0).toString();
                     //char c = firstdel.charAt(0);
-                    String[] statestokens = combinedStates.split(firstdel);
+                    //String[] statestokens = combinedStates.split(firstdel);
 		
 		    Matcher matcher = pattern.matcher(combinedStates);
                     
@@ -470,7 +513,7 @@ public class ReLearner {
                         p.character = curCharacter;
                         p.states = curStates;
                         
-                        if(!pp.contains(p))
+                        if(!pp.contains(p) && curStates.size()>0 && curCharacter!="")
                             pp.add(p);
                             ic++;
                         }
