@@ -1,6 +1,10 @@
 
+import nexus.MatrixBlock;
+import com.itextpdf.text.pdf.parser.Matrix;
 import java.awt.Color;
 import java.awt.FileDialog;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.*;
 import java.nio.charset.Charset;
 import java.util.*;
@@ -57,6 +61,11 @@ public class SampleJForm extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        fileMenu = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("MorphoBank");
@@ -67,12 +76,12 @@ public class SampleJForm extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        
+
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jTextArea1.setText("Load the Project File which needs to be learnt");
         jScrollPane2.setViewportView(jTextArea1);
-        
+
         jButton1.setText("Select");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,6 +125,37 @@ public class SampleJForm extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setText("Gen Nexus");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        fileMenu.setText("File");
+        fileMenu.setName("File_Menu");
+
+        jMenuItem1.setText("Pdf to Text");
+        jMenuItem1.setName("PdfToText");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        fileMenu.add(jMenuItem1);
+
+        jMenuItem2.setText("Word to Text");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        fileMenu.add(jMenuItem2);
+
+        jMenuBar1.add(fileMenu);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -136,7 +176,8 @@ public class SampleJForm extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
@@ -166,16 +207,18 @@ public class SampleJForm extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jButton2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton3))
+                        .addComponent(jButton3)
+                        .addGap(57, 57, 57)
+                        .addComponent(jButton4))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private String fileinput;
+    private String fileinput ;
     
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
@@ -195,22 +238,16 @@ public class SampleJForm extends javax.swing.JFrame {
     private Vector<characterStatePair> pairs = new Vector<characterStatePair>();
     class characterStatePair
     {
-        public String lineContent = "";
-        public int linenumber =-1;
-        public character c = new character();
-        Vector<states> s = new Stack<states>() ; 
-   }
+        String lineContent;
+        int linenumber ;
+        character c;
+        Vector<states> s = new Stack<states>() ;
+    }
     class character 
     {
         String value;
         int startpos;
         int endpos;
-	public character()
-	{
-		value ="";
-		int startpos = -1;
-		int endpos = -1;
-	}
     }
     
     class states
@@ -332,30 +369,8 @@ public class SampleJForm extends javax.swing.JFrame {
 
     Vector<String> dataRows = new Vector<String>();
     
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        
-              dataRows.clear();
-		
-		FileInputStream fin;
-		try {
-			fin = new FileInputStream(fileinput);
-			DataInputStream din = new DataInputStream(fin);
-			BufferedReader br = new BufferedReader(new InputStreamReader(din));
-			String nextLine;
-			try {
-				while((nextLine = br.readLine()) != null)
-					dataRows.addElement(nextLine);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	
+    private void Learn()
+    {
                 //Collections.reverse(dataRows);
                 ReLearner myLearner = new ReLearner(dataRows, ReLearner.AlgoType.REGEX_TEMPLATE);
 		
@@ -369,18 +384,15 @@ public class SampleJForm extends javax.swing.JFrame {
                  {
                      String line =  pairs.get(i).lineContent;
                      character c_char = pairs.get(i).c;
-                     System.out.println("\n##########Adding example for character to reLearner#########");
-                     myLearner.addCharacterExample(line, c_char.startpos, c_char.endpos);
                      
                      for(int j = 0 ;j< pairs.get(i).s.size();j++)
                      {
                          states s_state = (states) pairs.get(i).s.get(j);
                          startPos.add(s_state.startpos);
                          endPos.add(s_state.endpos);
-                         myLearner.addStateExample(line.substring(s_state.startpos, s_state.endpos));
                      }
                      
-                     //myLearner.addExample(line, c_char.startpos, c_char.endpos, startPos, endPos);
+                     myLearner.addExample(line, c_char.startpos, c_char.endpos, startPos, endPos);
                      startPos.clear();
                      endPos.clear();
                  }
@@ -389,15 +401,17 @@ public class SampleJForm extends javax.swing.JFrame {
 		//myLearner.addExample(line1, 0, 101, startPos, endPos);
 		
                // myLearner.toString( "Character","list<states>","line1")
-                	
+                
+		myLearner.learnExpressions();
+		
                 //Pattern regex = myLearner.getRegex();
                      
                 int startline;
                 int endline ;
                    
                 
-        //Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
-		Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
+                //Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
+		Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPairNew();
                 
                 
                 
@@ -418,7 +432,7 @@ public class SampleJForm extends javax.swing.JFrame {
                     jTextArea3.setText(jTextArea3.getText()+ "\n");
               }
                 
-                Vector<String> regExs = myLearner.getRegExpr();
+                Vector<String> regExs = myLearner.getRegex();
                 String expressions ="";
                 
                 for(int i =0 ;i< regExs.size();i++)
@@ -463,8 +477,40 @@ public class SampleJForm extends javax.swing.JFrame {
 		*/
             
         
-        
-               
+    }
+    
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+              
+              if(fromPdf)
+              {
+                  Learn();
+                  return;
+              }
+            
+              dataRows.clear();
+		
+		FileInputStream fin;
+		try {
+			fin = new FileInputStream(fileinput);
+			DataInputStream din = new DataInputStream(fin);
+			BufferedReader br = new BufferedReader(new InputStreamReader(din));
+			String nextLine;
+			try {
+				while((nextLine = br.readLine()) != null)
+					dataRows.addElement(nextLine);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+                       
+                        Learn();
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
         
         
         
@@ -491,38 +537,117 @@ public class SampleJForm extends javax.swing.JFrame {
         
         rowCount = 0;
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        WordConverter word = new WordConverter(this, rootPaneCheckingEnabled);
+        word.show();
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    public class MyAdapter extends WindowAdapter
+    {
+        SampleJForm form;
+        public MyAdapter(SampleJForm form) {
+        
+            this.form = form;
+        }
+        
+    };
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        
+        String parsedText = null ;
+        PdfConverter pdf = new PdfConverter(this, rootPaneCheckingEnabled);
+      
+        pdf.SetParent(this);
+        // add a window listener
+        pdf.addWindowListener(new MyAdapter(this)
+        {
+        public void windowClosed(WindowEvent e)
+        {
+           System.out.println("jdialog window closed");
+           if(form != null && form.GetParsedText() != null  )
+           {
+               // Handle Window Closed event here
+               
+           }
+        }
+
+        public void windowClosing(WindowEvent e)
+        {
+            System.out.println("jdialog window closing");
+        }
+        });
+        pdf.show();
+        
+       
+        
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private MatrixBlock block;
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        
+        String[] parsedLines = matrix.split("\\n");
+        
+        Vector<String>  vectorOfLines=  new Vector<String>();
+        vectorOfLines.addAll(Arrays.asList(parsedLines));
+
+         block = new MatrixBlock(vectorOfLines, "SAMPLE");
+         String tt = block.getNexusStr();
+         System.out.println(tt);
+         
+    }//GEN-LAST:event_jButton4ActionPerformed
+ 
+    public void RemoveNoiseClicked()
+    {
+       System.out.print(parsedText);
+    }
+    
+    private String parsedText ;
+    private boolean fromPdf = false;
+    
+    private String matrix;
+  
+    public void SetMatrix(String Matrix)
+    {
+        matrix = Matrix;
+    }
+    
+    public void SetParsedText(String  text)
+    {
+        jTextArea1.setText(text);
+    }            
+    public void SetDataRows(Vector<String> properFormatedInput)
+    {
+       // this.parsedText = parsedText;
+        dataRows.clear();
+        fromPdf  = true;
+        dataRows.addAll(properFormatedInput);
+    }
+    
+    public String GetParsedText()
+    {
+        return this.parsedText ;
+    }
  
      void Marker(ReLearner mylearner)
      {
-    	 		Vector<Pairs> charAndStates = mylearner.getCharacterAndStatesUsingRegexTemplates();
-               // Vector<String> mattachedString = mylearner.regexMatchedStates;
-                Vector<String> matchedChars = new Vector<String>();
-                Vector<String> matchedStates = new Vector<String>();
+                Vector<String> mattachedString = mylearner.regexMatchedStates;
                 
-                for(int i=0;i<charAndStates.size();i++)
-                {
-                	matchedChars.add(charAndStates.elementAt(i).character);
-                	System.out.println("****Character is"+charAndStates.elementAt(i).character+"*******");
-                	Vector<String> st = charAndStates.elementAt(i).states;
-                	for(int j=0;j<st.size();j++)
-                	{
-                    	matchedStates.add(st.elementAt(j));                		
-                	}
-                 }
-                
-                for(int  i = 0 ;i< matchedChars.size();i++)
+                for(int  i = 0 ;i< mattachedString.size();i++)
                 {
                     int startpos = 0 ;
                     while(true)
                     {
-                        startpos = jTextArea1.getText().indexOf(matchedChars.elementAt(i),startpos+1);
+                        startpos = jTextArea1.getText().indexOf(mattachedString.elementAt(i),startpos+1);
                     
                     if( startpos>=0 )
                     {
                         Highlighter hilite = jTextArea1.getHighlighter();
                         Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.yellow);
                 try {
-                    hilite.addHighlight(startpos, startpos+matchedChars.elementAt(i).length(), p);
+                    hilite.addHighlight(startpos, startpos+mattachedString.elementAt(i).length(), p);
                 } catch (BadLocationException ex) {
                     Logger.getLogger(SampleJForm.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -534,20 +659,22 @@ public class SampleJForm extends javax.swing.JFrame {
                     
                }
          
-                               
-                for(int  i = 0 ;i< matchedStates.size();i++)
+                
+                mattachedString = mylearner.regexMatchedChars;
+                
+                for(int  i = 0 ;i< mattachedString.size();i++)
                 {
                     int startpos = 0 ;
                     while(true)
                     {
-                        startpos = jTextArea1.getText().indexOf(matchedStates.elementAt(i),startpos+1);
+                        startpos = jTextArea1.getText().indexOf(mattachedString.elementAt(i),startpos+1);
                     
                     if( startpos>=0 )
                     {
                         Highlighter hilite = jTextArea1.getHighlighter();
                         Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.green);
                 try {
-                    hilite.addHighlight(startpos, startpos+matchedStates.elementAt(i).length(), p);
+                    hilite.addHighlight(startpos, startpos+mattachedString.elementAt(i).length(), p);
                 } catch (BadLocationException ex) {
                     Logger.getLogger(SampleJForm.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -559,8 +686,43 @@ public class SampleJForm extends javax.swing.JFrame {
                     
                } 
                 
-               System.out.println("CharAndStates have "+charAndStates.size()+" elements");
-              
+                /*
+                int startline;
+                int endline;
+                
+                try
+                {
+                int lineNumber = 0;
+                while(true)
+                {
+                    try
+                    {
+                        startline = jTextArea1.getLineStartOffset(lineNumber);
+                        endline = jTextArea1.getLineEndOffset(lineNumber);
+                    }
+                    catch ( BadLocationException ex)
+                    {
+                        break;
+                    }
+                    String text= jTextArea1.getText(startline, endline - startline);
+                    
+                    if(mylearner.mappedDataRows.contains(text.trim()))
+                    {
+                        Highlighter hilite = jTextArea1.getHighlighter();
+                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.lightGray);
+                        hilite.addHighlight(startline, endline, p);
+                        
+                   }
+                    lineNumber++;
+                }
+                }
+                catch ( Exception e)
+                {
+                    ;
+                }
+                * 
+                
+                */
      }
      
      
@@ -632,12 +794,17 @@ public class SampleJForm extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu fileMenu;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
