@@ -132,7 +132,7 @@ public class ReLearner {
     	if(newCharStateDelimter.trim().length() == 0)
     			return false;
     	
-    	charStateDelimiter = newCharStateDelimter.trim();
+    	charStateDelimiter = newCharStateDelimter.trim().substring(0,1);
     	
     	System.out.println("CharStateDelimiter learned is "+charStateDelimiter+" from "+chr+"("+chr.length()+") "+startCharPos+":"+endCharPos);
     	return true;
@@ -143,6 +143,7 @@ public class ReLearner {
          */
     public boolean addStateExample(String state)
     {
+    	state = state.trim();
 		regexTemplate rtemplate = new regexTemplate(state);
 		String rtemplateExpr = rtemplate.getRegex();
 		boolean isExistingTemplate = false;

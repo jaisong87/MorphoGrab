@@ -67,12 +67,12 @@ public class SampleJForm extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-
+        
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jTextArea1.setText("Load the Project File which needs to be learnt");
         jScrollPane2.setViewportView(jTextArea1);
-
+        
         jButton1.setText("Select");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

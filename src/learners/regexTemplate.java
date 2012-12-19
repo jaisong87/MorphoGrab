@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  */
 public class regexTemplate {
 		static String specialChars = "()?;-+"; /* Some special characters */
-                
+                		
                 static String charStateDelimiters = ":";
 		Vector<Integer> charType;
 		Vector<Boolean> repeatAllowed;
@@ -131,11 +131,13 @@ public class regexTemplate {
 			}
 			else if(ctype == specialCharCount+2)
 			{
-				pattern+="."; /* This should be changed to a custom character */
+				if(i>0)
+					pattern+="."; /* This should be changed to a custom character */
 			}
 			else if(ctype == specialCharCount+3)
-			{
-				pattern+=":";
+			{	
+				if(i>0)
+					pattern+=":";
 			}
 		}
 		return pattern;
