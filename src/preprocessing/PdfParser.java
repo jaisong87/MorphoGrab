@@ -143,7 +143,8 @@ public class PdfParser {
   //          System.out.println(strategy.getResultantText());  
 //            pdfParsedOutput.add(strategy.getResultantText());
             String[] contentLines = strategy.getResultantText().split("\n");
-            parsedText+=strategy.getResultantText();
+            parsedText += strategy.getResultantText();
+            parsedText += "\n";
             for(int j=0;j<contentLines.length;j++)
             	{
             		String line ="";

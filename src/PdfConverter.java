@@ -222,7 +222,11 @@ public class PdfConverter extends javax.swing.JDialog {
         Vector<String> noiseFreePdf = noiseFilter.deNoisify(vectorOfLines);
         
         
-        LineBreakGlue lbGlue = new LineBreakGlue("^[0-9]+.*");
+        /* MIGHT NEED A FIX LATER Eg: 1. OR  2.  OR 3.
+         * Ideally this should be learned
+         */
+        LineBreakGlue lbGlue = new LineBreakGlue("^[0-9]+\\..*"); 
+        
         System.out.println("noiseFreePdf has size "+noiseFreePdf.size());
         Vector<String> properLineInput = lbGlue.getGluedStream(noiseFreePdf);
         vectorDump(properLineInput);

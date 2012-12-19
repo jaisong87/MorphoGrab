@@ -26,8 +26,20 @@ public class NexusGen {
 	 */
 	public String getNexusStr() {
 
-		Vector<String> chars = new Vector<String>();
-		Vector<String> charRow = new Vector<String>();
+		if(inpData==null && chAndStates ==null)
+			System.out.println("FATAL ERROR : No matrix and no character and states given to build nexus(both null)");
+
+		Vector<String> chars = null;
+		Vector<String> charRow = null;
+		
+		if(inpData != null && inpData.size()!=0)
+			System.out.println("NexusGen : Matrix input with " + inpData.size() +" lines");
+		if(chAndStates != null)
+			System.out.println(" Character and states map with " + chAndStates.size() + " character entries");
+		
+		if(inpData != null) {
+		charRow = new Vector<String>();
+		chars = new Vector<String>();
 		
 		String curChar = "", curCharRow = "";
 		for(int i=0;i<inpData.size();i++) {
@@ -46,14 +58,27 @@ public class NexusGen {
 				//System.out.println("Found a charRow");
 				}
 			}
+		}
 
 		String nexStr = "#NEXUS\n";
 		nexStr += "BEGIN TAXA;\n";
+
+if(chAndStates != null) {
+			nexStr += "DIMENSIONS NTAX=" + chAndStates.size() +";\n";
+				
+			nexStr += "TAXLABELS\n";
+			
+			for(int i=0;i<chAndStates.size();i++)
+				nexStr += chAndStates.get(i).character + "\n";
+		}
+else {		
 		nexStr += "DIMENSIONS NTAX=" + chars.size() +";\n";
 
 		nexStr += "TAXLABELS\n";
+		
 		for(int i=0;i<chars.size();i++)
 			nexStr += chars.get(i) + "\n";
+}
 		nexStr += ";\n";
 		nexStr += "endblock;\n";
 
@@ -67,6 +92,35 @@ public class NexusGen {
 		
 		/* HardCoding this line - talk to maureen and infer this appropriately ( should be simple to infer)*/
 		nexStr += "FORMAT DATATYPE=STANDARD RESPECTCASE MISSING=? GAP=- SYMBOLS=\"01234\"\n";
+
+		/* If characters and states are present inser char labels and state labels */
+		if(chAndStates != null ){	
+			nexStr +="CHARLABELS\n";
+			
+			int chCount = 0;
+			for(int i=0;i<chAndStates.size();i++) {
+				chCount++;
+				nexStr +="["+chCount+"] '" + chAndStates.get(i).character+"'\n";
+			}
+			nexStr +=";\n";
+
+			chCount = 0;
+			nexStr += "STATELABELS\n";
+
+			for(int i=0;i<chAndStates.size();i++) {
+				chCount++;
+				nexStr += chCount+"\n";
+			
+				Vector<String> curStates = chAndStates.get(i).states;
+				for(int j=0;j<curStates.size();j++) {
+					nexStr += "'" + curStates.get(j) + "'\n";
+					if(chCount != chAndStates.size())
+						nexStr += ",\n";
+				}
+			}
+			nexStr +=";\n";
+	}
+
 		nexStr += "MATRIX\n";
 
 		for(int i=0;i<chars.size();i++) 
