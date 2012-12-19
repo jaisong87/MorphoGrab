@@ -64,70 +64,68 @@ public class NexusGen {
 		nexStr += "BEGIN TAXA;\n";
 
 if(chAndStates != null) {
-			nexStr += "DIMENSIONS NTAX=" + chAndStates.size() +";\n";
-				
-			nexStr += "TAXLABELS\n";
+			nexStr += "\tDIMENSIONS NTAX=" + chAndStates.size() +";\n";
+			nexStr += "\tTAXLABELS\n";
 			
 			for(int i=0;i<chAndStates.size();i++)
-				nexStr += chAndStates.get(i).character + "\n";
+				nexStr += "\t\t'" + chAndStates.get(i).character + "'\n";
 		}
 else {		
-		nexStr += "DIMENSIONS NTAX=" + chars.size() +";\n";
-
-		nexStr += "TAXLABELS\n";
+		nexStr += "\tDIMENSIONS NTAX=" + chars.size() +";\n";
+		nexStr += "\tTAXLABELS\n";
 		
 		for(int i=0;i<chars.size();i++)
-			nexStr += chars.get(i) + "\n";
+			nexStr += "\t\t'" + chars.get(i) + "'\n";
 }
 		nexStr += ";\n";
-		nexStr += "endblock;\n";
+		nexStr += "ENDBLOCK;\n\n\n\n";
 
 		
 		
-		nexStr += "begin characters;\n";  
-		nexStr += "TITLE '"+ title + "'\n";
+		nexStr += "BEGIN CHARACTERS;\n";  
+//		nexStr += "TITLE '"+ title + "'\n";
 		
 		
-		nexStr += "dimensions nchar="+chars.size()+"\n";
+		nexStr += "\tDIMENSIONS NCHAR="+chars.size()+";\n";
 		
 		/* HardCoding this line - talk to maureen and infer this appropriately ( should be simple to infer)*/
-		nexStr += "FORMAT DATATYPE=STANDARD RESPECTCASE MISSING=? GAP=- SYMBOLS=\"01234\"\n";
+		nexStr += "\tFORMAT DATATYPE=STANDARD RESPECTCASE MISSING=? GAP=- SYMBOLS=\"01234\";\n\n";
 
 		/* If characters and states are present inser char labels and state labels */
 		if(chAndStates != null ){	
-			nexStr +="CHARLABELS\n";
+			nexStr +="\tCHARLABELS\n";
 			
 			int chCount = 0;
 			for(int i=0;i<chAndStates.size();i++) {
 				chCount++;
-				nexStr +="["+chCount+"] '" + chAndStates.get(i).character+"'\n";
+				nexStr +="\t\t["+chCount+"] '" + chAndStates.get(i).character+"'\n";
 			}
-			nexStr +=";\n";
+			nexStr +="\t;\n\n";
 
 			chCount = 0;
-			nexStr += "STATELABELS\n";
+			nexStr += "\tSTATELABELS\n";
 
 			for(int i=0;i<chAndStates.size();i++) {
 				chCount++;
-				nexStr += chCount+"\n";
+				nexStr += "\t\t" + chCount+"\n";
 			
 				Vector<String> curStates = chAndStates.get(i).states;
 				for(int j=0;j<curStates.size();j++) {
-					nexStr += "'" + curStates.get(j) + "'\n";
+					nexStr += "\t\t'" + curStates.get(j) + "'\n";
 					if(chCount != chAndStates.size())
-						nexStr += ",\n";
+						nexStr += "\t\t,\n";
 				}
 			}
-			nexStr +=";\n";
+			nexStr +="\t;\n";
 	}
 
 		nexStr += "MATRIX\n";
 
 		for(int i=0;i<chars.size();i++) 
-			nexStr += chars.get(i)+ "      " + charRow.get(i) + "\n";
+			nexStr += "\t'" + chars.get(i)+ "'      " + charRow.get(i) + "\n";
 		
-		nexStr += "\n";
-		nexStr += "endblock;\n";
+		nexStr += "\t;\n";
+		nexStr += "ENDBLOCK;\n\n";
 		return nexStr;
 	}
 
