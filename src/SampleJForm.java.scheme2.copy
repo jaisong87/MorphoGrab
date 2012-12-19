@@ -248,12 +248,6 @@ public class SampleJForm extends javax.swing.JFrame {
         String value;
         int startpos;
         int endpos;
-    	public character()
-    	{
-    		value ="";
-    		int startpos = -1;
-    		int endpos = -1;
-    	}
     }
     
     class states
@@ -377,111 +371,111 @@ public class SampleJForm extends javax.swing.JFrame {
     
     private void Learn()
     {
-        //Collections.reverse(dataRows);
-        ReLearner myLearner = new ReLearner(dataRows, ReLearner.AlgoType.REGEX_TEMPLATE);
+                //Collections.reverse(dataRows);
+                ReLearner myLearner = new ReLearner(dataRows, ReLearner.AlgoType.REGEX_TEMPLATE);
+		
+                Vector<Integer> startPos = new Vector<Integer>();
+		Vector<Integer>   endPos = new Vector<Integer>();
+		
+               //startPos.add(103); endPos.add(127);
+		//startPos.add(129); endPos.add(157);
+	
+                 for(int i = 0 ; i < pairs.size();i++)
+                 {
+                     String line =  pairs.get(i).lineContent;
+                     character c_char = pairs.get(i).c;
+                     
+                     for(int j = 0 ;j< pairs.get(i).s.size();j++)
+                     {
+                         states s_state = (states) pairs.get(i).s.get(j);
+                         startPos.add(s_state.startpos);
+                         endPos.add(s_state.endpos);
+                     }
+                     
+                     myLearner.addExample(line, c_char.startpos, c_char.endpos, startPos, endPos);
+                     startPos.clear();
+                     endPos.clear();
+                 }
+                
+                 jTextArea3.setText("");
+		//myLearner.addExample(line1, 0, 101, startPos, endPos);
+		
+               // myLearner.toString( "Character","list<states>","line1")
+                
+		myLearner.learnExpressions();
+		
+                //Pattern regex = myLearner.getRegex();
+                     
+                int startline;
+                int endline ;
+                   
+                
+                //Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
+		Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPairNew();
+                
+                
+                
+                for(int  i = 0 ; i <chAndStates.size() ;i++)
+                {
+                    Pairs p = chAndStates.get(i);
+                    String key= p.getChar();
+                    jTextArea3.setText(jTextArea3.getText()+ key +"\n");
+            
+                    // getValue is used to get value of key in Map
+                    Vector<String> value=(Vector<String>)p.getStates();
 
-        Vector<Integer> startPos = new Vector<Integer>();
-Vector<Integer>   endPos = new Vector<Integer>();
+                    for(int j = 0 ; j< value.size();j++)
+                    {
+                        jTextArea3.setText( jTextArea3.getText()+ value.get(j) + "\n");
+                    }
 
-       //startPos.add(103); endPos.add(127);
-//startPos.add(129); endPos.add(157);
+                    jTextArea3.setText(jTextArea3.getText()+ "\n");
+              }
+                
+                Vector<String> regExs = myLearner.getRegex();
+                String expressions ="";
+                
+                for(int i =0 ;i< regExs.size();i++)
+                {
+                    expressions += regExs.elementAt(i);
+                    
+                    Pattern pattern = Pattern.compile(regExs.elementAt(i));
+                    
+                    expressions +="\n";
+                }
+                jTextArea2.setText(expressions);
+                   
+                Marker(myLearner);
 
-         for(int i = 0 ; i < pairs.size();i++)
-         {
-             String line =  pairs.get(i).lineContent;
-             character c_char = pairs.get(i).c;
-             System.out.println("\n##########Adding example for character to reLearner#########");
-             myLearner.addCharacterExample(line, c_char.startpos, c_char.endpos);
-             
-             for(int j = 0 ;j< pairs.get(i).s.size();j++)
-             {
-                 states s_state = (states) pairs.get(i).s.get(j);
-                 startPos.add(s_state.startpos);
-                 endPos.add(s_state.endpos);
-                 myLearner.addStateExample(line.substring(s_state.startpos, s_state.endpos));
-             }
-             
-             //myLearner.addExample(line, c_char.startpos, c_char.endpos, startPos, endPos);
-             startPos.clear();
-             endPos.clear();
-         }
-        
-         jTextArea3.setText("");
-//myLearner.addExample(line1, 0, 101, startPos, endPos);
+               // jTextArea1.setText(myLearner.getDataFromDataRows());
+                
+                /*
+                Set s=chAndStates.entrySet();
 
-       // myLearner.toString( "Character","list<states>","line1")
-        	
-        //Pattern regex = myLearner.getRegex();
-             
-        int startline;
-        int endline ;
-           
-        
-//Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
-Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
-        
-        
-        
-        for(int  i = 0 ; i <chAndStates.size() ;i++)
+        //Move next key and value of Map by iterator
+        Iterator it=s.iterator();
+
+        while(it.hasNext())
         {
-            Pairs p = chAndStates.get(i);
-            String key= p.getChar();
+            // key=value separator this by Map.Entry to get key and value
+            Map.Entry m =(Map.Entry)it.next();
+
+            // getKey is used to get key of Map
+            String key=(String)m.getKey();
             jTextArea3.setText(jTextArea3.getText()+ key +"\n");
-    
+            
             // getValue is used to get value of key in Map
-            Vector<String> value=(Vector<String>)p.getStates();
+            Vector<String> value=(Vector<String>)m.getValue();
 
             for(int j = 0 ; j< value.size();j++)
             {
-                jTextArea3.setText( jTextArea3.getText()+ value.get(j) + "\n");
+                  jTextArea3.setText( jTextArea3.getText()+ value.get(j) + "\n");
             }
-
+             
             jTextArea3.setText(jTextArea3.getText()+ "\n");
-      }
-        
-        Vector<String> regExs = myLearner.getRegExpr();
-        String expressions ="";
-        
-        for(int i =0 ;i< regExs.size();i++)
-        {
-            expressions += regExs.elementAt(i);
-            
-            Pattern pattern = Pattern.compile(regExs.elementAt(i));
-            
-            expressions +="\n";
         }
-        jTextArea2.setText(expressions);
-           
-        Marker(myLearner);
-
-       // jTextArea1.setText(myLearner.getDataFromDataRows());
-        
-        /*
-        Set s=chAndStates.entrySet();
-
-//Move next key and value of Map by iterator
-Iterator it=s.iterator();
-
-while(it.hasNext())
-{
-    // key=value separator this by Map.Entry to get key and value
-    Map.Entry m =(Map.Entry)it.next();
-
-    // getKey is used to get key of Map
-    String key=(String)m.getKey();
-    jTextArea3.setText(jTextArea3.getText()+ key +"\n");
-    
-    // getValue is used to get value of key in Map
-    Vector<String> value=(Vector<String>)m.getValue();
-
-    for(int j = 0 ; j< value.size();j++)
-    {
-          jTextArea3.setText( jTextArea3.getText()+ value.get(j) + "\n");
-    }
-     
-    jTextArea3.setText(jTextArea3.getText()+ "\n");
-}
-*/
+		*/
+            
         
     }
     
@@ -637,77 +631,102 @@ while(it.hasNext())
         return this.parsedText ;
     }
  
-    void Marker(ReLearner mylearner)
-    {
-   	 		Vector<Pairs> charAndStates = mylearner.getCharacterAndStatesUsingRegexTemplates();
-              // Vector<String> mattachedString = mylearner.regexMatchedStates;
-               Vector<String> matchedChars = new Vector<String>();
-               Vector<String> matchedStates = new Vector<String>();
-               
-               for(int i=0;i<charAndStates.size();i++)
-               {
-               	matchedChars.add(charAndStates.elementAt(i).character);
-               	System.out.println("****Character is"+charAndStates.elementAt(i).character+"*******");
-               	Vector<String> st = charAndStates.elementAt(i).states;
-               	for(int j=0;j<st.size();j++)
-               	{
-                   	matchedStates.add(st.elementAt(j));                		
-               	}
+     void Marker(ReLearner mylearner)
+     {
+                Vector<String> mattachedString = mylearner.regexMatchedStates;
+                
+                for(int  i = 0 ;i< mattachedString.size();i++)
+                {
+                    int startpos = 0 ;
+                    while(true)
+                    {
+                        startpos = jTextArea1.getText().indexOf(mattachedString.elementAt(i),startpos+1);
+                    
+                    if( startpos>=0 )
+                    {
+                        Highlighter hilite = jTextArea1.getHighlighter();
+                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.yellow);
+                try {
+                    hilite.addHighlight(startpos, startpos+mattachedString.elementAt(i).length(), p);
+                } catch (BadLocationException ex) {
+                    Logger.getLogger(SampleJForm.class.getName()).log(Level.SEVERE, null, ex);
                 }
-               
-               for(int  i = 0 ;i< matchedChars.size();i++)
-               {
-                   int startpos = 0 ;
-                   while(true)
-                   {
-                       startpos = jTextArea1.getText().indexOf(matchedChars.elementAt(i),startpos+1);
-                   
-                   if( startpos>=0 )
-                   {
-                       Highlighter hilite = jTextArea1.getHighlighter();
-                       Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.yellow);
-               try {
-                   hilite.addHighlight(startpos, startpos+matchedChars.elementAt(i).length(), p);
-               } catch (BadLocationException ex) {
-                   Logger.getLogger(SampleJForm.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    else
+                        break;
+                            
+                    }
+                    
                }
-                   }
-                   else
-                       break;
-                           
-                   }
-                   
-              }
-        
-                              
-               for(int  i = 0 ;i< matchedStates.size();i++)
-               {
-                   int startpos = 0 ;
-                   while(true)
-                   {
-                       startpos = jTextArea1.getText().indexOf(matchedStates.elementAt(i),startpos+1);
-                   
-                   if( startpos>=0 )
-                   {
-                       Highlighter hilite = jTextArea1.getHighlighter();
-                       Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.green);
-               try {
-                   hilite.addHighlight(startpos, startpos+matchedStates.elementAt(i).length(), p);
-               } catch (BadLocationException ex) {
-                   Logger.getLogger(SampleJForm.class.getName()).log(Level.SEVERE, null, ex);
-               }
-                   }
-                   else
-                       break;
-                           
-                   }
-                   
-              } 
-               
-              System.out.println("CharAndStates have "+charAndStates.size()+" elements");
-             
-    }
          
+                
+                mattachedString = mylearner.regexMatchedChars;
+                
+                for(int  i = 0 ;i< mattachedString.size();i++)
+                {
+                    int startpos = 0 ;
+                    while(true)
+                    {
+                        startpos = jTextArea1.getText().indexOf(mattachedString.elementAt(i),startpos+1);
+                    
+                    if( startpos>=0 )
+                    {
+                        Highlighter hilite = jTextArea1.getHighlighter();
+                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.green);
+                try {
+                    hilite.addHighlight(startpos, startpos+mattachedString.elementAt(i).length(), p);
+                } catch (BadLocationException ex) {
+                    Logger.getLogger(SampleJForm.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                    }
+                    else
+                        break;
+                            
+                    }
+                    
+               } 
+                
+                /*
+                int startline;
+                int endline;
+                
+                try
+                {
+                int lineNumber = 0;
+                while(true)
+                {
+                    try
+                    {
+                        startline = jTextArea1.getLineStartOffset(lineNumber);
+                        endline = jTextArea1.getLineEndOffset(lineNumber);
+                    }
+                    catch ( BadLocationException ex)
+                    {
+                        break;
+                    }
+                    String text= jTextArea1.getText(startline, endline - startline);
+                    
+                    if(mylearner.mappedDataRows.contains(text.trim()))
+                    {
+                        Highlighter hilite = jTextArea1.getHighlighter();
+                        Highlighter.HighlightPainter p = new DefaultHighlighter.DefaultHighlightPainter(Color.lightGray);
+                        hilite.addHighlight(startline, endline, p);
+                        
+                   }
+                    lineNumber++;
+                }
+                }
+                catch ( Exception e)
+                {
+                    ;
+                }
+                * 
+                
+                */
+     }
+     
+     
+     
      void LoadContents(String fileName) 
      {
       	 try

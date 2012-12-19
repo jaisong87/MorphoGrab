@@ -210,6 +210,8 @@ public class PdfConverter extends javax.swing.JDialog {
          // Here user can manually remove the noise 
         String parsedPdf =  jTextArea1.getSelectedText();
         
+        if(parsedPdf == null || parsedPdf.length() == 0 )
+        	return;
         Vector<String> knownNoise = new Vector<String>();
         NoiseHandler noiseFilter = new NoiseHandler(3, knownNoise);
         
