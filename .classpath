@@ -2,5 +2,21 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/jaison/CSE523/inputGen/itext-5.3.3.zip"/>
+	<classpathentry kind="lib" path="/home/jaison/CSE523/inputGen/itext-5.3.3/itextpdf-5.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/CSE523/inputGen/itext-5.3.3/itextpdf-5.3.3-sources.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/CSE523/inputGen/itext-5.3.3/itextpdf-5.3.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/CSE523/inputGen/itext-5.3.3/itext-xtra-5.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/CSE523/inputGen/itext-5.3.3/itext-xtra-5.3.3-sources.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/CSE523/inputGen/itext-5.3.3/itext-xtra-5.3.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/CSE523/inputGen/itext-5.3.3/itext-pdfa-5.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/CSE523/inputGen/itext-5.3.3/itext-pdfa-5.3.3-sources.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/CSE523/inputGen/itext-5.3.3/itext-pdfa-5.3.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/workspace/MorphoGrab/src/Dependencies/poi-3.8/poi-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/workspace/MorphoGrab/src/Dependencies/poi-3.8/poi-scratchpad-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/workspace/MorphoGrab/src/Dependencies/poi-3.8/poi-ooxml-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/workspace/MorphoGrab/src/Dependencies/poi-3.8/poi-examples-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/workspace/MorphoGrab/src/Dependencies/poi-3.8/poi-ooxml-schemas-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="/home/jaison/workspace/MorphoGrab/src/Dependencies/poi-3.8/poi-excelant-3.8-20120326.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

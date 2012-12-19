@@ -1,16 +1,20 @@
-package Nexus;
+package nexus;
 
 import java.util.Vector;
+
+import learners.Pairs;
 /*
  * Feed a Vector<String> of lines in order from a data matrix pdf
  * and get the corresponding nexus block  
  */
-public class MatrixBlock {
+public class NexusGen {
 
 	private Vector<String> inpData;
+	private Vector<Pairs> chAndStates;
 	public String title;
 	
-	public MatrixBlock(Vector<String> inp, String t) {
+	public NexusGen(Vector<Pairs> vp, Vector<String> inp, String t) {
+		chAndStates = vp;
 		inpData = inp;
 		title = t;
 	}
@@ -110,7 +114,7 @@ public class MatrixBlock {
 		v.add("Remingtonocetus");
 		v.add("112(12)12?011311010010011(02)00121??20?1????1111?01111011002?130?1?1211?020120-02(23)(23)2(23)41?00100???0?0301???????????0");
 		
-		MatrixBlock b = new MatrixBlock(v, "SAMPLE NEXUS");	
+		NexusGen b = new NexusGen(null, v, "SAMPLE NEXUS");	
 		System.out.println(b.getNexusStr());
 	}
 }

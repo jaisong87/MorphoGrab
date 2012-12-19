@@ -1,5 +1,5 @@
 
-import nexus.MatrixBlock;
+import nexus.NexusGen;
 import com.itextpdf.text.pdf.parser.Matrix;
 import java.awt.Color;
 import java.awt.FileDialog;
@@ -381,10 +381,7 @@ public class SampleJForm extends javax.swing.JFrame {
         ReLearner myLearner = new ReLearner(dataRows, ReLearner.AlgoType.REGEX_TEMPLATE);
 
         Vector<Integer> startPos = new Vector<Integer>();
-Vector<Integer>   endPos = new Vector<Integer>();
-
-       //startPos.add(103); endPos.add(127);
-//startPos.add(129); endPos.add(157);
+        Vector<Integer>   endPos = new Vector<Integer>();
 
          for(int i = 0 ; i < pairs.size();i++)
          {
@@ -407,20 +404,13 @@ Vector<Integer>   endPos = new Vector<Integer>();
          }
         
          jTextArea3.setText("");
-//myLearner.addExample(line1, 0, 101, startPos, endPos);
-
-       // myLearner.toString( "Character","list<states>","line1")
-        	
-        //Pattern regex = myLearner.getRegex();
              
         int startline;
         int endline ;
            
         
 //Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
-Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();
-        
-        
+Vector<Pairs> chAndStates = myLearner.getCharacterAndStatesUsingRegexTemplatesPair();        
         
         for(int  i = 0 ; i <chAndStates.size() ;i++)
         {
@@ -590,18 +580,25 @@ while(it.hasNext())
         
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private MatrixBlock block;
+    private NexusGen block;
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         
-        String[] parsedLines = matrix.split("\\n");
+        String[] parsedLines = null;
+        if(matrix != null)
+        	parsedLines = matrix.split("\\n");
+        
+        //characterAndStates ( Vector<Pairs> to be passed to MatrixBlock )
         
         Vector<String>  vectorOfLines=  new Vector<String>();
-        vectorOfLines.addAll(Arrays.asList(parsedLines));
+        if(parsedLines != null )
+        	vectorOfLines.addAll(Arrays.asList(parsedLines));
 
-         block = new MatrixBlock(vectorOfLines, "SAMPLE");
+         block = new NexusGen(characterAndStates, vectorOfLines, "SAMPLE");
          String tt = block.getNexusStr();
          System.out.println(tt);
+         
+         
          
     }//GEN-LAST:event_jButton4ActionPerformed
  
@@ -618,6 +615,11 @@ while(it.hasNext())
     public void SetMatrix(String Matrix)
     {
         matrix = Matrix;
+    }
+
+    private Vector<Pairs> characterAndStates = null;
+    public void setCharacterAndStates(Vector<Pairs> chAndStates) {
+    	characterAndStates = chAndStates;
     }
     
     public void SetParsedText(String  text)
@@ -640,7 +642,9 @@ while(it.hasNext())
     void Marker(ReLearner mylearner)
     {
    	 		Vector<Pairs> charAndStates = mylearner.getCharacterAndStatesUsingRegexTemplates();
-              // Vector<String> mattachedString = mylearner.regexMatchedStates;
+   	 		setCharacterAndStates(charAndStates);
+
+   	 		// Vector<String> mattachedString = mylearner.regexMatchedStates;
                Vector<String> matchedChars = new Vector<String>();
                Vector<String> matchedStates = new Vector<String>();
                

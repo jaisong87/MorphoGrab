@@ -1,2 +1,8 @@
 bin/*
 *.swp
+tags
+SampleCharacterStateSpecifications/
+SampleProjectsWithNexusFiles/
+.classpath
+Dependencies/
+.classpath
