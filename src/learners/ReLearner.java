@@ -473,36 +473,62 @@ public class ReLearner {
 						curCharacter += tokens[j];
 						}
 				}
-			//combinedStates = tokens[tokens.length-1];
 			
 			if(true == enableDebugging)
 				{
 				System.out.print(curCharacter+ " => ");
 				}
 									
-		    Vector<String> curStates = new Vector<String>();
-                //  String firstdel =stateDelimiters.elementAt(0).toString();
-                    //char c = firstdel.charAt(0);
-                    //String[] statestokens = combinedStates.split(firstdel);
-		
-		    Matcher matcher = pattern.matcher(combinedStates);
-                    
-                    int noOfStates = 0 ;
-		    while (matcher.find()) {
-//		                System.out.println("I found the text - " + matcher.group() + " starting at " +"index " + matcher.start() +" and ending at index " + matcher.end());
-                        String curre = matcher.group().trim();  
-			  curStates.addElement(curre);
-			  regexMatchedStates.add(curre);
-                            noOfStates++;
-                    }
+		    Vector<String> curStates = new Vector<String>();		
+		    Vector<String> potentialStates = new Vector<String>();
 
-			
+		    /* Loop through all regular expressions
+		     * Get all possible matches 
+		     */
+		    for(int k=0;k<stateTemplates.size();k++) {
+                Pattern stPattern = Pattern.compile(stateTemplates.elementAt(k).getRegex());		    	
+                Matcher matcher = stPattern.matcher(combinedStates);
+                		
+    		    while (matcher.find()) {
+                    String curre = matcher.group().trim();  
+		  potentialStates.addElement(curre);
+		  regexMatchedStates.add(curre);
+                }
+    		    
+		    }
+
+		    /* A simple algorithm to get good coverage . This could be improved a lot */
+		    for(int x=0;x<potentialStates.size();x++) {
+		    	String curPotentialState = potentialStates.get(x);
+		    	boolean acceptState = true;
+		    	for(int y=0;y<potentialStates.size();y++) {
+		    		if( x != y ) {
+		    			if(potentialStates.get(y).length() > curPotentialState.length())
+		    				if(potentialStates.get(y).contains(curPotentialState))
+		    					acceptState = false;
+		    		}
+		    	}
+		    	
+		    	if(acceptState == true && !curStates.contains(curPotentialState))
+		    		{
+		    		curStates.add(curPotentialState);
+		    		System.out.println("Adding "+curPotentialState+" to curStates");
+		    		}
+		    }
+		    
 			for(int j=0;j<curStates.size();j++)
 			{
+				int p1 = combinedStates.indexOf(curStates.elementAt(j));
 				if(true == enableDebugging)
 					{
 					System.out.print(" { "+curStates.elementAt(j) + " } ");
 					}
+				for(int k=j+1;k<curStates.size();k++) {
+					int q1 = combinedStates.indexOf(curStates.elementAt(k));
+					
+					if(q1<p1) 
+						Collections.swap(curStates, j, k);
+				}
 			}
 			
 			System.out.println("");

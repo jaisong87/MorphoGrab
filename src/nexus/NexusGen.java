@@ -85,9 +85,11 @@ else {
 		nexStr += "BEGIN CHARACTERS;\n";  
 //		nexStr += "TITLE '"+ title + "'\n";
 		
-		
-		nexStr += "\tDIMENSIONS NCHAR="+chars.size()+";\n";
-		
+		if(chAndStates != null )		
+			nexStr += "\tDIMENSIONS NCHAR="+ chAndStates.size()+";\n";
+		else 
+			nexStr += "\tDIMENSIONS NCHAR="+ chars.size()+";\n";
+			
 		/* HardCoding this line - talk to maureen and infer this appropriately ( should be simple to infer)*/
 		nexStr += "\tFORMAT DATATYPE=STANDARD RESPECTCASE MISSING=? GAP=- SYMBOLS=\"01234\";\n\n";
 

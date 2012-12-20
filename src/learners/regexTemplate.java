@@ -12,17 +12,19 @@ import java.util.regex.Pattern;
  */
 public class regexTemplate {
 
-		static String specialChars = "()?;-+"; /* Some special characters */
-
+	static String specialChars = "()?;-+<>%≤≥=,\\/"; /* Some special characters */
 
 		Vector<Integer> charType;
 
 		Vector<Boolean> repeatAllowed;
 
+		String inpStr;
 
 	public regexTemplate(String str)
 
 	{
+		inpStr = str;
+		
 		charType = new Vector<Integer>();
 
 		repeatAllowed = new Vector<Boolean>();
@@ -129,7 +131,7 @@ public class regexTemplate {
 			ctype = i+1;
 
 
-		else if ( ch==' ' || ch==',')
+		else if ( ch==' ' /* || ch==',' */)
 
 			ctype = i+1;
 
@@ -205,10 +207,10 @@ public class regexTemplate {
 				else if(i==charType.size()-1)
 
 					{
-					if(repeatAllowed.elementAt(i)==true) 
-
-						pattern+="[\\w\\s,]+";
-					pattern+="[\\w\\s]";
+					//if(repeatAllowed.elementAt(i)==true) 
+						//pattern+="[\\w\\s,]+";
+					
+					pattern+="[\\w\\s]+";
 
 					}
 				else {
@@ -237,6 +239,9 @@ public class regexTemplate {
 				pattern+="[\\.]";
 			}
 		}
+		
+		System.out.println("From "+ inpStr +" constructed "+pattern);
+		
 		return pattern;
 
 	}
@@ -244,6 +249,16 @@ public class regexTemplate {
 	public static void main(String args[])
 
 	{
+		
+		String test ="(0) wide, straight canal";
+		String subStr = "short, length";
+		
+		if(test.matches("[(][\\d][)][\\w\\s]+"))
+				System.out.print("SUCCESS");
+		else
+			System.out.print("FAILURE");
+
+			
 	String pattern = "[\\w\\s]+";
 
 	String str = "abcd..,, 12345 abcd 123 ...";
