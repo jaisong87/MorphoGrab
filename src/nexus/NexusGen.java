@@ -63,20 +63,13 @@ public class NexusGen {
 		String nexStr = "#NEXUS\n";
 		nexStr += "BEGIN TAXA;\n";
 
-if(chAndStates != null) {
-			nexStr += "\tDIMENSIONS NTAX=" + chAndStates.size() +";\n";
-			nexStr += "\tTAXLABELS\n";
-			
-			for(int i=0;i<chAndStates.size();i++)
-				nexStr += "\t\t'" + chAndStates.get(i).character + "'\n";
-		}
-else {		
+		
 		nexStr += "\tDIMENSIONS NTAX=" + chars.size() +";\n";
 		nexStr += "\tTAXLABELS\n";
 		
 		for(int i=0;i<chars.size();i++)
 			nexStr += "\t\t'" + chars.get(i) + "'\n";
-}
+
 		nexStr += ";\n";
 		nexStr += "ENDBLOCK;\n\n\n\n";
 
